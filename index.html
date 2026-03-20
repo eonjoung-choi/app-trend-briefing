@@ -62,12 +62,12 @@ body {
   display: flex; align-items: center;
   gap: 6px; padding: 4px 0 14px;
   max-height: 50px; overflow: hidden;
-  transition: max-height 0.25s ease, padding 0.25s ease, opacity 0.25s ease;
+ transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+will-change: max-height, padding, opacity; transform: translateZ(0);
   opacity: 1;
 }
 .tab-nav.hidden {
-  max-height: 0; padding: 0; opacity: 0;
-}
+  max-height: 0; padding: 0; opacity: 0; pointer-events: none;
 .tab-link {
   font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.45);
   background: rgba(255,255,255,0.1); border: none; cursor: pointer;
@@ -88,11 +88,12 @@ body {
   scrollbar-width: none;
   padding: 0 0 14px;
   max-height: 50px; overflow: hidden;
-  transition: max-height 0.25s ease, padding 0.25s ease, opacity 0.25s ease;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+will-change: max-height, padding, opacity; transform: translateZ(0);
   opacity: 1;
 }
 .filter-nav.hidden {
-  max-height: 0; padding: 0; opacity: 0;
+ max-height: 0; padding: 0; opacity: 0; pointer-events: none;
 }
 .filter-nav::-webkit-scrollbar { display: none; }
 .filter-link {
@@ -438,7 +439,7 @@ body {
       <button class="filter-link" data-domain="traditional" onclick="setDomain(this)">전통 금융사</button>
       <button class="filter-link" data-domain="fintech" onclick="setDomain(this)">핀테크</button>
       <button class="filter-link" data-domain="commerce" onclick="setDomain(this)">이커머스</button>
-      <button class="filter-link" data-domain="vertical" onclick="setDomain(this)">버티컬</button>
+      <button class="filter-link" data-domain="vertical" onclick="setDomain(this)">버티컬 커머스</button>
     </div>
   </div>
   <div class="feed" id="mainFeed"></div>
@@ -710,14 +711,16 @@ function toast(m){const t=document.getElementById('toast');t.textContent=m;t.cla
 
 // Scroll hide tabs + filter
 let lastScroll=0;
+let ticking=false;
 window.addEventListener('scroll',()=>{
-  const y=window.scrollY;
-  const tabNav=document.querySelector('#page-main .tab-nav');
-  const filterNav=document.getElementById('domainFilter');
-  if(!tabNav||!filterNav)return;
-  if(y>60){tabNav.classList.add('hidden');filterNav.classList.add('hidden');}
-  else{tabNav.classList.remove('hidden');filterNav.classList.remove('hidden');}
-  lastScroll=y;
+if(!ticking){requestAnimationFrame(()=>{
+const y=window.scrollY;
+const tabNav=document.querySelector('#page-main .tab-nav');
+const filterNav=document.getElementById('domainFilter');
+if(!tabNav||!filterNav){ticking=false;return;}
+if(y>80){tabNav.classList.add('hidden');filterNav.classList.add('hidden');}
+else{tabNav.classList.remove('hidden');filterNav.classList.remove('hidden');}
+ticking=false;});ticking=true;}
 },{passive:true});
 
 // Init — feed.json 로딩 시 품질 검증 후 사용, 불량이면 하드코딩 폴백
