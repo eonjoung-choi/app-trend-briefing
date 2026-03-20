@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>App Trend Tracker</title>
+<style>
+:root {
+  --bg: #f2f4f6;
+  --white: #ffffff;
+  --text: #191f28;
+  --text-secondary: #4e5968;
+  --text-tertiary: #8b95a1;
+  --text-dim: #b0b8c1;
+  --border: #e5e8eb;
+  --border-light: #f2f4f6;
+  --blue: #3182f6;
+  --blue-bg: rgba(49,130,246,0.08);
+  --blue-light: #4593fc;
+  --green: #00c73c;
+  --green-bg: rgba(0,199,60,0.08);
+  --orange: #f59e0b;
+  --orange-bg: rgba(245,158,11,0.08);
+  --red: #f04452;
+  --red-bg: rgba(240,68,82,0.08);
+  --purple: #8b5cf6;
+  --purple-bg: rgba(139,92,246,0.08);
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-xs: 8px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --tab-height: 52px;
+}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'SF Pro Display', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+/* ─── BI Logo + Text ─── */
+.bi-mark {
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.bi-icon {
+  width: 30px; height: 30px; flex-shrink: 0;
+}
+.bi-text {
+  font-size: 20px; font-weight: 800; color: rgba(255,255,255,0.95);
+  letter-spacing: -0.6px; white-space: nowrap;
+}
+
+/* ─── Tab Nav (pill buttons on dark bg) ─── */
+.tab-nav {
+  display: flex; align-items: center;
+  gap: 6px; padding: 4px 0 14px;
+  max-height: 50px; overflow: hidden;
+  transition: max-height 0.25s ease, padding 0.25s ease, opacity 0.25s ease;
+  opacity: 1;
+}
+.tab-nav.hidden {
+  max-height: 0; padding: 0; opacity: 0;
+}
+.tab-link {
+  font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.1); border: none; cursor: pointer;
+  font-family: inherit; padding: 8px 18px;
+  border-radius: 20px; white-space: nowrap;
+  transition: all 0.15s; letter-spacing: -0.2px;
+}
+.tab-link:active { transform: scale(0.96); }
+.tab-link.active {
+  color: #191f28; font-weight: 700;
+  background: var(--white);
+}
+
+/* ─── Domain Filter (pill style on dark bg) ─── */
+.filter-nav {
+  display: flex; gap: 6px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 0 14px;
+  max-height: 50px; overflow: hidden;
+  transition: max-height 0.25s ease, padding 0.25s ease, opacity 0.25s ease;
+  opacity: 1;
+}
+.filter-nav.hidden {
+  max-height: 0; padding: 0; opacity: 0;
+}
+.filter-nav::-webkit-scrollbar { display: none; }
+.filter-link {
+  flex-shrink: 0; padding: 6px 10px;
+  font-size: 12px; font-weight: 600;
+  color: rgba(255,255,255,0.4);
+  background: none; border: none;
+  cursor: pointer; font-family: inherit;
+  white-space: nowrap; transition: all 0.15s;
+  position: relative;
+}
+.filter-link:active { opacity: 0.6; }
+.filter-link.active {
+  color: var(--white);
+}
+.filter-link::after {
+  content: ''; position: absolute;
+  bottom: -2px; left: 6px; right: 6px;
+  height: 2px; border-radius: 1px;
+  background: transparent; transition: background 0.15s;
+}
+.filter-link.active::after { background: var(--white); }
+
+/* ─── Header ─── */
+.header {
+  position: sticky; top: 0;
+  background: #191f28;
+  z-index: 50;
+  padding: 0 20px 0;
+}
+.header-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 0 10px;
+}
+.brand {
+  font-size: 18px; font-weight: 800; letter-spacing: -0.5px; color: var(--text);
+}
+.brand em { font-style: normal; color: var(--blue); }
+.header-actions { display: flex; gap: 8px; }
+.icon-btn {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(255,255,255,0.12); border: none;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; cursor: pointer; transition: all 0.12s;
+}
+.icon-btn:active { transform: scale(0.9); background: rgba(255,255,255,0.25); }
+.icon-btn svg { stroke: rgba(255,255,255,0.85); }
+
+/* Search overlay */
+.search-overlay {
+  display: none; position: fixed; inset: 0;
+  background: var(--white); z-index: 200;
+  max-width: 480px; margin: 0 auto;
+}
+.search-overlay.active { display: flex; flex-direction: column; }
+.search-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; border-bottom: 1px solid var(--border);
+}
+.search-input {
+  flex: 1; border: none; background: none;
+  font-size: 16px; font-family: inherit; outline: none;
+  color: var(--text);
+}
+.search-input::placeholder { color: var(--text-dim); }
+.search-cancel {
+  font-size: 14px; font-weight: 600; color: #191f28;
+  border: none; background: none; cursor: pointer; font-family: inherit;
+  padding: 4px 8px;
+}
+.search-results { flex: 1; overflow-y: auto; padding: 8px 16px; }
+.search-suggest { padding: 20px; }
+.search-suggest-title {
+  font-size: 13px; font-weight: 700; color: var(--text-tertiary);
+  margin-bottom: 12px; letter-spacing: -0.2px;
+}
+.search-suggest-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.suggest-tag {
+  padding: 8px 14px; border-radius: 20px;
+  background: #ecedf0; color: #191f28;
+  font-size: 13px; font-weight: 600; cursor: pointer;
+  transition: all 0.12s; border: none; font-family: inherit;
+}
+.suggest-tag:active { transform: scale(0.95); background: #dddee0; }
+.suggest-tag::before { content: '#'; color: #8b95a1; margin-right: 2px; }
+
+/* (domain filter moved to filter-nav above) */
+
+/* ─── Hashtag Filter (사각 뱃지 형태) ─── */
+.hashtag-filter {
+  display: flex; gap: 6px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; padding-bottom: 2px;
+}
+.hashtag-filter::-webkit-scrollbar { display: none; }
+.hashtag-chip {
+  flex-shrink: 0; padding: 5px 10px;
+  border-radius: 6px; font-size: 12px; font-weight: 500;
+  background: var(--white); color: var(--text-tertiary);
+  cursor: pointer; transition: all 0.12s; white-space: nowrap;
+}
+.hashtag-chip:active { transform: scale(0.96); }
+.hashtag-chip.active { background: var(--blue-bg); color: var(--blue); font-weight: 600; }
+.hashtag-chip::before { content: '#'; opacity: 0.4; margin-right: 1px; }
+
+/* ─── Feed ─── */
+.feed { padding: 8px 20px 0; }
+
+/* ─── Card (토스 스타일: 큰 카드, 여백, 라운드) ─── */
+.card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 18px; margin-bottom: 12px;
+  cursor: pointer; transition: transform 0.12s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.card:active { transform: scale(0.985); }
+.card-top {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+}
+.app-icon {
+  width: 40px; height: 40px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 800; color: white; flex-shrink: 0;
+}
+.app-info { flex: 1; min-width: 0; }
+.app-name { font-size: 14px; font-weight: 700; color: var(--text); }
+.app-meta {
+  font-size: 12px; color: var(--text-tertiary);
+  display: flex; align-items: center; gap: 6px; margin-top: 1px;
+}
+.domain-badge {
+  font-size: 11px; font-weight: 600; padding: 2px 6px; border-radius: 4px;
+}
+.domain-badge.traditional { background: #f0f0f0; color: #4e5968; }
+.domain-badge.fintech { background: #f0f0f0; color: #4e5968; }
+.domain-badge.commerce { background: #f0f0f0; color: #4e5968; }
+.domain-badge.vertical { background: #f0f0f0; color: #4e5968; }
+.card-date { font-size: 12px; color: var(--text-dim); flex-shrink: 0; }
+.card-title {
+  font-size: 15px; font-weight: 700; line-height: 1.45;
+  margin-bottom: 6px; color: var(--text);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.card-desc {
+  font-size: 14px; color: var(--text-secondary); line-height: 1.55;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  margin-bottom: 12px;
+}
+.card-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+.tag {
+  font-size: 12px; padding: 3px 8px; border-radius: 6px;
+  background: #ecedf0; color: #4e5968; font-weight: 500;
+}
+.tag::before { content: '#'; opacity: 0.35; margin-right: 1px; }
+
+/* Marketing extras */
+.mkt-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  padding: 3px 8px; border-radius: 6px; margin-bottom: 10px;
+}
+.mkt-badge.promo { background: #fce4e6; color: #c62828; }
+.mkt-badge.event { background: #fff3e0; color: #e65100; }
+.mkt-badge.collab { background: #e8eaf6; color: #283593; }
+.mkt-badge.campaign { background: #e8f5e9; color: #2e7d32; }
+.mkt-status {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 12px; color: var(--text-tertiary); margin-bottom: 2px;
+}
+.live-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green); animation: pulse 2s infinite;
+}
+.ended-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text-dim); }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* ─── Detail Sheet ─── */
+.sheet-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.35); z-index: 200;
+}
+.sheet-overlay.active { display: block; }
+.sheet {
+  position: fixed; bottom: 0; left: 50%; transform: translateX(-50%) translateY(100%);
+  width: 100%; max-width: 480px; max-height: 88vh;
+  background: var(--white); border-radius: 20px 20px 0 0;
+  z-index: 201; overflow-y: auto;
+  transition: transform 0.3s cubic-bezier(0.32,0.72,0,1);
+}
+.sheet-overlay.active .sheet { transform: translateX(-50%) translateY(0); }
+.sheet-handle { width: 36px; height: 5px; border-radius: 3px; background: var(--border); margin: 10px auto 4px; }
+.sheet-body { padding: 16px 24px 36px; }
+.sheet-app { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.sheet-title { font-size: 19px; font-weight: 800; line-height: 1.4; margin-bottom: 10px; letter-spacing: -0.3px; }
+.sheet-desc { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
+.sheet-label { font-size: 13px; font-weight: 700; color: var(--text-tertiary); margin-bottom: 8px; }
+.sheet-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+.sheet-tag { font-size: 13px; padding: 5px 12px; border-radius: 8px; background: #ecedf0; color: #191f28; font-weight: 600; }
+.sheet-tag::before { content: '#'; opacity: 0.3; margin-right: 2px; }
+.sheet-insight {
+  font-size: 14px; color: var(--text-secondary); line-height: 1.7;
+  background: var(--bg); border-radius: var(--radius-sm); padding: 16px;
+  margin-bottom: 20px;
+}
+.source-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; padding: 16px; border-radius: var(--radius-sm);
+  background: #191f28; color: white;
+  font-size: 16px; font-weight: 700; border: none;
+  cursor: pointer; font-family: inherit; transition: all 0.12s;
+}
+.source-btn:active { transform: scale(0.98); background: #2d3440; }
+
+/* ─── Pages ─── */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ─── Admin ─── */
+.admin-gate {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 72px 24px; text-align: center;
+}
+.admin-gate-emoji { font-size: 56px; margin-bottom: 20px; }
+.admin-gate-title { font-size: 20px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.3px; }
+.admin-gate-desc { font-size: 14px; color: var(--text-secondary); margin-bottom: 28px; line-height: 1.6; }
+.pw-field {
+  width: 100%; max-width: 260px; padding: 14px 16px;
+  border: 2px solid var(--border); border-radius: var(--radius-sm);
+  font-size: 17px; text-align: center; font-family: inherit; outline: none;
+  -webkit-text-security: disc; transition: border-color 0.2s;
+}
+.pw-field:focus { border-color: var(--blue); }
+.pw-btn {
+  margin-top: 14px; padding: 14px 56px; border-radius: var(--radius-sm);
+  background: #191f28; color: white;
+  font-size: 16px; font-weight: 700; border: none; cursor: pointer; font-family: inherit;
+}
+.pw-btn:active { background: #2d3440; }
+.pw-error { color: var(--red); font-size: 13px; margin-top: 10px; display: none; }
+
+.admin-panel { display: none; padding: 0 20px 20px; }
+.admin-panel.active { display: block; }
+.admin-section {
+  font-size: 13px; font-weight: 700; color: var(--text-tertiary);
+  padding: 20px 0 10px; letter-spacing: -0.2px;
+}
+.admin-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; background: var(--white);
+  border-radius: var(--radius-sm); margin-bottom: 6px;
+}
+.admin-name { font-size: 14px; font-weight: 600; flex: 1; }
+.toggle {
+  width: 46px; height: 28px; border-radius: 14px;
+  background: var(--green); position: relative;
+  cursor: pointer; transition: background 0.2s; flex-shrink: 0;
+}
+.toggle.off { background: var(--border); }
+.toggle-knob {
+  width: 24px; height: 24px; border-radius: 50%; background: white;
+  position: absolute; top: 2px; right: 2px;
+  transition: all 0.2s; box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+.toggle.off .toggle-knob { right: auto; left: 2px; }
+
+/* Admin data policy */
+.policy-card {
+  background: var(--white); border-radius: var(--radius); padding: 20px;
+  margin-bottom: 16px;
+}
+.policy-title { font-size: 16px; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.3px; }
+.policy-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 0; border-bottom: 1px solid var(--border-light);
+  font-size: 14px; color: var(--text-secondary);
+}
+.policy-row:last-child { border-bottom: none; }
+.policy-val { font-weight: 700; color: var(--blue); }
+
+/* Admin add app */
+.add-app-section {
+  background: var(--white); border-radius: var(--radius); padding: 20px;
+  margin-bottom: 16px;
+}
+.add-app-title { font-size: 16px; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.3px; }
+.add-app-row { display: flex; gap: 8px; margin-bottom: 10px; }
+.add-input {
+  flex: 1; padding: 11px 14px; border: 1.5px solid var(--border);
+  border-radius: var(--radius-xs); font-size: 14px; font-family: inherit;
+  outline: none; transition: border-color 0.2s;
+}
+.add-input:focus { border-color: var(--blue); }
+.add-select {
+  padding: 11px 12px; border: 1.5px solid var(--border);
+  border-radius: var(--radius-xs); font-size: 13px; font-family: inherit;
+  background: var(--white); outline: none; color: var(--text-secondary);
+}
+.add-btn {
+  padding: 11px 20px; border-radius: var(--radius-xs);
+  background: #191f28; color: white;
+  font-size: 14px; font-weight: 700; border: none;
+  cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.add-btn:active { background: #2d3440; }
+.added-list { margin-top: 8px; }
+
+/* ─── Toast ─── */
+.toast {
+  position: fixed; bottom: 24px;
+  left: 50%; transform: translateX(-50%) translateY(20px);
+  background: var(--text); color: white;
+  padding: 12px 24px; border-radius: 24px;
+  font-size: 14px; font-weight: 600; z-index: 300;
+  opacity: 0; transition: all 0.3s; white-space: nowrap;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Empty */
+.empty { text-align: center; padding: 56px 24px; color: var(--text-dim); }
+.empty-icon { font-size: 44px; margin-bottom: 14px; }
+.empty-text { font-size: 15px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ═══ Main (Single Page with Segment) ═══ -->
+<div id="page-main">
+  <div class="header">
+    <div class="header-row">
+      <div class="bi-text">App 트렌드 브리핑</div>
+      <div style="flex:1"></div>
+      <div class="header-actions">
+        <button class="icon-btn" onclick="openSearch()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <button class="icon-btn" onclick="switchTab('admin')"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+      </div>
+    </div>
+    <div class="tab-nav">
+      <button class="tab-link active" id="segFeatures" onclick="selectTab('features')">업데이트 소식</button>
+      <button class="tab-link" id="segMarketing" onclick="selectTab('marketing')">마케팅 소식</button>
+    </div>
+    <!-- Domain Filter (inside header) -->
+    <div class="filter-nav" id="domainFilter">
+      <button class="filter-link active" data-domain="all" onclick="setDomain(this)">전체</button>
+      <button class="filter-link" data-domain="traditional" onclick="setDomain(this)">전통 금융사</button>
+      <button class="filter-link" data-domain="fintech" onclick="setDomain(this)">핀테크</button>
+      <button class="filter-link" data-domain="commerce" onclick="setDomain(this)">이커머스</button>
+      <button class="filter-link" data-domain="vertical" onclick="setDomain(this)">버티컬</button>
+    </div>
+  </div>
+  <div class="feed" id="mainFeed"></div>
+</div>
+
+<!-- ═══ Page: 관리자 ═══ -->
+<div class="page" id="page-admin" style="display:none">
+  <div class="header">
+    <div class="header-row">
+      <button class="icon-btn" onclick="switchTab('main')" style="margin-right:8px"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+      <div class="bi-text" style="font-size:16px">관리자 설정</div>
+      <div style="flex:1"></div>
+    </div>
+  </div>
+  <div class="admin-gate" id="adminGate">
+    <div class="admin-gate-emoji">🔒</div>
+    <div class="admin-gate-title">관리자 인증</div>
+    <div class="admin-gate-desc">모니터링 앱 관리 및 데이터 정책을 설정하려면<br>관리자 비밀번호를 입력해 주세요.</div>
+    <input type="password" class="pw-field" id="adminPw" placeholder="비밀번호 입력" onkeydown="if(event.key==='Enter')checkPw()">
+    <button class="pw-btn" onclick="checkPw()">확인</button>
+    <div class="pw-error" id="pwError">비밀번호가 일치하지 않습니다</div>
+  </div>
+  <div class="admin-panel" id="adminPanel">
+    <!-- Add App -->
+    <div class="add-app-section">
+      <div class="add-app-title">➕ 트래킹 서비스 추가</div>
+      <div class="add-app-row">
+        <input type="text" class="add-input" id="addAppName" placeholder="서비스명 (예: 토스)">
+        <select class="add-select" id="addAppDomain">
+          <option value="bank">은행</option>
+          <option value="fintech">핀테크</option>
+          <option value="commerce">이커머스</option>
+          <option value="vertical">버티컬</option>
+        </select>
+      </div>
+      <div class="add-app-row">
+        <input type="text" class="add-input" id="addAppUrl" placeholder="트래킹 URL (선택)">
+        <button class="add-btn" onclick="addNewApp()">추가</button>
+      </div>
+      <div class="added-list" id="addedList"></div>
+    </div>
+    <!-- Data Policy -->
+    <div class="policy-card">
+      <div class="policy-title">📦 데이터 누적 정책</div>
+      <div class="policy-row"><span>기능 업데이트 보관</span><span class="policy-val">최근 6개월</span></div>
+      <div class="policy-row"><span>마케팅 이벤트 보관</span><span class="policy-val">최근 3개월</span></div>
+      <div class="policy-row"><span>자동 아카이브</span><span class="policy-val">활성화</span></div>
+      <div class="policy-row"><span>최대 저장 콘텐츠</span><span class="policy-val">2,000건</span></div>
+      <div class="policy-row"><span>초과 시 정책</span><span class="policy-val">오래된 항목 자동 삭제</span></div>
+    </div>
+    <div class="admin-section">1. 전통 금융사 (은행·카드사)</div><div id="adminBank"></div>
+    <div class="admin-section">2. 빅테크·결제/핀테크</div><div id="adminFintech"></div>
+    <div class="admin-section">3. 이커머스</div><div id="adminCommerce"></div>
+    <div class="admin-section">4. 버티컬 커머스</div><div id="adminVertical"></div>
+  </div>
+</div>
+
+<!-- ═══ Search Overlay ═══ -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b95a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="앱, 기능, 해시태그 검색">
+    <button class="search-cancel" onclick="closeSearch()">취소</button>
+  </div>
+  <div id="searchSuggest" class="search-suggest">
+    <div class="search-suggest-title">추천 검색어</div>
+    <div class="search-suggest-tags" id="suggestTags"></div>
+  </div>
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<!-- ═══ Detail Sheet ═══ -->
+<div class="sheet-overlay" id="sheet" onclick="closeSheet(event)">
+  <div class="sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div class="sheet-body">
+      <div class="sheet-app" id="sApp"></div>
+      <div class="sheet-title" id="sTitle"></div>
+      <div class="sheet-desc" id="sDesc"></div>
+      <div class="sheet-label">해시태그</div>
+      <div class="sheet-tags" id="sTags"></div>
+      <div class="sheet-label">수집 채널</div>
+      <div id="sChannel" style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--bg);border-radius:var(--radius-xs);margin-bottom:20px;font-size:13px;color:var(--text-secondary)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b95a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <span id="sChText"></span>
+      </div>
+      <div class="sheet-label">분석 인사이트</div>
+      <div class="sheet-insight" id="sInsight"></div>
+      <button class="source-btn" id="sSourceBtn" onclick="goSource()">↗ 출처 사이트로 이동</button>
+    </div>
+  </div>
+</div>
+
+<!-- No bottom tab bar -->
+<div class="toast" id="toast"></div>
+
+<script>
+const apps={
+toss_bank:{name:'토스',color:'#3182f6',initial:'T',domain:'traditional',domainLabel:'전통금융',src:'https://toss.im',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','토스 공식 블로그','앱 내 공지·이벤트 배너']},
+kakao_bank:{name:'카카오뱅크',color:'#FFCD00',initial:'K',domain:'traditional',domainLabel:'전통금융',src:'https://www.kakaobank.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','카카오뱅크 뉴스룸','앱 내 이벤트 배너']},
+kb_bank:{name:'KB국민은행',color:'#b07f36',initial:'KB',domain:'traditional',domainLabel:'전통금융',src:'https://www.kbstar.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','KB 보도자료','공식 블로그']},
+shinhan_bank:{name:'신한은행',color:'#0046ff',initial:'SH',domain:'traditional',domainLabel:'전통금융',src:'https://www.shinhan.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','신한 보도자료','공식 뉴스룸']},
+woori_bank:{name:'우리은행',color:'#0072bc',initial:'W',domain:'traditional',domainLabel:'전통금융',src:'https://www.wooribank.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','우리은행 보도자료']},
+hana_bank:{name:'하나은행',color:'#009490',initial:'H',domain:'traditional',domainLabel:'전통금융',src:'https://www.kebhana.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','하나은행 보도자료','공식 블로그']},
+nh_bank:{name:'NH농협은행',color:'#00703c',initial:'NH',domain:'traditional',domainLabel:'전통금융',src:'https://www.nhbank.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','NH 보도자료']},
+ibk_bank:{name:'IBK기업은행',color:'#005baa',initial:'IBK',domain:'traditional',domainLabel:'전통금융',src:'https://www.ibk.co.kr',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','IBK 보도자료']},
+k_bank:{name:'케이뱅크',color:'#ffb500',initial:'K',domain:'traditional',domainLabel:'전통금융',src:'https://www.kbanknow.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','케이뱅크 공식 블로그']},
+toss_fin:{name:'토스',color:'#3182f6',initial:'T',domain:'fintech',domainLabel:'핀테크',src:'https://toss.im',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','토스 블로그·공지','공식 SNS (X·인스타그램)']},
+kakao_pay:{name:'카카오페이',color:'#FFCD00',initial:'KP',domain:'fintech',domainLabel:'핀테크',src:'https://www.kakaopay.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','카카오페이 스토리·공지','이벤트·쿠폰 페이지']},
+naver_pay:{name:'네이버페이',color:'#03c75a',initial:'N',domain:'fintech',domainLabel:'핀테크',src:'https://www.naverfincorp.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','네이버파이낸셜 공지','네이버페이 이벤트 페이지']},
+payco:{name:'페이코',color:'#e5243b',initial:'P',domain:'fintech',domainLabel:'핀테크',src:'https://www.payco.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','NHN페이코 공지']},
+samsung_pay:{name:'삼성페이',color:'#1428a0',initial:'SP',domain:'fintech',domainLabel:'핀테크',src:'https://www.samsung.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','삼성 뉴스룸']},
+coupang:{name:'쿠팡',color:'#e52528',initial:'C',domain:'commerce',domainLabel:'이커머스',src:'https://www.coupang.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','쿠팡 뉴스룸','이벤트·혜택 페이지']},
+naver_shop:{name:'네이버 쇼핑',color:'#03c75a',initial:'N',domain:'commerce',domainLabel:'이커머스',src:'https://shopping.naver.com',ch:['Play Store 업데이트 노트','네이버 이벤트 모아보기','네이버 쇼핑 공지']},
+st11:{name:'11번가',color:'#ff0038',initial:'11',domain:'commerce',domainLabel:'이커머스',src:'https://www.11st.co.kr',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','11번가 이벤트·혜택·쿠폰 메뉴']},
+gmarket:{name:'G마켓',color:'#4daf51',initial:'G',domain:'commerce',domainLabel:'이커머스',src:'https://www.gmarket.co.kr',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','G마켓 이벤트 페이지']},
+ssg:{name:'SSG닷컴',color:'#ff5452',initial:'SS',domain:'commerce',domainLabel:'이커머스',src:'https://www.ssg.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','SSG 이벤트·혜택 메뉴']},
+wemakeprice:{name:'위메프',color:'#f14f5c',initial:'WM',domain:'commerce',domainLabel:'이커머스',src:'https://www.wemakeprice.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','위메프 이벤트 페이지']},
+musinsa:{name:'무신사',color:'#111111',initial:'M',domain:'vertical',domainLabel:'버티컬',src:'https://www.musinsa.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','무신사 매거진·블로그','앱 내 기획전 영역']},
+cm29:{name:'29CM',color:'#111111',initial:'29',domain:'vertical',domainLabel:'버티컬',src:'https://www.29cm.co.kr',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','29CM 공식 뉴스레터']},
+kurly:{name:'컬리',color:'#5f0080',initial:'K',domain:'vertical',domainLabel:'버티컬',src:'https://www.kurly.com',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','컬리 공식 블로그','앱 내 특가·기획전 영역']},
+ohouse:{name:'오늘의집',color:'#35c5f0',initial:'O',domain:'vertical',domainLabel:'버티컬',src:'https://ohou.se',ch:['App Store 업데이트 노트','Play Store 업데이트 노트','오늘의집 공식 블로그·뉴스레터']}
+};
+
+// ═══ 실제 크롤링 데이터 (2026.03.19 08:00 갱신) ═══
+// 공식 기업 채널·언론사 출처만. 1개월 이내. 상시 이벤트 제외. 출처 페이지 검증 완료.
+const featureData=[
+{appId:'toss_bank',title:'토스 통합 미니앱 홈 출시 — 게임홈·미니앱홈 하나로 통합',desc:'기존에 분리되어 있던 게임홈과 미니앱홈이 하나로 통합. 모든 미니앱을 한 곳에서 탐색 가능. 대시보드에 체류시간 지표도 추가',tags:['미니앱','홈통합','UX개편','대시보드'],date:'2026.03.18',analysis:'토스 앱 내 미니앱 생태계를 하나의 허브로 통합해 탐색 효율을 높이는 전략.',src:'https://toss.im/apps-in-toss/blog/update-26-3-18',ch:'토스 공식 블로그 (앱인토스)'},
+{appId:'toss_bank',title:'토스 SDK 2.0.1 마이그레이션 필수화 — 3월 30일 1.x 업로드 제한',desc:'React Native 0.84 기반 SDK 2.0.1로 마이그레이션 필수. 3월 30일부터 기존 SDK 1.x 업로드가 제한됨',tags:['SDK업데이트','플랫폼','마이그레이션','개발환경'],date:'2026.03.05',analysis:'플랫폼 품질 관리를 위한 강제 마이그레이션. 3월 30일 데드라인.',src:'https://toss.im/apps-in-toss/blog/update-26-3-5',ch:'토스 공식 블로그 (앱인토스)'},
+{appId:'kurly',title:'버티컬 커머스 앱 MAU 2년 연속 증가 — 컬리 450만, 전년비 34% 성장',desc:'2026년 2월 기준 올리브영 934만, 무신사 765만, 다이소몰 516만, 컬리 450만. 다이소몰 2년새 140% 급성장',tags:['MAU','사용자성장','버티컬커머스','시장데이터'],date:'2026.03.18',analysis:'버티컬 커머스 앱 전반의 성장세 지속. 컬리 34% 성장은 네이버 제휴 효과에 기인.',src:'https://www.etnews.com/20260318000259',ch:'전자신문'},
+];
+
+const mktData=[
+{appId:'kakao_pay',title:'카카오페이 춘식이 QR 3월 프로모션 — 이삭토스트·길동우동·노티드 할인',desc:'춘식이 QR 테이블오더로 이삭토스트 신메뉴 최대 2천원 할인(3/16~22, 4/6~12), 길동우동 57개점 10% 할인, 노티드·백미당으로 확대 예정',type:'프로모션',tc:'promo',status:'live',period:'03.01 ~ 03.31',tags:['춘식이QR','QR결제','오프라인','가맹점확대'],analysis:'캐릭터 IP와 오프라인 QR결제를 결합. 구체적 브랜드·기간별 혜택이 명확한 프로모션.',src:'https://www.fintechtimes.co.kr/news/article.html?no=55026',ch:'핀테크경제신문'},
+{appId:'kakao_pay',title:'카카오페이 굿딜 틴즈 출시 — CU·아트박스·공차·메가커피 10% 할인',desc:'08~12년생 대상 굿딜 틴즈 서비스 출시. 3월 한달간 CU, 아트박스, 공차, 메가MGC커피에서 10% 할인. 톡학생증 연동 프로모션 동시 진행',type:'캠페인',tc:'campaign',status:'live',period:'03.05 ~ 03.31',tags:['틴즈','학생할인','MZ타겟','굿딜'],analysis:'10대를 세분화한 타겟 마케팅. 초기 고객 확보와 결제 습관 형성에 효과적.',src:'https://www.fintechtimes.co.kr/news/article.html?no=54858',ch:'핀테크경제신문'},
+{appId:'kakao_bank',title:'카카오뱅크 × KB국민카드 3월 제휴 이벤트',desc:'카카오뱅크 앱 내 KB국민카드 이용 시 3월 한정 특별 혜택 제공. 월간 교차 제휴 이벤트',type:'이벤트',tc:'event',status:'live',period:'03.01 ~ 03.31',tags:['제휴카드','KB국민','월간이벤트','카드혜택'],analysis:'카카오뱅크가 카드사별 월간 제휴 이벤트를 교차 진행하며 활성화 유도.',src:'https://www.kakaobank.com/events/235',ch:'카카오뱅크 공식'},
+{appId:'ssg',title:'SSG닷컴 이마트몰 3월 한정 이벤트·쿠폰',desc:'SSG닷컴 이마트몰에서 3월 한정 이벤트 및 할인 쿠폰 진행. 카드사별 추가 할인 및 쓱머니 적립',type:'프로모션',tc:'promo',status:'live',period:'03.01 ~ 03.31',tags:['이마트몰','쓱머니','카드할인','3월한정'],analysis:'이마트 오프라인 고객의 온라인 전환을 촉진하는 월간 O2O 프로모션.',src:'https://emart.ssg.com/event/eventMain.ssg',ch:'SSG닷컴 공식'},
+{appId:'st11',title:'11번가 3월 모바일 앱 전용 쇼핑 이벤트',desc:'11번가 모바일 앱 접속 시 3월 한정 할인 쿠폰 지급 및 카테고리별 특가 상품 노출',type:'이벤트',tc:'event',status:'live',period:'03.01 ~ 03.31',tags:['모바일쇼핑','앱전용','3월쿠폰','특가'],analysis:'모바일 앱 전용 이벤트로 앱 재방문 유도.',src:'http://m.11st.co.kr/page/main/event',ch:'11번가 공식'},
+];
+
+let fTags=[...new Set(featureData.flatMap(d=>d.tags))].slice(0,15);
+let mTags=[...new Set(mktData.flatMap(d=>d.tags))].slice(0,15);
+
+const monApps={bank:[{id:'toss_bank',name:'토스 (토스뱅크 포함)',on:true},{id:'kakao_bank',name:'카카오뱅크',on:true},{id:'kb_bank',name:'KB국민은행 KB스타뱅킹',on:true},{id:'shinhan_bank',name:'신한은행 신한 SOL뱅크',on:true},{id:'woori_bank',name:'우리은행 우리WON뱅킹',on:true},{id:'hana_bank',name:'하나은행 하나원큐',on:true},{id:'nh_bank',name:'NH농협은행',on:true},{id:'ibk_bank',name:'IBK기업은행 i-ONE뱅크',on:true},{id:'k_bank',name:'케이뱅크',on:true}],fintech:[{id:'toss_fin',name:'토스 (비바리퍼블리카)',on:true},{id:'kakao_pay',name:'카카오페이',on:true},{id:'naver_pay',name:'네이버페이',on:true},{id:'payco',name:'페이코',on:true},{id:'samsung_pay',name:'삼성페이',on:false}],commerce:[{id:'coupang',name:'쿠팡',on:true},{id:'naver_shop',name:'네이버 쇼핑',on:true},{id:'st11',name:'11번가',on:true},{id:'gmarket',name:'G마켓 / 옥션',on:true},{id:'ssg',name:'SSG닷컴',on:true},{id:'wemakeprice',name:'위메프',on:true}],vertical:[{id:'musinsa',name:'무신사',on:true},{id:'cm29',name:'29CM',on:true},{id:'kurly',name:'컬리',on:true},{id:'ohouse',name:'오늘의집',on:true}]};
+
+let curDomain={features:'all',marketing:'all'};
+let curTag={features:null,marketing:null};
+let curDetail=null;
+let searchPage=null;
+
+function dc(d){return{traditional:'traditional',fintech:'fintech',commerce:'commerce',vertical:'vertical'}[d]||'traditional';}
+// 추천 검색어: 실제 데이터의 해시태그에서 빈도순 상위 10개, 유사 키워드 병합
+const suggestHashtags=(()=>{
+  const count={};
+  [...featureData,...mktData].forEach(d=>(d.tags||[]).forEach(t=>{count[t]=(count[t]||0)+1;}));
+  const sorted=Object.entries(count).sort((a,b)=>b[1]-a[1]).map(e=>e[0]);
+  // 유사 키워드 병합: 이미 선택된 태그와 2글자 이상 겹치면 스킵
+  const result=[];
+  for(const tag of sorted){
+    if(result.length>=10)break;
+    const isDup=result.some(r=>{
+      const short=r.length<tag.length?r:tag;
+      const long=r.length<tag.length?tag:r;
+      return long.includes(short)||(short.length>=3&&long.includes(short.slice(0,3)));
+    });
+    if(!isDup)result.push(tag);
+  }
+  return result;
+})();
+
+function fCard(d,i){const a=apps[d.appId];if(!a)return '';return `<div class="card" onclick="openDetail('f',${i})"><div class="card-top"><div class="app-icon" style="background:${a.color}">${a.initial}</div><div class="app-info"><div class="app-name">${a.name}</div><div class="app-meta"><span class="domain-badge ${dc(a.domain)}">${a.domainLabel}</span></div></div><div class="card-date">${d.date}</div></div><div class="card-title">${d.title}</div><div class="card-desc">${d.desc}</div><div class="card-tags">${d.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`;}
+
+function mCard(d,i){const a=apps[d.appId];if(!a)return '';const st=d.status==='live'?'<span class="live-dot"></span> 진행 중':'<span class="ended-dot"></span> 종료';return `<div class="card" onclick="openDetail('m',${i})"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px"><span class="mkt-badge ${d.tc}">${d.type}</span><div class="mkt-status">${st} · ${d.period}</div></div><div class="card-top"><div class="app-icon" style="background:${a.color};width:34px;height:34px;border-radius:10px;font-size:12px">${a.initial}</div><div class="app-info"><div class="app-name">${a.name}</div><div class="app-meta"><span class="domain-badge ${dc(a.domain)}">${a.domainLabel}</span></div></div></div><div class="card-title">${d.title}</div><div class="card-desc">${d.desc}</div><div class="card-tags">${d.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`;}
+
+let curSegment='features';
+function renderTags(cid,tags){document.getElementById(cid).innerHTML=tags.map(t=>`<div class="hashtag-chip" data-tag="${t}" onclick="toggleTag(this)">${t}</div>`).join('');}
+
+function renderAdmin(cid,list){document.getElementById(cid).innerHTML=list.map(a=>{const ap=apps[a.id];const chs=ap?.ch||[];return `<div style="background:var(--white);border-radius:var(--radius-sm);margin-bottom:6px;overflow:hidden"><div class="admin-row" style="margin-bottom:0"><div class="app-icon" style="background:${ap?.color||'#999'};width:32px;height:32px;border-radius:8px;font-size:11px">${ap?.initial||'?'}</div><div class="admin-name">${a.name}</div><div class="toggle ${a.on?'':'off'}" onclick="this.classList.toggle('off')"><div class="toggle-knob"></div></div></div><div style="padding:0 16px 10px;display:flex;gap:4px;flex-wrap:wrap">${chs.map(c=>`<span style="font-size:10px;padding:2px 7px;border-radius:4px;background:var(--bg);color:var(--text-tertiary)">${c}</span>`).join('')}</div></div>`;}).join('');}
+
+function setDomain(el){el.parentElement.querySelectorAll('.filter-link').forEach(c=>c.classList.remove('active'));el.classList.add('active');curDomain[curSegment]=el.dataset.domain;render();}
+function toggleTag(el){if(el.classList.contains('active')){el.classList.remove('active');curTag[curSegment]=null;}else{el.parentElement.querySelectorAll('.hashtag-chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');curTag[curSegment]=el.dataset.tag;}render();}
+
+function selectTab(seg){
+  curSegment=seg;
+  document.getElementById('segFeatures').classList.toggle('active',seg==='features');
+  document.getElementById('segMarketing').classList.toggle('active',seg==='marketing');
+  // Restore domain filter
+  document.querySelectorAll('#domainFilter .filter-link').forEach(c=>c.classList.remove('active'));
+  const ac=document.querySelector(`#domainFilter .filter-link[data-domain="${curDomain[seg]}"]`);
+  if(ac)ac.classList.add('active');
+  render();
+  window.scrollTo(0,0);
+}
+
+function render(){
+  const pg=curSegment,dom=curDomain[pg],tag=curTag[pg];
+  let data=pg==='features'?[...featureData]:[...mktData];
+  if(dom!=='all')data=data.filter(d=>{const a=apps[d.appId];return a&&a.domain===dom;});
+  if(tag)data=data.filter(d=>d.tags.includes(tag));
+  const el=document.getElementById('mainFeed');
+  if(!data.length){el.innerHTML='<div class="empty"><div class="empty-icon">🔍</div><div class="empty-text">검색 결과가 없습니다</div></div>';return;}
+  if(pg==='features')el.innerHTML=data.map((d,i)=>fCard(d,featureData.indexOf(d))).join('');
+  else el.innerHTML=data.map((d,i)=>mCard(d,mktData.indexOf(d))).join('');
+}
+
+function openDetail(t,i){
+  const d=t==='f'?featureData[i]:mktData[i];const a=apps[d.appId];curDetail={d,a};
+  document.getElementById('sApp').innerHTML=`<div class="app-icon" style="background:${a.color}">${a.initial}</div><div class="app-info"><div class="app-name">${a.name}</div><div class="app-meta"><span class="domain-badge ${dc(a.domain)}">${a.domainLabel}</span><span>${d.date||d.period||''}</span></div></div>`;
+  document.getElementById('sTitle').textContent=d.title;
+  document.getElementById('sDesc').textContent=d.desc;
+  document.getElementById('sTags').innerHTML=d.tags.map(t=>`<span class="sheet-tag">${t}</span>`).join('');
+  document.getElementById('sChText').textContent=d.ch||'공식 웹사이트';
+  document.getElementById('sInsight').textContent=d.analysis;
+  document.getElementById('sheet').classList.add('active');
+}
+function closeSheet(e){if(e.target.id==='sheet')document.getElementById('sheet').classList.remove('active');}
+function goSource(){if(curDetail){const u=curDetail.d.src||curDetail.a.src;toast('출처 사이트로 이동합니다');setTimeout(()=>window.open(u,'_blank'),400);}}
+
+// Search
+function openSearch(){document.getElementById('searchOverlay').classList.add('active');document.getElementById('searchSuggest').style.display='block';document.getElementById('searchResults').innerHTML='';document.getElementById('suggestTags').innerHTML=suggestHashtags.map(t=>`<button class="suggest-tag" onclick="useSuggest('${t}')">${t}</button>`).join('');const inp=document.getElementById('searchInput');inp.value='';inp.focus();inp.oninput=()=>{const v=inp.value;document.getElementById('searchSuggest').style.display=v?'none':'block';doSearch(v);};}
+function useSuggest(tag){document.getElementById('searchInput').value=tag;document.getElementById('searchSuggest').style.display='none';doSearch(tag);}
+function closeSearch(){document.getElementById('searchOverlay').classList.remove('active');document.getElementById('searchInput').value='';document.getElementById('searchResults').innerHTML='';}
+function doSearch(q){
+  q=q.toLowerCase().replace('#','');if(!q){document.getElementById('searchResults').innerHTML='';return;}
+  const all=[...featureData.map((d,i)=>({...d,_t:'f',_i:i})),...mktData.map((d,i)=>({...d,_t:'m',_i:i}))];
+  const res=all.filter(d=>{const a=apps[d.appId];return d.title.toLowerCase().includes(q)||d.desc.toLowerCase().includes(q)||d.tags.some(t=>t.toLowerCase().includes(q))||(a&&a.name.toLowerCase().includes(q));});
+  if(!res.length){document.getElementById('searchResults').innerHTML='<div class="empty"><div class="empty-icon">🔍</div><div class="empty-text">검색 결과가 없습니다</div></div>';return;}
+  document.getElementById('searchResults').innerHTML=res.map(d=>{
+    const a=apps[d.appId];
+    return `<div class="card" onclick="closeSearch();openDetail('${d._t}',${d._i})"><div class="card-top"><div class="app-icon" style="background:${a.color};width:32px;height:32px;border-radius:8px;font-size:11px">${a.initial}</div><div class="app-info"><div class="app-name" style="font-size:13px">${a.name}</div></div><div class="card-date">${d.date||d.period||''}</div></div><div class="card-title">${d.title}</div></div>`;
+  }).join('');
+}
+
+// Page navigation (main <-> admin)
+function switchTab(tab){
+  if(tab==='admin'){
+    document.getElementById('page-main').style.display='none';
+    document.getElementById('page-admin').style.display='block';
+  } else {
+    document.getElementById('page-admin').style.display='none';
+    document.getElementById('page-main').style.display='block';
+  }
+  window.scrollTo(0,0);
+}
+
+// Admin
+function checkPw(){const pw=document.getElementById('adminPw').value;if(pw==='appref2026'){document.getElementById('adminGate').style.display='none';document.getElementById('adminPanel').classList.add('active');}else{document.getElementById('pwError').style.display='block';document.getElementById('adminPw').value='';setTimeout(()=>document.getElementById('pwError').style.display='none',2000);}}
+
+// Add app
+let addedApps=[];
+function addNewApp(){
+  const name=document.getElementById('addAppName').value.trim();
+  const domain=document.getElementById('addAppDomain').value;
+  const url=document.getElementById('addAppUrl').value.trim();
+  if(!name){toast('서비스명을 입력해 주세요');return;}
+  addedApps.push({name,domain,url});
+  document.getElementById('addAppName').value='';
+  document.getElementById('addAppUrl').value='';
+  renderAddedList();
+  toast(`"${name}" 추가되었습니다`);
+}
+function removeAdded(i){addedApps.splice(i,1);renderAddedList();}
+function renderAddedList(){
+  const domainLabels={bank:'은행',fintech:'핀테크',commerce:'이커머스',vertical:'버티컬'};
+  document.getElementById('addedList').innerHTML=addedApps.map((a,i)=>`<div class="admin-row"><div class="app-icon" style="background:var(--blue);width:32px;height:32px;border-radius:8px;font-size:11px">+</div><div class="admin-name">${a.name} <span style="font-size:11px;color:var(--text-tertiary)">${domainLabels[a.domain]||''}</span></div><button style="border:none;background:var(--red-bg);color:var(--red);font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer" onclick="removeAdded(${i})">삭제</button></div>`).join('');
+}
+
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000);}
+
+// Scroll hide tabs + filter
+let lastScroll=0;
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  const tabNav=document.querySelector('#page-main .tab-nav');
+  const filterNav=document.getElementById('domainFilter');
+  if(!tabNav||!filterNav)return;
+  if(y>60){tabNav.classList.add('hidden');filterNav.classList.add('hidden');}
+  else{tabNav.classList.remove('hidden');filterNav.classList.remove('hidden');}
+  lastScroll=y;
+},{passive:true});
+
+// Init — feed.json 로딩 시 품질 검증 후 사용, 불량이면 하드코딩 폴백
+async function initFromFeed(){
+  try{
+    const res=await fetch('feed.json');
+    if(res.ok){
+      const feed=await res.json();
+      // 품질 검증: appId와 title이 있는 항목만 유효
+      const validF=(feed.features||[]).filter(d=>d.appId&&d.title&&d.title.length>5&&apps[d.appId]);
+      const validM=(feed.marketing||[]).filter(d=>d.appId&&d.title&&d.title.length>5&&apps[d.appId]);
+      if(validF.length>0||validM.length>0){
+        if(validF.length>0){featureData.length=0;validF.forEach(d=>{d.tags=d.tags||[];featureData.push(d);});}
+        if(validM.length>0){mktData.length=0;validM.forEach(d=>{d.tags=d.tags||[];mktData.push(d);});}
+        console.log(`✓ feed.json 로드: features ${featureData.length}건, marketing ${mktData.length}건`);
+      }else{console.log('feed.json 데이터 품질 불량, 기본 데이터 사용');}
+    }
+  }catch(e){console.log('feed.json 로드 실패, 기본 데이터 사용');}
+  fTags.length=0;[...new Set(featureData.flatMap(d=>d.tags||[]))].slice(0,15).forEach(t=>fTags.push(t));
+  mTags.length=0;[...new Set(mktData.flatMap(d=>d.tags||[]))].slice(0,15).forEach(t=>mTags.push(t));
+  render();
+}
+
+initFromFeed();
+renderAdmin('adminBank',monApps.bank);
+renderAdmin('adminFintech',monApps.fintech);
+renderAdmin('adminCommerce',monApps.commerce);
+renderAdmin('adminVertical',monApps.vertical);
+</script>
+</body>
+</html>
