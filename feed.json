@@ -1,26 +1,6 @@
 {
-  "lastUpdated": "2026-03-20T08:54:12.569965",
+  "lastUpdated": "2026-03-20T09:09:17.929339",
   "features": [
-    {
-      "appId": "toss_bank",
-      "title": "토스 행운퀴즈 정답 3월 20일",
-      "desc": "토스 행운퀴즈 정답 3월 20일 bntnews.co.kr",
-      "tags": [],
-      "date": "2026.03.20",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uYjEwTGdYWVB0ZWlCVEU4MzlYZnhGUmhoWlphY0UxWE9ieUZySWZwM1E5TldBbnBLNDVFODQwQjN2bDNJSE9QWHJDRHVWZ04zWVV2RjVZOS1Eb2k2Ty1iZTctQVo?oc=5",
-      "ch": "Google News (bntnews.co.kr)"
-    },
-    {
-      "appId": "toss_bank",
-      "title": "토스 행운퀴즈 'CJ더마켓' 정답…3월 20일",
-      "desc": "토스 행운퀴즈 'CJ더마켓' 정답…3월 20일 게임톡",
-      "tags": [],
-      "date": "2026.03.20",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40MVJIWExPU0ptQ2hCQVNFTDBxWk5YamFsNUNyd25haF9BTkIxWkgzb3RjXzNmdkY4dnhBM2NOS05GTlJmdnU3c2tfR3lza3duOFRRYWNhREdLbmVqMFEteG1ILWprd0RUTFp1Mw?oc=5",
-      "ch": "Google News (게임톡)"
-    },
     {
       "appId": "toss_fin",
       "title": "[판 뒤집는 토스증권] ④ AI와 함께 만드는 브랜드 가치",
@@ -46,7 +26,7 @@
     {
       "appId": "toss_bank",
       "title": "한강물 온도 확인?…토스 주식 앱에 '죽음 희화화' 기능 논란",
-      "desc": "한강물 온도 확인?…토스 주식 앱에 '죽음 희화화' 기능 논란 네이트",
+      "desc": "한강물 온도 확인?…토스 주식 앱에 '죽음 희화화' 기능 논란",
       "tags": [
         "기능"
       ],
@@ -58,22 +38,12 @@
     {
       "appId": "kakao_bank",
       "title": "카카오뱅크, 17일 접속 장애 원인 2시간 만에 뒤늦게 파악…복구 중 또 ′먹통′",
-      "desc": "카카오뱅크, 17일 접속 장애 원인 2시간 만에 뒤늦게 파악…복구 중 또 ′먹통′ 알파경제",
+      "desc": "카카오뱅크, 17일 접속 장애 원인 2시간 만에 뒤늦게 파악…복구 중 또 ′먹통′",
       "tags": [],
       "date": "2026.03.19",
       "analysis": "기능 개선 관련 업데이트",
       "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1VDlWdElWUVc0VEpxTFI1X3B6ek1KdFRKMEczVTNjbFBvSm0zMG55TTE0eFlzeHVTRnlwMlFXRF9pd1JJOGc4Z2F3OFZyaU9zcllNcUxIRUpaSS0zSVHSAW5BVV95cUxNVVppVVJFODYxanN6dnpGTXc5M2VvYm9oNzM3blp3T1JVNnNkcVFYOU5lSV81cTJEYkVlbFlwZk9MM29rc01tYXFtR2N4RnFodEEyN1p0eE0xV2ZWZVRaOVpDdHR5dTljMFBhdHFBdw?oc=5",
       "ch": "Google News (알파경제)"
-    },
-    {
-      "appId": "shinhan_bank",
-      "title": "쏠퀴즈 정답 3월 20일",
-      "desc": "쏠퀴즈 정답 3월 20일 bntnews.co.kr",
-      "tags": [],
-      "date": "2026.03.19",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYR2NHelpXemxXM1AwcnhDRVVBV0IzS0FjWGtTRHNXTC1vTWVOc2x5UnhtODE1UFpnTjlQNFZPX2dJZlNvWTRibEQzU3ZyVzc4UHItM1dKdnB4SF9TcWZMRjZqZGI?oc=5",
-      "ch": "Google News (bntnews.co.kr)"
     },
     {
       "appId": "toss_fin",
@@ -100,7 +70,7 @@
     {
       "appId": "coupang",
       "title": "쿠팡, 정보유출 파고 넘었나…주간 이용자 수 2800만명대 '회복세'",
-      "desc": "쿠팡, 정보유출 파고 넘었나…주간 이용자 수 2800만명대 '회복세' 네이트",
+      "desc": "쿠팡, 정보유출 파고 넘었나…주간 이용자 수 2800만명대 '회복세'",
       "tags": [],
       "date": "2026.03.19",
       "analysis": "기능 개선 관련 업데이트",
@@ -130,7 +100,7 @@
     {
       "appId": "toss_bank",
       "title": "3월 3주 앱인토스 업데이트 | 통합 미니앱 홈이 출시됐어요",
-      "desc": "3월 3주 앱인토스 업데이트 | 통합 미니앱 홈이 출시됐어요 토스",
+      "desc": "3월 3주 앱인토스 업데이트 | 통합 미니앱 홈이 출시됐어요",
       "tags": [
         "업데이트",
         "출시"
@@ -143,7 +113,7 @@
     {
       "appId": "toss_fin",
       "title": "미국 현지에서 찾은 투자 힌트: 토스증권의 탐방 리포트 출간",
-      "desc": "미국 현지에서 찾은 투자 힌트: 토스증권의 탐방 리포트 출간 토스",
+      "desc": "미국 현지에서 찾은 투자 힌트: 토스증권의 탐방 리포트 출간",
       "tags": [],
       "date": "2026.03.18",
       "analysis": "기능 개선 관련 업데이트",
@@ -151,33 +121,9 @@
       "ch": "Google News (토스)"
     },
     {
-      "appId": "naver_shop",
-      "title": "일키 최강 블루 (파트너사 모집)",
-      "desc": "일키 최강 블루 (파트너사 모집) 아이보스",
-      "tags": [],
-      "date": "2026.03.18",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBURk1ubUl2S1YtNERsZFM3Mlg3VXpBaUFuVzM5YnBUcWdVd3ZTSjhmQzdPVWhfdWdJU1ExU1E1NkhBa2hMRFFNU1Ewd1YxV1FQ?oc=5",
-      "ch": "Google News (아이보스)"
-    },
-    {
-      "appId": "kb_bank",
-      "title": "SK인텔릭스, 웰니스 로봇 ‘나무엑스’ OTA 업데이트…‘팔로우 미’ 등 신기능 추가",
-      "desc": "SK인텔릭스, 웰니스 로봇 ‘나무엑스’ OTA 업데이트…‘팔로우 미’ 등 신기능 추가 리버티코리아포스트",
-      "tags": [
-        "업데이트",
-        "기능",
-        "신기능"
-      ],
-      "date": "2026.03.17",
-      "analysis": "업데이트, 기능, 신기능 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5xaGNCeUp6dDV5WW1wSTRhU3FKbnYxNFZlSDA4Tjcya2gtVHp6em85X2xvQUlRV2ZiZFpkODNTbGpqV2txTV9naGFyNjhCT1Z3eklOMFp2OHJmSEstblJlRlNiONIBZ0FVX3lxTFBfSjNGLW5HYV9UVDdwMDBvdTJVa3p0YXNyanVqOVBpMlZBZ2dBZ2tBdDBjZy1BTUxSblozVHJvbmJZY01lQXRLZ1hSanpJOHZtWE5CTXJHel8xQ1Z4eTJSNWVxYll3akU?oc=5",
-      "ch": "Google News (리버티코리아포스트)"
-    },
-    {
       "appId": "toss_fin",
       "title": "토스인슈어런스, KB손해보험과 '금융소비자 보호 위한 업무협약' 체결",
-      "desc": "토스인슈어런스, KB손해보험과 '금융소비자 보호 위한 업무협약' 체결 전자신문",
+      "desc": "토스인슈어런스, KB손해보험과 '금융소비자 보호 위한 업무협약' 체결",
       "tags": [],
       "date": "2026.03.17",
       "analysis": "기능 개선 관련 업데이트",
@@ -187,7 +133,7 @@
     {
       "appId": "toss_fin",
       "title": "[금융 트렌드] 토스인슈어런스·KB손해보험, 금융소비자 보호 위한 업무협약 체결 外",
-      "desc": "[금융 트렌드] 토스인슈어런스·KB손해보험, 금융소비자 보호 위한 업무협약 체결 外 베이비뉴스",
+      "desc": "[금융 트렌드] 토스인슈어런스·KB손해보험, 금융소비자 보호 위한 업무협약 체결 外",
       "tags": [],
       "date": "2026.03.17",
       "analysis": "기능 개선 관련 업데이트",
@@ -197,7 +143,7 @@
     {
       "appId": "toss_fin",
       "title": "토스인슈어런스, KB손해보험과 소비자보호 협력 강화",
-      "desc": "토스인슈어런스, KB손해보험과 소비자보호 협력 강화 한국보험신문",
+      "desc": "토스인슈어런스, KB손해보험과 소비자보호 협력 강화",
       "tags": [],
       "date": "2026.03.17",
       "analysis": "기능 개선 관련 업데이트",
@@ -207,7 +153,7 @@
     {
       "appId": "ssg",
       "title": "SSG닷컴 “쓱7클럽 티빙형 회원은 WBC 8강 실시간 시청”",
-      "desc": "SSG닷컴 “쓱7클럽 티빙형 회원은 WBC 8강 실시간 시청” 신세계그룹 뉴스룸",
+      "desc": "SSG닷컴 “쓱7클럽 티빙형 회원은 WBC 8강 실시간 시청” 신세계그룹",
       "tags": [],
       "date": "2026.03.16",
       "analysis": "기능 개선 관련 업데이트",
@@ -217,7 +163,7 @@
     {
       "appId": "toss_fin",
       "title": "“과도한 데이터 이용료, 마이데이터 산업화 발목”",
-      "desc": "“과도한 데이터 이용료, 마이데이터 산업화 발목” edaily.co.kr",
+      "desc": "“과도한 데이터 이용료, 마이데이터 산업화 발목”",
       "tags": [],
       "date": "2026.03.15",
       "analysis": "기능 개선 관련 업데이트",
@@ -227,7 +173,7 @@
     {
       "appId": "ohouse",
       "title": "부스터스, 오늘의집 북촌서 ‘브랜든’ 팝업 진행",
-      "desc": "부스터스, 오늘의집 북촌서 ‘브랜든’ 팝업 진행 지디넷코리아",
+      "desc": "부스터스, 오늘의집 북촌서 ‘브랜든’ 팝업 진행",
       "tags": [],
       "date": "2026.03.13",
       "analysis": "기능 개선 관련 업데이트",
@@ -237,7 +183,7 @@
     {
       "appId": "toss_fin",
       "title": "토스도 애플페이 도입…간편결제 시장 '요동'",
-      "desc": "토스도 애플페이 도입…간편결제 시장 '요동' 아시아타임즈",
+      "desc": "토스도 애플페이 도입…간편결제 시장 '요동'",
       "tags": [],
       "date": "2026.03.12",
       "analysis": "기능 개선 관련 업데이트",
@@ -247,7 +193,7 @@
     {
       "appId": "nh_bank",
       "title": "'아마추어 테니스인의 축제' 2026 NH올원뱅크 아마추어테니스오픈 28일부터 시작",
-      "desc": "'아마추어 테니스인의 축제' 2026 NH올원뱅크 아마추어테니스오픈 28일부터 시작 테니스코리아",
+      "desc": "'아마추어 테니스인의 축제' 2026 NH올원뱅크 아마추어테니스오픈 28일부터 시작",
       "tags": [],
       "date": "2026.03.11",
       "analysis": "기능 개선 관련 업데이트",
@@ -257,7 +203,7 @@
     {
       "appId": "woori_bank",
       "title": "영상갤S26 신기능에 ‘체리 따봉’·‘충성충성’ 논란 이제 끝?…“의원들 무조건 바꾸겠네” 말까지",
-      "desc": "영상갤S26 신기능에 ‘체리 따봉’·‘충성충성’ 논란 이제 끝?…“의원들 무조건 바꾸겠네” 말까지 서울경제신문",
+      "desc": "영상갤S26 신기능에 ‘체리 따봉’·‘충성충성’ 논란 이제 끝?…“의원들 무조건 바꾸겠네” 말까지",
       "tags": [
         "기능",
         "신기능"
@@ -270,7 +216,7 @@
     {
       "appId": "kakao_pay",
       "title": "\"이제 부장님 소식 안 볼 수 있네\"...카카오톡 신기능 업데이트 [1일IT템]",
-      "desc": "\"이제 부장님 소식 안 볼 수 있네\"...카카오톡 신기능 업데이트 [1일IT템] v.daum.net",
+      "desc": "\"이제 부장님 소식 안 볼 수 있네\"...카카오톡 신기능 업데이트 [1일IT템]",
       "tags": [
         "업데이트",
         "기능",
@@ -284,7 +230,7 @@
     {
       "appId": "hana_bank",
       "title": "하나은행 앱 오류 해결 방법",
-      "desc": "하나은행 앱 오류 해결 방법 브런치",
+      "desc": "하나은행 앱 오류 해결 방법",
       "tags": [],
       "date": "2026.03.05",
       "analysis": "기능 개선 관련 업데이트",
@@ -294,7 +240,7 @@
     {
       "appId": "nh_bank",
       "title": "NH농협은행, 'NH올원뱅크' 모바일 신분증 전 기종 확대…금융권 최초",
-      "desc": "NH농협은행, 'NH올원뱅크' 모바일 신분증 전 기종 확대…금융권 최초 전자신문",
+      "desc": "NH농협은행, 'NH올원뱅크' 모바일 신분증 전 기종 확대…금융권 최초",
       "tags": [],
       "date": "2026.03.04",
       "analysis": "기능 개선 관련 업데이트",
@@ -304,7 +250,7 @@
     {
       "appId": "payco",
       "title": "[G-브리핑] ‘에브리타운’ 출시 13주년 업데이트 진행",
-      "desc": "[G-브리핑] ‘에브리타운’ 출시 13주년 업데이트 진행 v.daum.net",
+      "desc": "[G-브리핑] ‘에브리타운’ 출시 13주년 업데이트",
       "tags": [
         "업데이트",
         "출시"
@@ -317,7 +263,7 @@
     {
       "appId": "musinsa",
       "title": "무신사, 푸마와 첫 컬래버레이션 ‘무신사 에디션’ 발매··· “레드벨벳 슬기 화보 전격 공개”",
-      "desc": "무신사, 푸마와 첫 컬래버레이션 ‘무신사 에디션’ 발매··· “레드벨벳 슬기 화보 전격 공개” 무신사 뉴스룸",
+      "desc": "무신사, 푸마와 첫 컬래버레이션 ‘무신사 에디션’ 발매··· “레드벨벳 슬기 화보 전격 공개” 무신사",
       "tags": [],
       "date": "2026.03.03",
       "analysis": "기능 개선 관련 업데이트",
