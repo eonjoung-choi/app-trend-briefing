@@ -25,7 +25,6 @@ def _parse_rss_date(date_str):
     if not date_str:
         return datetime.now().strftime("%Y.%m.%d")
     try:
-        # Google News RSS 날짜 형식: "Thu, 20 Mar 2026 03:00:00 GMT"
         dt = datetime.strptime(date_str.strip(), "%a, %d %b %Y %H:%M:%S %Z")
         return dt.strftime("%Y.%m.%d")
     except (ValueError, TypeError):
@@ -56,7 +55,7 @@ def _extract_source(title):
     return title.strip(), ""
 
 
-def crawl_google_news(keyword, max_items=5):
+def _fetch_google_news(keyword, max_items=3):
     """Google News RSS로 뉴스 검색"""
     results = []
     encoded_keyword = quote(keyword)
@@ -69,7 +68,6 @@ def crawl_google_news(keyword, max_items=5):
         root = ET.fromstring(resp.content)
         channel = root.find('channel')
         if channel is None:
-            print(f"    -> RSS 채널 없음")
             return results
 
         items = channel.findall('item')
@@ -83,16 +81,12 @@ def crawl_google_news(keyword, max_items=5):
             pub_date = item.findtext('pubDate', '')
             description = item.findtext('description', '')
 
-            # 제목에서 언론사 분리
             title, source_name = _extract_source(raw_title)
 
             if not title or not link:
                 continue
 
-            # 날짜 파싱
             date_str = _parse_rss_date(pub_date)
-
-            # 설명 정리
             desc = _clean_html(description)
             if len(desc) > 200:
                 desc = desc[:200] + "..."
@@ -102,80 +96,68 @@ def crawl_google_news(keyword, max_items=5):
                 "link": link,
                 "date": date_str,
                 "description": desc,
-                "source_name": source_name,
+                "channel": "Google News (" + source_name + ")",
             })
             count += 1
 
     except requests.exceptions.RequestException as e:
-        print(f"    [Error] Google News RSS: {type(e).__name__}: {e}")
+        print(f"    [Error] Google News RSS '{keyword}': {type(e).__name__}: {e}")
     except ET.ParseError as e:
-        print(f"    [Error] XML 파싱 실패: {e}")
+        print(f"    [Error] XML parse '{keyword}': {e}")
 
     return results
 
 
-def crawl(apps: dict, data_policy: dict) -> list:
+def crawl_news(app_id: str, keywords: list) -> list:
     """
     앱별 뉴스 크롤링 메인 함수
 
     Parameters:
-        apps: config.py의 APPS 딕셔너리
-        data_policy: config.py의 DATA_POLICY 딕셔너리
+        app_id: 앱 식별자 (예: 'toss_bank')
+        keywords: 검색 키워드 리스트 (예: ['토스 업데이트', '토스 신기능'])
 
     Returns:
         list: 크롤링된 뉴스 아이템 리스트
     """
     all_results = []
-    max_per_keyword = data_policy.get("news", {}).get("max_per_keyword", 3)
+    seen_titles = set()
 
-    for app_id, app_info in apps.items():
-        app_name = app_info.get("name", app_id)
-        keywords = app_info.get("keywords", [])
+    if not keywords:
+        return all_results
 
-        if not keywords:
+    print(f"  [Naver News] {app_id}:")
+
+    for keyword in keywords:
+        print(f"    [Google News] {app_id}: '{keyword}'")
+
+        try:
+            items = _fetch_google_news(keyword, max_items=3)
+
+            for item in items:
+                title = item["title"]
+                if title in seen_titles:
+                    continue
+                seen_titles.add(title)
+
+                all_results.append({
+                    "app_id": app_id,
+                    "title": title,
+                    "description": item.get("description", ""),
+                    "link": item["link"],
+                    "date": item["date"],
+                    "channel": item.get("channel", "Google News"),
+                    "keyword": keyword,
+                })
+
+            print(f"      -> {len(items)}건 수집")
+
+        except Exception as e:
+            print(f"    [Error] {app_id} - '{keyword}': {type(e).__name__}: {e}")
             continue
 
-        print(f"  [Naver News] {app_id}:")
-        news_titles = []
-        item_count = 0
+        time.sleep(1)
 
-        for keyword in keywords:
-            print(f"    [Google News] {app_id}: '{keyword}'")
-
-            try:
-                items = crawl_google_news(keyword, max_items=max_per_keyword)
-
-                for item in items:
-                    title = item["title"]
-
-                    # 중복 체크
-                    if title in news_titles:
-                        continue
-                    news_titles.append(title)
-
-                    all_results.append({
-                        "app_id": app_id,
-                        "title": title,
-                        "description": item.get("description", ""),
-                        "link": item["link"],
-                        "date": item["date"],
-                        "channel": "Google News (" + item.get("source_name", "") + ")",
-                        "keyword": keyword,
-                    })
-                    item_count += 1
-
-                print(f"      -> {len(items)}건 수집")
-
-            except Exception as e:
-                print(f"    [Error] {app_id} - '{keyword}': {type(e).__name__}: {e}")
-                continue
-
-            time.sleep(1)
-
-        print(f"  [Naver News] {app_id}: 총 {item_count}건 수집")
-        print()
+    print(f"  [Naver News] {app_id}: 총 {len(all_results)}건 수집")
+    print()
 
     return all_results
-
-# Alias for backward compatibility with run.py
-crawl_news = crawl
