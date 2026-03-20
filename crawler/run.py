@@ -3,26 +3,31 @@ App Trends Tracker - 크롤링 파이프라인 오케스트레이터
 - Play Store, App Store, 뉴스 크롤링
 - 항목 분류
 - 중복 제거 및 병합
-- feed.json 생성
+- feed.json 생성 (최신순 정렬, 현재 월 필터링)
 
 GitHub Actions 및 로컬 실행 모두 호환
 """
 
+
 import sys
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
+
 
 # 크롤러 디렉토리를 Python path에 추가 (어디서 실행해도 import 가능)
 CRAWLER_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(CRAWLER_DIR))
+
 
 from config import APPS, DATA_POLICY
 from play_store import crawl_play_store
 from app_store import crawl_app_store
 from news_crawler import crawl_news
 from classifier import classify, deduplicate_items, generate_analysis
+
+
 
 
 def format_date(date_str: str) -> str:
@@ -34,13 +39,23 @@ def format_date(date_str: str) -> str:
     if date_str == "오늘":
         return today.strftime("%Y.%m.%d")
     if date_str == "어제":
-        from datetime import timedelta
         yesterday = today - timedelta(days=1)
         return yesterday.strftime("%Y.%m.%d")
-    # MM.DD 형태 -> YYYY.MM.DD
-    if len(date_str) <= 5 and '.' in date_str:
-        return f"{today.year}.{date_str}"
-    return date_str
+
+    # 이미 올바른 형식이면 그대로
+    if len(date_str) == 10 and date_str[4] == '.' and date_str[7] == '.':
+        return date_str
+
+    # ISO 형식 처리
+    for fmt in ["%Y-%m-%dT%H:%M:%S", "%Y-%m-%d", "%b %d, %Y", "%d %b %Y"]:
+        try:
+            dt = datetime.strptime(date_str[:len(fmt.replace('%', 'X').replace('X', 'XX'))], fmt)
+            return dt.strftime("%Y.%m.%d")
+        except (ValueError, TypeError):
+            continue
+
+    # 변환 실패 시 원본 반환
+    return date_str if date_str else today.strftime("%Y.%m.%d")
 
 
 def to_feature_item(item: dict) -> dict:
@@ -49,10 +64,15 @@ def to_feature_item(item: dict) -> dict:
     index.html 기대 포맷:
     { appId, title, desc, tags: [], date, analysis, src, ch }
     """
+    desc = item.get("description", item.get("release_notes", ""))
+    # &nbsp; 잔여 정리
+    desc = desc.replace("&nbsp;", " ").replace("\u00a0", " ").strip()
+    desc = " ".join(desc.split())  # 연속 공백 정리
+
     return {
         "appId": item.get("app_id", ""),
         "title": item.get("title", ""),
-        "desc": item.get("description", item.get("release_notes", "")),
+        "desc": desc,
         "tags": item.get("tags", []),
         "date": format_date(item.get("date", item.get("last_updated", ""))),
         "analysis": item.get("analysis", ""),
@@ -67,13 +87,17 @@ def to_marketing_item(item: dict) -> dict:
     index.html 기대 포맷:
     { appId, title, desc, type, tc, status, period, tags: [], analysis, src, ch }
     """
+    desc = item.get("description", item.get("release_notes", ""))
+    desc = desc.replace("&nbsp;", " ").replace("\u00a0", " ").strip()
+    desc = " ".join(desc.split())
+
     return {
         "appId": item.get("app_id", ""),
         "title": item.get("title", ""),
-        "desc": item.get("description", item.get("release_notes", "")),
+        "desc": desc,
         "type": item.get("type", "마케팅"),
-        "tc": item.get("tc", "marketing"),
-        "status": item.get("status", "live"),
+        "tc": item.get("target_customer", "전체"),
+        "status": item.get("status", "진행중"),
         "period": item.get("period", ""),
         "tags": item.get("tags", []),
         "analysis": item.get("analysis", ""),
@@ -82,20 +106,57 @@ def to_marketing_item(item: dict) -> dict:
     }
 
 
-def run_crawler_pipeline() -> None:
-    """전체 크롤링 파이프라인 실행"""
+def is_valid_item(item: dict) -> bool:
+    """유효한 항목인지 확인 (쓰레기 데이터 필터링)"""
+    title = item.get("title", "").strip()
+    src = item.get("src", "").strip()
+
+    # 빈 제목 필터
+    if not title:
+        return False
+
+    # 쓰레기 데이터 패턴 필터
+    junk_titles = ["관련도순", "전체", "옵션 초기화", "최신순", "정확도순"]
+    if title in junk_titles:
+        return False
+
+    # 무효한 링크 필터
+    if src in ["#", "javascript:;", "javascript:void(0)", ""]:
+        return False
+
+    return True
+
+
+def is_current_month(item: dict) -> bool:
+    """현재 월의 항목인지 확인"""
+    date_str = item.get("date", "")
+    if not date_str:
+        return False
+    now = datetime.now()
+    current_prefix = now.strftime("%Y.%m")
+    return date_str.startswith(current_prefix)
+
+
+def sort_by_date_desc(items: list) -> list:
+    """날짜 기준 최신순 정렬"""
+    def date_key(item):
+        d = item.get("date", "0000.00.00")
+        return d
+    return sorted(items, key=date_key, reverse=True)
+
+
+def run_crawler_pipeline():
+    """메인 크롤링 파이프라인"""
     print("=" * 60)
-    print("App Trends Tracker - 크롤링 파이프라인 시작")
+    print("App Trends Tracker - 크롤링 시작")
+    print(f"시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 60)
 
     start_time = datetime.now()
-    print(f"시작 시간: {start_time.isoformat()}\n")
 
-    # 결과 저장소
     features = []
     marketing = []
 
-    # 각 앱별로 크롤링 실행
     total_apps = len(APPS)
     for idx, (app_key, app_config) in enumerate(APPS.items(), 1):
         print(f"\n[{idx}/{total_apps}] {app_config['name']} ({app_key})")
@@ -125,10 +186,7 @@ def run_crawler_pipeline() -> None:
                     marketing.append(classified)
 
         # 3. 뉴스 크롤링
-        news_results = crawl_news(
-            app_id,
-            app_config.get('news_keywords', [])
-        )
+        news_results = crawl_news(app_id, app_config.get('news_keywords', []))
         for news_item in news_results:
             classified = classify(news_item)
             classified['analysis'] = generate_analysis(classified)
@@ -189,6 +247,20 @@ def run_crawler_pipeline() -> None:
 
     all_features = merge_items(formatted_features, existing_features)
     all_marketing = merge_items(formatted_marketing, existing_marketing)
+
+    # 1. 쓰레기 데이터 필터링 (무효 항목 제거)
+    all_features = [item for item in all_features if is_valid_item(item)]
+    all_marketing = [item for item in all_marketing if is_valid_item(item)]
+    print(f"\n쓰레기 데이터 필터 후 - Features: {len(all_features)}, Marketing: {len(all_marketing)}")
+
+    # 2. 현재 월 데이터만 유지
+    all_features = [item for item in all_features if is_current_month(item)]
+    all_marketing = [item for item in all_marketing if is_current_month(item)]
+    print(f"현재 월 필터 후 - Features: {len(all_features)}, Marketing: {len(all_marketing)}")
+
+    # 3. 최신순 정렬
+    all_features = sort_by_date_desc(all_features)
+    all_marketing = sort_by_date_desc(all_marketing)
 
     # 데이터 보관 정책 적용 (최대 아이템 수 제한)
     max_items = DATA_POLICY.get("max_items", 2000)
