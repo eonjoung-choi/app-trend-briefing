@@ -4,22 +4,22 @@ App Trends Tracker - 크롤링 파이프라인 오케스트레이터
 - 항목 분류
 - 중복 제거 및 병합
 - feed.json 생성 (최신순 정렬, 현재 월 필터링)
+- 노이즈 필터링 (퀴즈, 주가, 채용 등 무관 콘텐츠 제거)
+- desc 출처명 정리
 
 GitHub Actions 및 로컬 실행 모두 호환
 """
 
-
 import sys
 import os
 import json
+import re
 from datetime import datetime, timedelta
 from pathlib import Path
-
 
 # 크롤러 디렉토리를 Python path에 추가 (어디서 실행해도 import 가능)
 CRAWLER_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(CRAWLER_DIR))
-
 
 from config import APPS, DATA_POLICY
 from play_store import crawl_play_store
@@ -27,13 +27,42 @@ from app_store import crawl_app_store
 from news_crawler import crawl_news
 from classifier import classify, deduplicate_items, generate_analysis
 
+# ── 노이즈 필터 (news_crawler.py와 동일 키워드, 병합 후에도 적용) ──
+NOISE_KEYWORDS = [
+    "퀴즈 정답", "행운퀴즈", "이벤트 정답", "오늘의 퀴즈",
+    "파트너사 모집", "채용", "인턴", "공채", "합격",
+    "주가", "시세", "주식 전망", "투자 의견", "목표가",
+    "실적 발표", "영업이익", "순이익", "매출액",
+    "대출 금리", "예금 금리", "적금 금리",
+    "로봇", "웰니스", "AI 서밋", "AI 전략 공개",
+    "ESG", "탄소", "사회공헌", "봉사",
+    "일키", "최강 블루", "게임", "e스포츠",
+]
 
+
+def is_noise_title(title: str) -> bool:
+    """노이즈 제목 필터 (퀴즈, 주가, 채용 등 앱 서비스/UX와 무관한 콘텐츠)"""
+    title_lower = title.lower()
+    for noise in NOISE_KEYWORDS:
+        if noise.lower() in title_lower:
+            return True
+    return False
+
+
+def clean_desc_source(desc: str) -> str:
+    """desc에서 출처명 잔여 텍스트 제거 (예: 'bntnews.co.kr', '게임톡' 등)"""
+    if not desc:
+        return ""
+    # URL 패턴 제거 (xxx.co.kr, xxx.com 등)
+    desc = re.sub(r'\s+[a-zA-Z0-9.-]+\.(co\.kr|com|net|kr|org)(\s|$)', ' ', desc)
+    # 마지막에 붙은 짧은 출처명 제거 (2~6자 한글로 끝나는 패턴)
+    desc = re.sub(r'\s+[가-힣]{2,6}$', '', desc.strip())
+    return desc.strip()
 
 
 def format_date(date_str: str) -> str:
     """날짜를 index.html이 기대하는 YYYY.MM.DD 포맷으로 변환"""
     today = datetime.now()
-
     if not date_str:
         return today.strftime("%Y.%m.%d")
     if date_str == "오늘":
@@ -41,11 +70,9 @@ def format_date(date_str: str) -> str:
     if date_str == "어제":
         yesterday = today - timedelta(days=1)
         return yesterday.strftime("%Y.%m.%d")
-
     # 이미 올바른 형식이면 그대로
     if len(date_str) == 10 and date_str[4] == '.' and date_str[7] == '.':
         return date_str
-
     # ISO 형식 처리
     for fmt in ["%Y-%m-%dT%H:%M:%S", "%Y-%m-%d", "%b %d, %Y", "%d %b %Y"]:
         try:
@@ -53,7 +80,6 @@ def format_date(date_str: str) -> str:
             return dt.strftime("%Y.%m.%d")
         except (ValueError, TypeError):
             continue
-
     # 변환 실패 시 원본 반환
     return date_str if date_str else today.strftime("%Y.%m.%d")
 
@@ -61,14 +87,12 @@ def format_date(date_str: str) -> str:
 def to_feature_item(item: dict) -> dict:
     """
     크롤러 출력을 index.html의 featureData 포맷으로 변환
-    index.html 기대 포맷:
-    { appId, title, desc, tags: [], date, analysis, src, ch }
+    index.html 기대 포맷: { appId, title, desc, tags: [], date, analysis, src, ch }
     """
     desc = item.get("description", item.get("release_notes", ""))
     # &nbsp; 잔여 정리
     desc = desc.replace("&nbsp;", " ").replace("\u00a0", " ").strip()
     desc = " ".join(desc.split())  # 연속 공백 정리
-
     return {
         "appId": item.get("app_id", ""),
         "title": item.get("title", ""),
@@ -84,13 +108,11 @@ def to_feature_item(item: dict) -> dict:
 def to_marketing_item(item: dict) -> dict:
     """
     크롤러 출력을 index.html의 mktData 포맷으로 변환
-    index.html 기대 포맷:
-    { appId, title, desc, type, tc, status, period, tags: [], analysis, src, ch }
+    index.html 기대 포맷: { appId, title, desc, type, tc, status, period, tags: [], analysis, src, ch }
     """
     desc = item.get("description", item.get("release_notes", ""))
     desc = desc.replace("&nbsp;", " ").replace("\u00a0", " ").strip()
     desc = " ".join(desc.split())
-
     return {
         "appId": item.get("app_id", ""),
         "title": item.get("title", ""),
@@ -153,7 +175,6 @@ def run_crawler_pipeline():
     print("=" * 60)
 
     start_time = datetime.now()
-
     features = []
     marketing = []
 
@@ -223,8 +244,8 @@ def run_crawler_pipeline():
         try:
             with open(feed_path, 'r', encoding='utf-8') as f:
                 existing = json.load(f)
-                existing_features = existing.get("features", [])
-                existing_marketing = existing.get("marketing", [])
+            existing_features = existing.get("features", [])
+            existing_marketing = existing.get("marketing", [])
         except (json.JSONDecodeError, KeyError):
             pass
 
@@ -253,12 +274,26 @@ def run_crawler_pipeline():
     all_marketing = [item for item in all_marketing if is_valid_item(item)]
     print(f"\n쓰레기 데이터 필터 후 - Features: {len(all_features)}, Marketing: {len(all_marketing)}")
 
-    # 2. 현재 월 데이터만 유지
+    # 2. 노이즈 필터링 (퀴즈, 주가, 채용 등 앱 서비스/UX와 무관한 콘텐츠 제거)
+    before_f = len(all_features)
+    before_m = len(all_marketing)
+    all_features = [item for item in all_features if not is_noise_title(item.get("title", ""))]
+    all_marketing = [item for item in all_marketing if not is_noise_title(item.get("title", ""))]
+    noise_removed = (before_f - len(all_features)) + (before_m - len(all_marketing))
+    print(f"노이즈 필터 후 - Features: {len(all_features)}, Marketing: {len(all_marketing)} (제거: {noise_removed}건)")
+
+    # 3. desc 출처명 정리
+    for item in all_features:
+        item["desc"] = clean_desc_source(item.get("desc", ""))
+    for item in all_marketing:
+        item["desc"] = clean_desc_source(item.get("desc", ""))
+
+    # 4. 현재 월 데이터만 유지
     all_features = [item for item in all_features if is_current_month(item)]
     all_marketing = [item for item in all_marketing if is_current_month(item)]
     print(f"현재 월 필터 후 - Features: {len(all_features)}, Marketing: {len(all_marketing)}")
 
-    # 3. 최신순 정렬
+    # 5. 최신순 정렬
     all_features = sort_by_date_desc(all_features)
     all_marketing = sort_by_date_desc(all_marketing)
 
@@ -277,22 +312,22 @@ def run_crawler_pipeline():
     # 레포 루트에 feed.json 저장
     with open(feed_path, 'w', encoding='utf-8') as f:
         json.dump(feed, f, ensure_ascii=False, indent=2)
+
     print(f"\n✓ 저장됨: {feed_path}")
 
     # 통계 출력
     print("\n" + "=" * 60)
     print("크롤링 완료 - 최종 통계")
     print("=" * 60)
-
     end_time = datetime.now()
     elapsed = (end_time - start_time).total_seconds()
-
     print(f"소요 시간: {elapsed:.1f}초")
     print(f"신규 Features: {len(formatted_features)}")
     print(f"신규 Marketing: {len(formatted_marketing)}")
     print(f"전체 Features: {len(all_features)}")
     print(f"전체 Marketing: {len(all_marketing)}")
     print(f"총 항목: {len(all_features) + len(all_marketing)}")
+    print(f"노이즈 제거: {noise_removed}건")
     print("\n파이프라인 완료!")
 
 
