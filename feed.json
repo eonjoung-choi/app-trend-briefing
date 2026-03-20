@@ -1,6 +1,1448 @@
 {
-  "lastUpdated": "2026-03-20T05:28:01.254871",
+  "lastUpdated": "2026-03-20T05:49:51.471171",
   "features": [
+    {
+      "appId": "toss_bank",
+      "title": "3월 3주 앱인토스 업데이트 | 통합 미니앱 홈이 출시됐어요",
+      "desc": "3월 3주 앱인토스 업데이트 | 통합 미니앱 홈이 출시됐어요&nbsp;&nbsp;토스",
+      "tags": [
+        "출시",
+        "업데이트"
+      ],
+      "date": "2026.03.18",
+      "analysis": "출시, 업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Scm0wM3R0M0Z0VzRsYlZFajBIVVVPVHJLNFdVbHRidUhBUWJTN1YtNmhMdUQzQXpJcTFueTU4V2NNUXhya1hjMUlFa3lkQjVheHQ1bWw0ZUZLV09B?oc=5",
+      "ch": "Google News (토스)"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "토스 앱에 '한강물 온도' 새 기능...죽음 희화화 논란 일자 \"중단\"",
+      "desc": "토스 앱에 '한강물 온도' 새 기능...죽음 희화화 논란 일자 \"중단\"&nbsp;&nbsp;YTN",
+      "tags": [
+        "기능"
+      ],
+      "date": "2026.03.19",
+      "analysis": "기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9meVdpcER0UHlQd0xqamVwZGJ0X2R1YTdpUUFJZkh6V3AyOVFPQXVoTGkweHk0cmllVE1pN015MGVXRGFWWk4yVTgtYmtudjZqdzhmazlPSVp3R0Mxbmc?oc=5",
+      "ch": "Google News (YTN)"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "[자막뉴스] 증시 널뛰는데 증권 앱에 '한강물'?…\"왜 뛰어들라고?\" \"눈을 의심했다\"",
+      "desc": "[자막뉴스] 증시 널뛰는데 증권 앱에 '한강물'?…\"왜 뛰어들라고?\" \"눈을 의심했다\"&nbsp;&nbsp;네이트",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5VdlF2MU42dFlIRHphWW9QRm9EaGoxTldDREJJMnhkS2lORnExRmxiR1p2eUIySXlhQjgwMXBpRkdYRjk2MG1YY3pmaENaLWRPU0pr?oc=5",
+      "ch": "Google News (네이트)"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "“룸메·부부도 편하게”...토스뱅크, 모임통장 관리비 자동납부 기능 추가",
+      "desc": "“룸메·부부도 편하게”...토스뱅크, 모임통장 관리비 자동납부 기능 추가&nbsp;&nbsp;경기신문",
+      "tags": [
+        "기능",
+        "추가"
+      ],
+      "date": "2025.09.03",
+      "analysis": "기능, 추가 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5RGctZGY0UGFKUDBHaEd1YWpsaUwtTURrbS13cDl6TDhSdkJEMHhncENqVTZNQnhRRF9hUHY1Z3B6aXBza3FicHBpYTYyVVVJVDFJdlRObFNrSzRyX0JGMVhn?oc=5",
+      "ch": "Google News (경기신문)"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "매번 혁신한다는 토스뱅크, 뭐가 그렇게 다른가요?",
+      "desc": "매번 혁신한다는 토스뱅크, 뭐가 그렇게 다른가요?&nbsp;&nbsp;토스",
+      "tags": [],
+      "date": "2025.03.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5JMUwtb2lNdGRaMGoybEYzQ18wZWpNXzkxdkt5enh1amRFdm5aV3UyM2luTjk5bXFKUW56dnRKazZ4bFZmV3dWaXItdUs?oc=5",
+      "ch": "Google News (토스)"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "‘100원부터 외화 적금’…토스뱅크, 자동 환전 기능 도입",
+      "desc": "‘100원부터 외화 적금’…토스뱅크, 자동 환전 기능 도입&nbsp;&nbsp;뉴스투데이",
+      "tags": [
+        "기능"
+      ],
+      "date": "2025.05.19",
+      "analysis": "기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBUaW10b1BseU8wSlcwcGRTU3ctWk9hSEJPbFJVT1dPT1g4c2lIOUVXWkU0MjAwckhEdHcxNlltNzB1Vjg3T1dpOVA3b0Y0ajJsS2xpaWhTbjl3cmc3bXc?oc=5",
+      "ch": "Google News (뉴스투데이)"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "토스 행운퀴즈 정답 3월 20일",
+      "desc": "토스 행운퀴즈 정답 3월 20일&nbsp;&nbsp;bntnews.co.kr",
+      "tags": [],
+      "date": "2026.03.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uYjEwTGdYWVB0ZWlCVEU4MzlYZnhGUmhoWlphY0UxWE9ieUZySWZwM1E5TldBbnBLNDVFODQwQjN2bDNJSE9QWHJDRHVWZ04zWVV2RjVZOS1Eb2k2Ty1iZTctQVo?oc=5",
+      "ch": "Google News (bntnews.co.kr)"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "토스 행운퀴즈 'CJ더마켓' 정답…3월 20일",
+      "desc": "토스 행운퀴즈 'CJ더마켓' 정답…3월 20일&nbsp;&nbsp;게임톡",
+      "tags": [],
+      "date": "2026.03.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40MVJIWExPU0ptQ2hCQVNFTDBxWk5YamFsNUNyd25haF9BTkIxWkgzb3RjXzNmdkY4dnhBM2NOS05GTlJmdnU3c2tfR3lza3duOFRRYWNhREdLbmVqMFEteG1ILWprd0RUTFp1Mw?oc=5",
+      "ch": "Google News (게임톡)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "카카오뱅크, 17일 접속 장애 원인 2시간 만에 뒤늦게 파악…복구 중 또 ′먹통′",
+      "desc": "카카오뱅크, 17일 접속 장애 원인 2시간 만에 뒤늦게 파악…복구 중 또 ′먹통′&nbsp;&nbsp;알파경제",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1VDlWdElWUVc0VEpxTFI1X3B6ek1KdFRKMEczVTNjbFBvSm0zMG55TTE0eFlzeHVTRnlwMlFXRF9pd1JJOGc4Z2F3OFZyaU9zcllNcUxIRUpaSS0zSVHSAW5BVV95cUxNVVppVVJFODYxanN6dnpGTXc5M2VvYm9oNzM3blp3T1JVNnNkcVFYOU5lSV81cTJEYkVlbFlwZk9MM29rc01tYXFtR2N4RnFodEEyN1p0eE0xV2ZWZVRaOVpDdHR5dTljMFBhdHFBdw?oc=5",
+      "ch": "Google News (알파경제)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "카뱅, 오는18일 새벽 카드 시스템 업데이트…체크·미니카드 일시 중단",
+      "desc": "카뱅, 오는18일 새벽 카드 시스템 업데이트…체크·미니카드 일시 중단&nbsp;&nbsp;마켓인",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2026.01.13",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45UTNNdEl3STFOQmhLYmxSb0FQQXQ3ZlBaaWZTSlZUQ3AzWEhnR2lUa2h6UFQ3VENwSUFZdXl6UjMyY2hXZEstdS1kTjdQX09ubGF3OHVySHpBUlMyWlBfazAxZE91VjRlVnBsWEwyZEJ4Q1E?oc=5",
+      "ch": "Google News (마켓인)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "\"18일 새벽 결제 못해요\"…카카오뱅크 체크카드 시스템 업데이트",
+      "desc": "\"18일 새벽 결제 못해요\"…카카오뱅크 체크카드 시스템 업데이트&nbsp;&nbsp;뉴스1",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2026.01.13",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Cd1RaZFk3WkFaNkxRUHl5VkpfcTB5bF9hcnZ2Mk1mbElsSEtKNUl6WGphb3ZvVkl3dy00eW5wZEE1TXp5bklWYmdDakpkdDY0OThjbjJiRk1jSWpDTDh1UV9R?oc=5",
+      "ch": "Google News (뉴스1)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "편리하지만 새롭진 않다…카카오뱅크 새광고",
+      "desc": "편리하지만 새롭진 않다…카카오뱅크 새광고&nbsp;&nbsp;AP신문",
+      "tags": [],
+      "date": "2025.12.13",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YelhGOEc2RlFVMUZmVzRBUGl2b0N2aGN4elZkSGpxOS1MRUZlSHE0LTJtX3JyQjF0QlJwQUNrLXhLZ05nM3ByT3NuRC1EMmZ4LXE2SEhtVi11aWFuRWxYTEJQZmxXLUZF0gFsQVVfeXFMTzBiLTg0ZDRNQ1k4eEZ3VzNtck11MmV5R2ZFYkswT3Boc0p1U2lJZXdQV0UyeUNzV0o3Z3BzYWdlWUtnWXFTUTFHZm1oa05hbFlMWEFKQld2V01Jd25HenFXMmVidUhCWjl4ajYw?oc=5",
+      "ch": "Google News (AP신문)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "[시선] 카카오 '시간끌기' 전략?...'간단한' 카톡 친구탭 복원은 방치, 신기능만 오픈",
+      "desc": "[시선] 카카오 '시간끌기' 전략?...'간단한' 카톡 친구탭 복원은 방치, 신기능만 오픈&nbsp;&nbsp;포인트경제",
+      "tags": [
+        "기능",
+        "신기능",
+        "포인트"
+      ],
+      "date": "2025.10.29",
+      "analysis": "기능, 신기능, 포인트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xRDM1UHcxUnVNRFVNNG1zU2pDSmg3SW13MkJoRURMdkRqeVd5OFN6SFZWbFJ5djFwQllWSXU4RTJ2aVotSHRybzRsY1BWaE5pbWxHdGJfcDN1YlJRb1BBdUtKX2hVaW1leUE?oc=5",
+      "ch": "Google News (포인트경제)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "‘ISTJ 픽’ 카뱅, 돈 버는 서베이 100만명 달성",
+      "desc": "‘ISTJ 픽’ 카뱅, 돈 버는 서베이 100만명 달성&nbsp;&nbsp;더리브스",
+      "tags": [],
+      "date": "2025.06.23",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBqX0NrS0kwTENyS3loNGt5LXlPX0tTNE83UnJnZkJ0UkQzOEhjTHI3Mm1rc2M1LVpGSDhSd1p3WDdMdXdyLUQ2ZlNkZ1BEVkZIYUJDU0FQX2trU0QxUnNVLTJZWE51TURaekE?oc=5",
+      "ch": "Google News (더리브스)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "‘KB부동산’, 부동산 업데이트 서비스 ‘오늘’ 선봬",
+      "desc": "‘KB부동산’, 부동산 업데이트 서비스 ‘오늘’ 선봬&nbsp;&nbsp;파이낸셜투데이",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2025.09.25",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4xd3ZMYUk3V2U5ckZyQnF2YnJiRU13Vjhtb0xQMG1SSjEzWEFPYTducTNadzVnQWhUdmd2WGhDdmhqQk42RVFxWEVtX2VFQW1CUjBLdl9XbmhOSmF1VGJiQUFWVWZTdUxRS1HSAW5BVV95cUxPeDFlWkFJcEExTEdRQUQ2a0ZWSWxzWlk2c2wzVkJaUnhsdlFmRVBhSHlweVZGQVFORTRBRUFfOFNHNkFhekhoaVJFQ181Z1Y0LTloal9mcjlZWi1vNHNBRGE4MGRaRU9IVTJ1bjVLZw?oc=5",
+      "ch": "Google News (파이낸셜투데이)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "KB국민은행, KB스타뱅킹 업데이트…”플랫폼 경쟁력 강화”",
+      "desc": "KB국민은행, KB스타뱅킹 업데이트…”플랫폼 경쟁력 강화”&nbsp;&nbsp;오피니언뉴스",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2024.08.29",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1KQl93ZUIxamFRVGhhemlMMmFLbVlZS0V4b1FLd2J5NnhKdEpiSVhvaTlfb3Z6bFBNcHdRbnBsaHFLdTNZbnNpVzJzdHE0SDZtZUFGQ3htSlV1QnB5Slg0RG5tM0N1aE9vLXM3cFNqcXI?oc=5",
+      "ch": "Google News (오피니언뉴스)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "KB스타뱅킹 '자산관리' 확 바뀐다…VIP 고객은 추가 혜택",
+      "desc": "KB스타뱅킹 '자산관리' 확 바뀐다…VIP 고객은 추가 혜택&nbsp;&nbsp;전자신문",
+      "tags": [
+        "추가"
+      ],
+      "date": "2024.10.31",
+      "analysis": "추가 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB3Q25kbGU5SWc4M3hwc2k0aEwwcG9VQjB1cFRUbUhSZk1wc2pUTXZuRjc3QlhhY3VhWThoMFZtY2Z6UWxnZ3NDQUtQYzJaZw?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "SK인텔릭스, 웰니스 로봇 ‘나무엑스’ OTA 업데이트…‘팔로우 미’ 등 신기능 추가",
+      "desc": "SK인텔릭스, 웰니스 로봇 ‘나무엑스’ OTA 업데이트…‘팔로우 미’ 등 신기능 추가&nbsp;&nbsp;리버티코리아포스트",
+      "tags": [
+        "기능",
+        "신기능",
+        "업데이트"
+      ],
+      "date": "2026.03.17",
+      "analysis": "기능, 신기능, 업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5xaGNCeUp6dDV5WW1wSTRhU3FKbnYxNFZlSDA4Tjcya2gtVHp6em85X2xvQUlRV2ZiZFpkODNTbGpqV2txTV9naGFyNjhCT1Z3eklOMFp2OHJmSEstblJlRlNiONIBZ0FVX3lxTFBfSjNGLW5HYV9UVDdwMDBvdTJVa3p0YXNyanVqOVBpMlZBZ2dBZ2tBdDBjZy1BTUxSblozVHJvbmJZY01lQXRLZ1hSanpJOHZtWE5CTXJHel8xQ1Z4eTJSNWVxYll3akU?oc=5",
+      "ch": "Google News (리버티코리아포스트)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "[AI시대, 디지털 전환⑨-2] 초거대 AI 서밋, 오픈AI와 K-기업들의 AI 전략 공개",
+      "desc": "[AI시대, 디지털 전환⑨-2] 초거대 AI 서밋, 오픈AI와 K-기업들의 AI 전략 공개&nbsp;&nbsp;한국보험신문",
+      "tags": [],
+      "date": "2025.10.06",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE02MThxY0JoYWZTcFp4YUFnUkJVVnVTZ1pLT3BZOGJzRTI1ZEtHTmt6LTU4V0VwWVpiaTFUWk9uZ3lxMThlLXdpTFplZ2g4QVNscnNDN1ExOVdaMGhCRjJFRVhCc3FiUzhPOWhB0gFvQVVfeXFMUHgybGg2a2J1alk1Y1huS3pLcnlIRUxfLUpBT24yd1V5MF9sUmlfWkR0X1M5R19zRUozMzFudlNXTFhZT0UzWGE2UWIyQW9CbEp1RzFlaGtRYnRPcDh6b3VRbVVmTUhhbm5GdWlkZ2Jz?oc=5",
+      "ch": "Google News (한국보험신문)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "[ZD SW 투데이] 유라클 모피어스, AWS 마켓플레이스에 등록 外",
+      "desc": "[ZD SW 투데이] 유라클 모피어스, AWS 마켓플레이스에 등록 外&nbsp;&nbsp;지디넷코리아",
+      "tags": [],
+      "date": "2025.06.26",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJTGRyWmV0NHM4Yjk2M3pCNktHOFhQb3JxREpxV05qRXp1Z1VBRGNpSXhYTXFjSW1NNWRMd0ZKTXJ3QkpGVWpuSGxXaEs1ZGdEU3k5UnBn?oc=5",
+      "ch": "Google News (지디넷코리아)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "신한은행, ‘신한 20+ 뛰어요’ 업그레이드",
+      "desc": "신한은행, ‘신한 20+ 뛰어요’ 업그레이드&nbsp;&nbsp;스트레이트뉴스",
+      "tags": [],
+      "date": "2026.02.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5MQ3d1T2JGZDd5NDNnOHRkRE9Gai1sekhqSlhYejI5MEhuczc3VDdGX0RRTUQxWFFtaEk4SFE0OS1XdWxTeXRtUkxTTFJudi1WZ3ZqVFREMkxLa0tLRkQ5dXhaaEg1eWQwUjdZcWlMeU81YXPSAXdBVV95cUxORDZtbHFJVHo5R3g2ejVDM0stQnVzNDYxNEhfN2l5QlRQOXNSTkJJd182OHVtRy1mZHQyWTF5SHlQYnVEN21hSjgzbEtjUTVReUI2R2JfU1F2dHBYLTRoTzl5ZjMyVHh6V1d2dzJudi01bGFua0tGUQ?oc=5",
+      "ch": "Google News (스트레이트뉴스)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "“간편 로그인 없애고 본인인증 필수”...은행권 플랫폼 보안 레벨업",
+      "desc": "“간편 로그인 없애고 본인인증 필수”...은행권 플랫폼 보안 레벨업&nbsp;&nbsp;전자신문",
+      "tags": [
+        "보안"
+      ],
+      "date": "2025.10.28",
+      "analysis": "보안 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5CM1VjTzdpamtxNm43ZWtLNmpjN2JrdnQtV3BnRTJGUzMwRWdrWXAzR3lRdFdLOEY1ZEtxWE9NYnlOem9YNXdSQWtxZ1dGQQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "신한은행, ‘신한 20+ 뛰어요’ 재단장",
+      "desc": "신한은행, ‘신한 20+ 뛰어요’ 재단장&nbsp;&nbsp;디지털데일리",
+      "tags": [],
+      "date": "2026.02.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE52b0FlOVc5OUJmTS1XU29XeXNmQ1A5bjJ3UHZ4VGw2WGNaVXNVeE1hUDNBeVBoWnUweUJtQVJqazJQd3BXODVTdm9DNzhlaVFudVhfbmg2N011Qi1nZHhrWHZybm8?oc=5",
+      "ch": "Google News (디지털데일리)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "비자, 패스키 지원한다…연말 신기능 대거 추가",
+      "desc": "비자, 패스키 지원한다…연말 신기능 대거 추가&nbsp;&nbsp;디지털투데이",
+      "tags": [
+        "기능",
+        "신기능",
+        "추가"
+      ],
+      "date": "2024.05.17",
+      "analysis": "기능, 신기능, 추가 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZGY1SmNWbHVaTGxOZVdVa3o0VjJqamp1dGYyX3JIS011YUZyU3hlT2JRNzdkQXZZcjFzYVBGVVhJeDRWendEcUNLOWxqc0RBcXNlbHlicmRZMkxhaWJpb2hRLXBUeUYwTnAxUUV2MlRtNEhHWE1UcmtISmE5US1QemR2RUY0YmljNEQ0alhQdHRNbGd1Y2pfRE5ITFhkRG1vdC1BVzRn?oc=5",
+      "ch": "Google News (디지털투데이)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "인스웨이브, 웹스퀘어5 서비스팩2 출시",
+      "desc": "인스웨이브, 웹스퀘어5 서비스팩2 출시&nbsp;&nbsp;지디넷코리아",
+      "tags": [
+        "출시"
+      ],
+      "date": "2017.01.23",
+      "analysis": "출시 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1kajFLSkYycW1vTmxWMGV1MXNUUXlXSmV0YXFuaTR5N1duajltemRRRWMzVUc1OGlNeG1TVTl0cERmdzJ6cFE2dVdtT1JMUUdXRExjY0ln?oc=5",
+      "ch": "Google News (지디넷코리아)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "총 6000원 받아 가세요…갤럭시면 다 되는, 삼성페이 역대급 '신기능'",
+      "desc": "총 6000원 받아 가세요…갤럭시면 다 되는, 삼성페이 역대급 '신기능'&nbsp;&nbsp;위키트리",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2025.11.07",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rXzBCdTFEaDVTOUJJaGZqWjh5cl93b29NYjRKdjVMMjRmTUMyTncwOGFtc3NOejBlLW5YMEVONVd3ekhmMUhUb1RiTTVBRWpCY29wUXB3?oc=5",
+      "ch": "Google News (위키트리)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "쏠퀴즈 정답 3월 20일",
+      "desc": "쏠퀴즈 정답 3월 20일&nbsp;&nbsp;bntnews.co.kr",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYR2NHelpXemxXM1AwcnhDRVVBV0IzS0FjWGtTRHNXTC1vTWVOc2x5UnhtODE1UFpnTjlQNFZPX2dJZlNvWTRibEQzU3ZyVzc4UHItM1dKdnB4SF9TcWZMRjZqZGI?oc=5",
+      "ch": "Google News (bntnews.co.kr)"
+    },
+    {
+      "appId": "woori_bank",
+      "title": "우리은행, 우리WON뱅킹에 MTS 연계···주식거래 지원",
+      "desc": "우리은행, 우리WON뱅킹에 MTS 연계···주식거래 지원&nbsp;&nbsp;서울파이낸스",
+      "tags": [],
+      "date": "2025.06.24",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ETk9jOUtxS0xlM1IzRHFrdEN6bzVZaWpWalh0aENVNHFRaThaQWJlRU8zNnk5aW1MSzFQWGhoeVNMNW5TME9ZcDZvNlFjTkQ3MWJHSWNLQlZ5dmNxLWU4ZjM4b085dVhtbWc?oc=5",
+      "ch": "Google News (서울파이낸스)"
+    },
+    {
+      "appId": "woori_bank",
+      "title": "\"문자 한 통에 전 재산 날릴라\" 우리은행, 진화하는 보이스피싱 사전 차단",
+      "desc": "\"문자 한 통에 전 재산 날릴라\" 우리은행, 진화하는 보이스피싱 사전 차단&nbsp;&nbsp;이로운뉴스",
+      "tags": [],
+      "date": "2025.12.31",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81cDk5MXdISnlLSU04d0tQd24tY0xZOFFGdGQxcFhCclhmR3ZZN1RwaUdvczMzT05fbzVBZlRmbjZESUhkclQwX3NOYmxMR3pmV3lVVkJHUi04UkZSNUdROHp2b21tRUU?oc=5",
+      "ch": "Google News (이로운뉴스)"
+    },
+    {
+      "appId": "woori_bank",
+      "title": "우리은행, 우리원뱅킹 앱에 MTS 서비스 탑재",
+      "desc": "우리은행, 우리원뱅킹 앱에 MTS 서비스 탑재&nbsp;&nbsp;오피니언뉴스",
+      "tags": [],
+      "date": "2025.06.24",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE4yczQxRnRQTmFURzV2V09tMUNYdG53M2Z3NEpZdkQyZFl0cElDTk4tRFd6dkhqMVpOVDIyc2J0cWdLSGsxYlFLTk91V1VGUlZLU05nZHZ1UUdfQklFbE1IZDRaVmNjYlo0eWxLWnhmTzdMZw?oc=5",
+      "ch": "Google News (오피니언뉴스)"
+    },
+    {
+      "appId": "woori_bank",
+      "title": "영상갤S26 신기능에 ‘체리 따봉’·‘충성충성’ 논란 이제 끝?…“의원들 무조건 바꾸겠네” 말까지",
+      "desc": "영상갤S26 신기능에 ‘체리 따봉’·‘충성충성’ 논란 이제 끝?…“의원들 무조건 바꾸겠네” 말까지&nbsp;&nbsp;서울경제신문",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2026.03.08",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51dnhSakhpREhGem1rZjQyQ3E1emI3ZDVLQlhGam5IdTdNbWpVSDB4emNRMmhhV0FKM2h6ZDJlMFVsbGEtTlNhdm1UVlJtWjNCWDRPb3ZFa1U0OHZM?oc=5",
+      "ch": "Google News (서울경제신문)"
+    },
+    {
+      "appId": "woori_bank",
+      "title": "경북대학교병원 김용림·조장희 교수·칠곡경북대병원 임정훈 교수 연구팀, 확장된 혈액투석(HDX)의 잔여 신기능 보존 효과 입증",
+      "desc": "경북대학교병원 김용림·조장희 교수·칠곡경북대병원 임정훈 교수 연구팀, 확장된 혈액투석(HDX)의 잔여 신기능 보존 효과 입증&nbsp;&nbsp;서울경제TV",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2025.07.07",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBaNjVON29MX3ZpNnhlZ0JMVzM5ZUxVQ3FzbEp6WjFxaWZpREVHMEh3aEFFcktOQUM0M2czMTdHa0F6cGNkT2s0WC1fem9Uck5SMk9BTnEtTElCMzdzdWVobEJSZElpakRLUHFJ?oc=5",
+      "ch": "Google News (서울경제TV)"
+    },
+    {
+      "appId": "woori_bank",
+      "title": "금융권 AI로 ‘슈퍼앱’ 경쟁…반려동물 케어·마이데이터 등 신기능 등장",
+      "desc": "금융권 AI로 ‘슈퍼앱’ 경쟁…반려동물 케어·마이데이터 등 신기능 등장&nbsp;&nbsp;글로벌이코노믹",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2024.09.04",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOXzR1eTJ4NzVmWW9mX2lNUmhOTjFjaFlHZWJKYUdMUHc1Q29HUHJ2N1NGWDBPTS05R2tRSDhRcWh6d1RjOHd2MUtIcGZvS3kzcGpQbVVpWTM0VWs4dkRTZHFyaVFFWDA4YTByYUNScDc5YnZHNTZwUjdfX2k5a01pTHFNT2w?oc=5",
+      "ch": "Google News (글로벌이코노믹)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "하나은행 앱 오류 해결 방법",
+      "desc": "하나은행 앱 오류 해결 방법&nbsp;&nbsp;브런치",
+      "tags": [],
+      "date": "2026.03.05",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BS3RJcDlGV0FRbWV4UjRHR0tOcXBJUi1XcmdnS1lOaUx6WllKWXRDNzNDaGFvMzB3bkplTGwtd0FCYVhMLTA5VmNJbHowWFdMaS04?oc=5",
+      "ch": "Google News (브런치)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "하나은행, 대규모 시스템 업그레이드 예고…기대되는 변화는?",
+      "desc": "하나은행, 대규모 시스템 업그레이드 예고…기대되는 변화는?&nbsp;&nbsp;녹색경제신문",
+      "tags": [],
+      "date": "2025.09.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IdXh5alZiYTlWUFlhaE1Cem5xM0lOVTFpR21WZXdsOEMtNkRqTE1Scm5xeXZlOHp6ZDlJUWdxSXZfT0JqNmNEZnhTQUxqb0V2Tm9nZlJxWEFCeHBXMHVaNE1DYTBnbE1C?oc=5",
+      "ch": "Google News (녹색경제신문)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "삼성 신형 빅스비, 갤럭시 S26에 최초 탑재...자연 대화·상황 제어 강화된 신기능 선보인다",
+      "desc": "삼성 신형 빅스비, 갤럭시 S26에 최초 탑재...자연 대화·상황 제어 강화된 신기능 선보인다&nbsp;&nbsp;엠투데이",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2026.01.21",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBxbEs0cVRwMlkwVm9HbHU0Z1lUZmFidWlIcmVQNlNEMHZvSWh2WVVMVjYyeUdCcVVva2hxVV9HRjB0LXdzZGtzei13ZlNhcjJGZldBaUVTOFlsdnVVR1BCcEpIMHVCQTdoYUVUOXFLUdIBc0FVX3lxTE5EZi1xQTVsU2UwWTRzUmJZaDhZMXc4S2dHX1dLdUZ0SkdGbFpYcEFrNnNLYkZaZ2dmOGVrdEl2MG9sbVJzRjVIX0J0bUJQTlZyaHJrbkE1YVlfTDUtaURIcUFPbGpCUnNzWVpSQTJpQUViaVk?oc=5",
+      "ch": "Google News (엠투데이)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "하나은행 인도네시아, 모바일 뱅킹 앱에 ‘하나 AI어드바이저’ 도입",
+      "desc": "하나은행 인도네시아, 모바일 뱅킹 앱에 ‘하나 AI어드바이저’ 도입&nbsp;&nbsp;글로벌이코노믹",
+      "tags": [],
+      "date": "2023.08.23",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yS2RJYjVjZkloZWxPLW5udW5TMXJ6SW90QzluTkhlYTdNRHdMSk9WWVJxQ1UxenZ4SnM3OHAwNXRlWmhXaFFZLXMza3JMY296M1EyTXVYOFViMjZKQWxWUlY1NmpFeEhjUl9RbkpQdFc?oc=5",
+      "ch": "Google News (글로벌이코노믹)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "하나은행, 하나원큐 '신차 견적 서비스' 출시",
+      "desc": "하나은행, 하나원큐 '신차 견적 서비스' 출시&nbsp;&nbsp;스트레이트뉴스",
+      "tags": [
+        "출시"
+      ],
+      "date": "2021.12.10",
+      "analysis": "출시 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ab3g0bG9IV1JDZXBuVVN1Qmx2U0tqNmd1Q1I2aldqTmxsTGVMM3ZYUlZJTXNxYlZ4VWs4dG1NY254c1otc21McVBOQVctQ1lISTFrZVpzRUk5V3lWRUFxMEZQOUdESVhqcUxiU29tTmpzRjjSAXdBVV95cUxNTVRPZkM0a0pDSERDTE9JRFB1MURpSjVDbW5nVVdoX2VBSDlDaFM1dFozalpzSjZkVUVlYV8tVi04MzRiU0czSjNMVTUySkJVZ0V1b3RnYnZJdldvMzRWYkNIbk1BdFFhV1BqU0JsSnRrSENTTE5lMA?oc=5",
+      "ch": "Google News (스트레이트뉴스)"
+    },
+    {
+      "appId": "nh_bank",
+      "title": "NH농협은행, 'NH올원뱅크' 모바일 신분증 전 기종 확대…금융권 최초",
+      "desc": "NH농협은행, 'NH올원뱅크' 모바일 신분증 전 기종 확대…금융권 최초&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2026.03.04",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5OWmVwbTdsRUhadzRBY2dPbnZvYzZOQnZMeExkbm9ySk5taXdZMDJxOEdVVGdzUW42cWNHLU84WWtuNnJxUXNTNkRHX1lFUQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "nh_bank",
+      "title": "'아마추어 테니스인의 축제' 2026 NH올원뱅크 아마추어테니스오픈 28일부터 시작",
+      "desc": "'아마추어 테니스인의 축제' 2026 NH올원뱅크 아마추어테니스오픈 28일부터 시작&nbsp;&nbsp;테니스코리아",
+      "tags": [],
+      "date": "2026.03.11",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJWTJZYWk1TWVyUDI1WDdvZy0wM2tIRGpJb3dRNHZwZzNXSXFSMFFWN2J0YXpzNHJNelloQUFua2xjN1UwMzBRV3Q2YnhEaFdTUHFpTkFpdW9weG1wenAtbTJ3V3pGZExtcWc?oc=5",
+      "ch": "Google News (테니스코리아)"
+    },
+    {
+      "appId": "nh_bank",
+      "title": "NH농협은행, “올원뱅크·토스 페이스페이 함께하고 선물 받아가세요”",
+      "desc": "NH농협은행, “올원뱅크·토스 페이스페이 함께하고 선물 받아가세요”&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2025.11.11",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBfeVVSd1ZXajFkSHE2ZHR0eEp0Vi1OM1RySXpJUFV3WXVzU3RMV2Vfemc2Zk40dk5iZ2c1aERKdWh3dFpKejFfQl9XQjVvUQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "nh_bank",
+      "title": "LG CNS, NH농협은행 차세대 시스템 ‘NEO’ 구축 수주…금융권 최대 규모",
+      "desc": "LG CNS, NH농협은행 차세대 시스템 ‘NEO’ 구축 수주…금융권 최대 규모&nbsp;&nbsp;팝콘뉴스",
+      "tags": [],
+      "date": "2025.12.29",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9wU3BCV1N3SjFUX2RmR2Z6X3pldVU2Z1ZGcng0Z0tORW5BR0FhbTA1LUlOUDEzdnA0Nk8ydHppWmQ2Z1pnMXJGcmxGdnBacURldmY2M3hMMmtZMFRKX2lROWFjYWU5LWM2aXhDdGdB0gFyQVVfeXFMT09KLUZjYXpIRmtTN3A5R3V5NWctbm1Vc1BQNHZ1TVlVeEJnWS1oRm9hVVJ5MVU5X291SE5KVTl1MXpkVzMzeDZGbUc5YXpqYUw1VlVSZDBwOWpmWFZPUW5MNGh0ZlRyWm56cnhONVNRc3Vn?oc=5",
+      "ch": "Google News (팝콘뉴스)"
+    },
+    {
+      "appId": "nh_bank",
+      "title": "‘현장에서 바로 활용’…NH농협은행, 생성형 AI 도입으로 금융업무 혁신",
+      "desc": "‘현장에서 바로 활용’…NH농협은행, 생성형 AI 도입으로 금융업무 혁신&nbsp;&nbsp;EPN엔피나우",
+      "tags": [],
+      "date": "2025.07.07",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xNHVwZUhHc216SFpjSXpUQnFKb3pYY2k0X0lsZG5Bcndla3Jyckx5Y09kMG1UNi1feGsxb1JUT3B0MlVXTWE3eHQ2d2ZLYU9FaERkT09ldXRkVmxsYUpkQzJvYUFacDjSAWtBVV95cUxOU0NrWm02cmlGTHdJRExmeF9vMXRGcGxmeF9kcnpYVkFkM2JxSE5MZ010VU44dnJraC0xb09USW9hM2NEMkRMTjJ5NVRKQl9LLWtoVzlmaERnLXdMX2E3bmktOXAyZUR3TkdfMA?oc=5",
+      "ch": "Google News (EPN엔피나우)"
+    },
+    {
+      "appId": "ibk_bank",
+      "title": "\"최악의 업데이트\"…IBK기업은행, 'i-ONE Bank 개인' 앱 개편 후 오류·불편 속출",
+      "desc": "\"최악의 업데이트\"…IBK기업은행, 'i-ONE Bank 개인' 앱 개편 후 오류·불편 속출&nbsp;&nbsp;중앙이코노미뉴스",
+      "tags": [
+        "개편",
+        "업데이트"
+      ],
+      "date": "2025.09.24",
+      "analysis": "개편, 업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE5kM0xvNmY4UVlTMlpsaE9KS1FTZEluVXItMW1YeXFEYmhiSjZISGtTRjNUelM4VTZqMGs2ZTRPMWp1Nnp2eG1QY01JLTM5TWFaZDRNMHVxSHZycWVIbTFVWi1ua3E2dWlacmU2N3pSbzBBdw?oc=5",
+      "ch": "Google News (중앙이코노미뉴스)"
+    },
+    {
+      "appId": "ibk_bank",
+      "title": "IBK기업은행, ‘i-ONE Bank 개인’ 앱 전면개편",
+      "desc": "IBK기업은행, ‘i-ONE Bank 개인’ 앱 전면개편&nbsp;&nbsp;인사이드비나",
+      "tags": [
+        "개편"
+      ],
+      "date": "2025.09.01",
+      "analysis": "개편 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYMmUzNnBtWXFuZktDQ0U0cUt0Tjh0ZEN0Y0NRYUQwTEJreXBLXzhMeF9NRzVtNmR1WXFzR3JYa0NfYkZyTkV0bjVuWGxjcktrUnZtenI0azktTWF3OTdwWWZWNGY2Sm14eXZPVg?oc=5",
+      "ch": "Google News (인사이드비나)"
+    },
+    {
+      "appId": "ibk_bank",
+      "title": "IBK기업은행, ‘i-ONE Bank 개인’ 앱 전면 개편",
+      "desc": "IBK기업은행, ‘i-ONE Bank 개인’ 앱 전면 개편&nbsp;&nbsp;금융경제신문",
+      "tags": [
+        "개편"
+      ],
+      "date": "2025.09.02",
+      "analysis": "개편 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02MVh6bDJrWUxhTG1NWFN2R0RpbE4xWmlPaExhR2hFYTlVTnp5VkFwZG8zbEZzYldqRXAwMGpMRFZCZlBkRGd3OTB2TXBqekVmWExHVk5neTRNeUk1bE1JZUJPV0xrQlk4RUZZSNIBb0FVX3lxTE9vQXpNR0w3Nk41d0dZYXpSRnQxTzNzTkJINklnOXBiQXJwblFrT1I5TDNrdVZMUEdZdXQtVkg5NnlxdlRFaXMwQ3pUQktsSjNGbV9NZ2h2UjdLMHRDdW5WcnBVTEU4T3Y4NWNHamxRMA?oc=5",
+      "ch": "Google News (금융경제신문)"
+    },
+    {
+      "appId": "ibk_bank",
+      "title": "'은행앱 전쟁' 기업은행도 참전…\"스마트뱅킹 전면 개편\"",
+      "desc": "'은행앱 전쟁' 기업은행도 참전…\"스마트뱅킹 전면 개편\"&nbsp;&nbsp;뉴스1",
+      "tags": [
+        "개편"
+      ],
+      "date": "2024.10.07",
+      "analysis": "개편 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FbVRjRlpqM21CZTRhYnFtUV93RHJZSzBGN0RVLVJuTll5THk2TlZkRmNJdEY3WDFMNUhJaExDbXAyQkh2X1NUTEppNHVsOTRGQkdZ?oc=5",
+      "ch": "Google News (뉴스1)"
+    },
+    {
+      "appId": "ibk_bank",
+      "title": "“전환율 낮은 이유? AI에 물어봐” UX 분석 툴 뷰저블, AI 도슨트 출시",
+      "desc": "“전환율 낮은 이유? AI에 물어봐” UX 분석 툴 뷰저블, AI 도슨트 출시&nbsp;&nbsp;디지털 인사이트 DIGITAL iNSIGHT",
+      "tags": [
+        "UX개선",
+        "출시"
+      ],
+      "date": "2025.04.23",
+      "analysis": "UX개선, 출시 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPa1JQMG5hS24zbklhZ2hDSGs5b2IyOWlVaFNLdVJCcWJHd212M1o4a3VyeHktWU1xZjZsck1Ed3BMcmRnRnpNTGFWWHBZWGFHam9kUXFYWldackZVcnVTeWw5MVo3cFZnZWpYamwtbkpwQ1RPX3lLRWpYZ3NRdmp0akR4Y09ycmxnSWVZeXY4akRsVnZRVXl0UUlabzZOcHNYd2FJZ2pTYU9XamVodWRJa1NCVjJsQ2x0QVg5ZGJoOXk1VzJLMmFIa0dKR3pERW5nM0Njb3o2U3JUYUppUjNsb0xCYWVTczZLTGs5X290b0pHc1hOc2lxdU5BS3plVnI5U1FXSTlHTVBKUlBxaE9HWVlac1pHMmQ1Z1h3dGdtZHBKYlpK?oc=5",
+      "ch": "Google News (디지털 인사이트 DIGITAL iNSIGHT)"
+    },
+    {
+      "appId": "ibk_bank",
+      "title": "'디지털'에 힘 싣는 기업은행, 시장조사 나선다",
+      "desc": "'디지털'에 힘 싣는 기업은행, 시장조사 나선다&nbsp;&nbsp;이투데이",
+      "tags": [],
+      "date": "2024.10.08",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5IcUZNRjF3VkpaTW1aSnYwVG90OVBkakhZU2g3cDBTNFFwTGtIR21MVlBHLVNFV0Y5N0ZHOTFaTVBFMlZXLTVpY1d0TnIxZXhvY3plMA?oc=5",
+      "ch": "Google News (이투데이)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "케이뱅크, 9일 오전 금융거래 일시 중단…시스템 업데이트",
+      "desc": "케이뱅크, 9일 오전 금융거래 일시 중단…시스템 업데이트&nbsp;&nbsp;연합뉴스",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2025.11.07",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aZWxUWmstYWlsazUyaHVxWU1odlJCSFNnMXFKSjVqUVFjMF9sdVhnV2xualpySEZXVTNFS1c2dzV3MUU5bllDSms0OEZpaHhwVWVGRk9qNmlNRlnSAWBBVV95cUxNX01Id2JaUHRYX1hXVDA5VXNSdU1pMGdyREpyUldpal9vTUZMYmhCZzFDc1R2WVJhcEpCRmZWRGlLdjk5OUNNNzlWbG1aZEYxdUppTk9LMGRpY1MyNlZ3NkI?oc=5",
+      "ch": "Google News (연합뉴스)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "케이뱅크, 시스템 업데이트로 9일 새벽 서비스 일시 중단 - 조선비즈",
+      "desc": "케이뱅크, 시스템 업데이트로 9일 새벽 서비스 일시 중단 - 조선비즈&nbsp;&nbsp;Chosunbiz",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2025.11.07",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSnR1b1JpNWhxaFptSHNiRFBrejYzN1pzVnptc05oMnNlRW85NFZtVHFjWnJWVXBFbXJhODFOdlRjcm1iTEFnNFJqYmlWTFcxSEo2X1JiU284RUNkd01WQXVKajROQkN4cGYwVTN6cTRKU2IzUndOSWZFVHIxZGZrStIBlAFBVV95cUxNVzVPUFlZalFGak51ZUxHUDMxQmllY28xakxNeFRJVlBBR2JzejU2elk0bjVyYnpBNzR5NElDV3pHcFc5UmYyeF9CMlNOSk1OaU5KNEgtUm90RVVHWTNMX2YxelgzNE1RblM4eDVRZ0FOWWUwYU5qNm1UY1VXaGt4ckdqMlJnZnBSMEZ1dGFJaXpzLWZn?oc=5",
+      "ch": "Google News (Chosunbiz)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "케이뱅크, 시스템 업데이트로 9일 새벽 10시간 서비스 일시 중단",
+      "desc": "케이뱅크, 시스템 업데이트로 9일 새벽 10시간 서비스 일시 중단&nbsp;&nbsp;서울와이어",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2025.11.07",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJMzZvLVFnRUxTanBoUlB5NktybHlEX055NWFaNmNkTWlMOFZNYTE1QVB4V2hlZlNOWDNVNVd3NTRoaG9PYV9qd2owdHdFRjlpa0VIcHN2MHFpSTRVaGFfbGxUdldUbDV3bTZ3?oc=5",
+      "ch": "Google News (서울와이어)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "케이뱅크·카카오뱅크, 적금도 '챌린지' 시대...MZ 취향 저격",
+      "desc": "케이뱅크·카카오뱅크, 적금도 '챌린지' 시대...MZ 취향 저격&nbsp;&nbsp;녹색경제신문",
+      "tags": [],
+      "date": "2024.05.29",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hMHNkUW1uN3ZYaEZFcE1OZU5IOUN4ZFFUOHpKcEJxRWYyLTcyUDRHRzlDUGNtZXc3RHlkYTlWeUxqWXZWZC1vZDNWZFBSNVpBckxtRDA2T0EwZzhkS1Zla0RMbUlsR1li?oc=5",
+      "ch": "Google News (녹색경제신문)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "문화경제",
+      "desc": "문화경제&nbsp;&nbsp;CNB뉴스",
+      "tags": [],
+      "date": "2018.04.12",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE52R2JUUE9FNEwzY05rd2ktV1hzeGVxRFJTXzNFbFFaWjQxbF82YjlOZDRNNklRZ3BwdERVMlZ5SVFSRVd0SERXZVZVelc3UW93VWJZbFhSeEU0bVc1aVl5SkVYRm54RDJ5WHBycQ?oc=5",
+      "ch": "Google News (CNB뉴스)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "'카카오뱅크'와 '카카오페이'를 분석하다.",
+      "desc": "'카카오뱅크'와 '카카오페이'를 분석하다.&nbsp;&nbsp;브런치",
+      "tags": [],
+      "date": "2021.07.27",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5fTGVLQml2V0VlR2hXWVlsS1M3VVMtM0tBeVNtZ2l4aE85MkdqTk0tYzJCQjBDX0Y3aExXQVpVRXBpQV96b2VZR2hYckl1QklW?oc=5",
+      "ch": "Google News (브런치)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "케이뱅크 관련 소액주주 오버행 이슈 부각",
+      "desc": "케이뱅크 관련 소액주주 오버행 이슈 부각&nbsp;&nbsp;시사저널e",
+      "tags": [],
+      "date": "2026.01.15",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMickFVX3lxTFBpd3NYV3RNN3FBNUJvMWprSnFWcEMwYUJOTXRDYXZaU1dBaGtZa0VSdHZFOFpYWXg5VW9IS0V1SlBjdTM0TWhOSzg3dXlWZ05MNjlEa0VYMGlPSUVaRHB4VUhYVzUybWxuWl9IRE1uV194Z9IBdkFVX3lxTE1mSWotVTBBNDZvaDhSWlRYZ3hGaHNuNHIxODBnSXlBbHA0MTJmSVAtcEJOcFd6MHJqZ1UyM3JYdFdKMWlPNm9JMnFFcEFBYmtzYlBhQmZWOW93eXM3amYwSzlUS3JwUEhrV3NDeG0wM3B0a2k4VlE?oc=5",
+      "ch": "Google News (시사저널e)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "토스페이먼츠, 항공예약발권시스템 간편결제 도입",
+      "desc": "토스페이먼츠, 항공예약발권시스템 간편결제 도입&nbsp;&nbsp;MSN",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMi9ANBVV95cUxQQUV6MDJyQnFRc2pRb0dhc0Nod0czLURjUzF2NlNqc2NOeXV3ZDFfMEhUejNLV25laDdEZjJmdEZpVmtzVHhCbV8xcTA5RDdSRHBlSWZPMHlEcEFJUUFJRXdsMXR6MXBmYXBYX19VVUVPLUgyX2JPVi1TS2hBYkU0bEM3NVdPV3V4aW9oWm1Da2VCUUppUU84OFJfQjRPclIwZjFSbDBFZEdQNG95UWwyUm4wWGVaT2hQNzNiNnhmeDZIeWxVRXpSdDdfMlVqcHpFMWhmeVRHOEtTc2lRcDJrSjI5N25jYk9OWE5PVDAtamkySHdueFp1a0ZXekE3dGkyd2xXNGpCSmNDOXkxSHM0TTljTFVQeEo4QWdmS0tTUlZaeGVSX1MwdUlHR1RlZDBxZ05ETGlQaXd6SUhZMlY5MV9uUG5HMVZadndMY2hDQmxLOTdTb2FWZXRhMWQ1MHlLVWJKcGE1VEpZX05SLUgwQjVoTUJYVktFLUwxcEdESWwtT2RwSlF4U25ZOFdDNHlFcHFKU2pzUUtZS1ZxMGx0QWZ3TTIzaEN3aXV6RVNoQVhjSktSdmRzX1IzTTRQTkNJTi1oOE4tRk5qcjNPSGZ5VlJNZm8wbmVJbnVwQ2FDQkpNNGNER0RISzctbG1UVzhLRUM2Mw?oc=5",
+      "ch": "Google News (MSN)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "토스도 애플페이 도입…간편결제 시장 '요동'",
+      "desc": "토스도 애플페이 도입…간편결제 시장 '요동'&nbsp;&nbsp;아시아타임즈",
+      "tags": [],
+      "date": "2026.03.12",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1UbXpwbU9lZlFydDdZSE13dVRrTnotWFpuN1hvZnRzdk84TEtTc2JoX2tEa093SzJyRmgyU0pQZFNOb0E4NGE1Y0d0bkxOLWltYWgtb3dWalplNk9NZkE?oc=5",
+      "ch": "Google News (아시아타임즈)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "토스, 페이스페이 가입자 40만 돌파… 전국 확장으로 오프라인 혁신 가속",
+      "desc": "토스, 페이스페이 가입자 40만 돌파… 전국 확장으로 오프라인 혁신 가속&nbsp;&nbsp;토스",
+      "tags": [],
+      "date": "2025.09.01",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rc2pUMHlCSGhlSkc3MGJ3eTJfZXVUdVpsR0NtQ3JkclZ5X3p1bi1BSWRHQkpPb1hfcVpHZWZJV2Z4ai03UUNqamVBRHhCT0NlUTd0aDFnVS1yelZn?oc=5",
+      "ch": "Google News (토스)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "토스 앱에 ‘한강 수온’ 서비스…“투자 실패 희화화” 비판에 노출 중단",
+      "desc": "토스 앱에 ‘한강 수온’ 서비스…“투자 실패 희화화” 비판에 노출 중단&nbsp;&nbsp;v.daum.net주식 앱에 ‘한강물 온도’ 넣은 토스… “죽음 희화화” 논란 - 조선비즈&nbsp;&nbsp;Chosunbiz주식 앱에 '한강 물 온도' 넣은 토스…\"오해받기 딱 좋아\" 투자자들 불쾌&nbsp;&nbsp;뉴스1“오늘 한강물 온도는?”…토스, ‘투자 ...",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB6OGRpOWZYYnVNZXVobVNhTWxJXzk4RGJHMmE4YVBKdVFFNThKeXdmYVVhZ2pNTmJFRVByd1VIb2NHUVo3aGY0anp0ejVPeUk?oc=5",
+      "ch": "Google News (v.daum.net)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "미국 현지에서 찾은 투자 힌트: 토스증권의 탐방 리포트 출간",
+      "desc": "미국 현지에서 찾은 투자 힌트: 토스증권의 탐방 리포트 출간&nbsp;&nbsp;토스",
+      "tags": [],
+      "date": "2026.03.18",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53aW1YYjd1ei1RTVQ2bWpIbGtLakFDWWF2NldCbW82VllPWTlHNC1CZzJlVDBVR1BwbHB2WFJCU3FkYWU0bmc0YUxCUU5DeW5MbUNuRVl6aG4tUHl2VHVacFNvRV9sRE0ycFE?oc=5",
+      "ch": "Google News (토스)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "[판 뒤집는 토스증권] ④ AI와 함께 만드는 브랜드 가치",
+      "desc": "[판 뒤집는 토스증권] ④ AI와 함께 만드는 브랜드 가치&nbsp;&nbsp;스트레이트뉴스",
+      "tags": [],
+      "date": "2026.03.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52dXMwOW11RnRUNFZRWDJrSndDbnJmZC1PVFQxN1dUNkdyUWtnOXhSR2hUb0dLVHB5S0RFTGhVQVA0WlRkLTg5aWNtNXZHWGtQclFncG4xZ3NQcGxzZlZPVHduWlE1Y3B5akY3TG1qUlZibFHSAXdBVV95cUxOZkJ3Y0lMNHFMbU5STnlNZ1B0dF9NejNJM05FbmRHemtZQXRFYXM5RW9XZFBHdkdkZlFPYVROZmNESmdYRmJ4dkxvdkN4QmtPTEE4akRCUkNIS1Q1YnlOSThlWXNhUEtnMG9iU3RQVzlwM1RTVkhYQQ?oc=5",
+      "ch": "Google News (스트레이트뉴스)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "토스인슈어런스, KB손해보험과 '금융소비자 보호 위한 업무협약' 체결",
+      "desc": "토스인슈어런스, KB손해보험과 '금융소비자 보호 위한 업무협약' 체결&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2026.03.17",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9mYVFmM3IxSUFyZUJYT25jR0tlQzUtZ2t5TnVzeDhiczVnbUJDeWxSYWFDTG5HeENBUVZrZV9laE5yN1d5bU5hd20tZFdXUQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "[금융 트렌드] 토스인슈어런스·KB손해보험, 금융소비자 보호 위한 업무협약 체결 外",
+      "desc": "[금융 트렌드] 토스인슈어런스·KB손해보험, 금융소비자 보호 위한 업무협약 체결 外&nbsp;&nbsp;베이비뉴스",
+      "tags": [],
+      "date": "2026.03.17",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2dllqN2wyZXRFYWRpX09pcGR6Wmw4TE1saTl4S3BHc2RzV2xiWGs1X1dVMUlma3ZXWndKS0Z1UFZ3RWVCUGFpSkRqUW5IWk43aVJoQkV2QmpyR0E0RHhHdzJ3bUxwNElLclk0Nw?oc=5",
+      "ch": "Google News (베이비뉴스)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "토스인슈어런스, KB손해보험과 소비자보호 협력 강화",
+      "desc": "토스인슈어런스, KB손해보험과 소비자보호 협력 강화&nbsp;&nbsp;한국보험신문",
+      "tags": [],
+      "date": "2026.03.17",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5MY3lXR05KQnprNzF5cTZ2Tl9QZ3RlbGVRM2hISjBlbDYwWGppMWxRS2lXcVpVejZLRXdmRU5mSWh2U3BTOEhvTzBISVdqLW5HX3VReWRDemR2QWsxNElVWW5sOVpLck5HanFF0gFvQVVfeXFMTkFTT2JpbWFPSHUxY2ZkSV9wa3RWUm1Yd3oyaEU2dDh4TGxJV3lYS3dsRE9DSkxiSi1vUEVUR2tYTENrX1J2am1EQUJGOXlEVzNEdmdqWFc4UVk2ZjRtOF9oSnQzZDlIOFVweWdJM0FN?oc=5",
+      "ch": "Google News (한국보험신문)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "토스인사이트, ‘마이데이터 사업의 현황과 발전을 위한 제언’ 보고서 발간",
+      "desc": "토스인사이트, ‘마이데이터 사업의 현황과 발전을 위한 제언’ 보고서 발간&nbsp;&nbsp;토스",
+      "tags": [],
+      "date": "2026.02.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BQk9lMHNtVWZpZHdMWUUwWm1VWkZPcUtFdVVvTnBWcmc1WV9zVzlSd2paeXhnQ3ZBSUI2endhTzE2QzNtaWM4TDRaLTFxUlU?oc=5",
+      "ch": "Google News (토스)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "[단독]국내 1호 청소년 마이데이터, 토스가 '스타트'",
+      "desc": "[단독]국내 1호 청소년 마이데이터, 토스가 '스타트'&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2026.01.15",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE40M19Ud1d1blBhX3R5b0JFOWFIcUlGOFJwRHNyVG9sdXpjVm1feFRtSFVadVBrR05ONDFjSFNqN2NQMWNLNEpxdUE0U3Vmdw?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "toss_fin",
+      "title": "“과도한 데이터 이용료, 마이데이터 산업화 발목”",
+      "desc": "“과도한 데이터 이용료, 마이데이터 산업화 발목”&nbsp;&nbsp;edaily.co.kr",
+      "tags": [],
+      "date": "2026.03.15",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQem52MWl6bllsX3FvTEhLcEdEb0hRN2N5V3ZVTGR4alhuTUxwTHk1bGxnejBOejlLMDE0WkptLUNsWjgzdjNKVERCNWlITUtaWTlwcGZEdGtJalNQaEVVNC04cEI5MmRXYnNVYWVJTkZxbHBTUmVUdV9xR3ZKSHBvWA?oc=5",
+      "ch": "Google News (edaily.co.kr)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "카카오페이, 카카오톡의 그늘에서 벗어날 수 있을까?",
+      "desc": "카카오페이, 카카오톡의 그늘에서 벗어날 수 있을까?&nbsp;&nbsp;브런치",
+      "tags": [],
+      "date": "2025.11.12",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE90bUlBVUJKeTBPMk1Qal96NnhPUEY3NjhudlBfT1lWRTEwc1NWektpdXBpN0xWd3oxLUJJWEFfQkdLSDkxa2pmM0o1Rk1Sdw?oc=5",
+      "ch": "Google News (브런치)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "카카오페이, 통신 멤버십까지 계산…AI로 현명소비",
+      "desc": "카카오페이, 통신 멤버십까지 계산…AI로 현명소비&nbsp;&nbsp;mstoday.co.kr",
+      "tags": [],
+      "date": "2026.01.21",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRamFrWUZ2eld1WFQ5WW1kUUpRcV9mejZnUkVwMldzUnpYbDkwa1I0S00wQktQUFpoYVJBWFNwLTF2VUctcS01MW12WUNTYW15WHhuUUhCc1VBckg2eHNCLWEzMHRCY2U0T2VWTQ?oc=5",
+      "ch": "Google News (mstoday.co.kr)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "카카오페이證, 커뮤니티 업데이트 기념 '#톡톡톡 챌린지' 이벤트",
+      "desc": "카카오페이證, 커뮤니티 업데이트 기념 '#톡톡톡 챌린지' 이벤트&nbsp;&nbsp;중소기업신문",
+      "tags": [
+        "업데이트",
+        "이벤트"
+      ],
+      "date": "2025.08.28",
+      "analysis": "업데이트, 이벤트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zV2g2a3dTQ0ZwTkVpbWtqZk1nUVI4V0N1blNIS0s5RVp1bHFFb2l4d3NKN1RGSnIwOFI5WW15YndSRzNZQWdrYm1NT1JBNDdpeXREcG5XQWtlOXlVZ1VpaVBEQkV5SlBZbHpxMUpn?oc=5",
+      "ch": "Google News (중소기업신문)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "\"이제 부장님 소식 안 볼 수 있네\"...카카오톡 신기능 업데이트 [1일IT템]",
+      "desc": "\"이제 부장님 소식 안 볼 수 있네\"...카카오톡 신기능 업데이트 [1일IT템]&nbsp;&nbsp;v.daum.net",
+      "tags": [
+        "기능",
+        "신기능",
+        "업데이트"
+      ],
+      "date": "2026.03.07",
+      "analysis": "기능, 신기능, 업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04cjk1R0Q1ckJGRk5Ub2haVnl1WU9CaGFyeUZ4TzZzWkFuOGptX1UtVUlDLXhpMFdvMkt5bFE4OFFQV3pFcDVReUVCSzd2VU0?oc=5",
+      "ch": "Google News (v.daum.net)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "'흑역사' 청산 돕나… 구글, 지메일 주소 변경 기능 도입 예고",
+      "desc": "'흑역사' 청산 돕나… 구글, 지메일 주소 변경 기능 도입 예고&nbsp;&nbsp;지디넷코리아",
+      "tags": [
+        "기능",
+        "변경"
+      ],
+      "date": "2025.12.28",
+      "analysis": "기능, 변경 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE41UnN5cHltUGNVR1VQNXU0QW5KcTE3dnZkNENzSWU1LWZXdWwwVEltbzdtV25COGpyYVhzVW1KRlBxR01uSVU5eGlFSTdrV21ZaWV4akx3?oc=5",
+      "ch": "Google News (지디넷코리아)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "카카오페이證, 증권홈 개편···“사용자 맞춤형 신기능 추가”",
+      "desc": "카카오페이證, 증권홈 개편···“사용자 맞춤형 신기능 추가”&nbsp;&nbsp;ER 이코노믹리뷰",
+      "tags": [
+        "기능",
+        "개편",
+        "신기능"
+      ],
+      "date": "2024.12.26",
+      "analysis": "기능, 개편, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9adFZOSk1vb1F3dHNTWl9JRFNNRUJjMHFZTjRrd0Y0MGgxQWVjb0xpYUphNzd0WE9aQTAyTG16OS05Zm40SUxUZWtBOEJpRkpqaHQxb1YwMTFkZnRWcmJMSFZPY2hKRy1vTnBEOA?oc=5",
+      "ch": "Google News (ER 이코노믹리뷰)"
+    },
+    {
+      "appId": "naver_pay",
+      "title": "네이버, 숏폼 창작자 위한 신기능·광고 인센티브 프로그램 출시",
+      "desc": "네이버, 숏폼 창작자 위한 신기능·광고 인센티브 프로그램 출시&nbsp;&nbsp;v.daum.net",
+      "tags": [
+        "기능",
+        "출시",
+        "신기능"
+      ],
+      "date": "2025.08.13",
+      "analysis": "기능, 출시, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9YTGFmYU80X0pLZ1Q5ZUxPZlRrMkotQTJ0dkZOOUgzTkRNWWFweWI0YjVBVXBGZXpnc3RybmZKX0NuTUdOWEk4VktlMA?oc=5",
+      "ch": "Google News (v.daum.net)"
+    },
+    {
+      "appId": "payco",
+      "title": "[G-브리핑] ‘에브리타운’ 출시 13주년 업데이트 진행",
+      "desc": "[G-브리핑] ‘에브리타운’ 출시 13주년 업데이트 진행&nbsp;&nbsp;v.daum.net",
+      "tags": [
+        "출시",
+        "업데이트"
+      ],
+      "date": "2026.03.03",
+      "analysis": "출시, 업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBfY20yUDM2OUQ3NGZMc0h1bXZtSTA1N3IyWFhuV2NOUDVNZHMyNTBzQ21XMXZWVFFZejJtSjlwalFabWNueUE?oc=5",
+      "ch": "Google News (v.daum.net)"
+    },
+    {
+      "appId": "payco",
+      "title": "NHN페이코, 결제 편의성 향상 위해 앱 기능 개편",
+      "desc": "NHN페이코, 결제 편의성 향상 위해 앱 기능 개편&nbsp;&nbsp;디지털투데이",
+      "tags": [
+        "기능",
+        "개편"
+      ],
+      "date": "2024.04.04",
+      "analysis": "기능, 개편 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kbXdIdzdSY1JCSmZiUlc5YmNCcHgxV1VCZnZkbVo3UDZ5aHVteTluMHRPZ1pla05FV240VUNqbS1Zd0ZfanNUcGNEVGp1N18tcEZSWU5CTEJ2Zi1XRVg4RkFDeVhKdE1vV19LUlpmaWxQM2s?oc=5",
+      "ch": "Google News (디지털투데이)"
+    },
+    {
+      "appId": "payco",
+      "title": "구글 번역 앱, 실시간으로 대화 분석하여 번역하는 기능 개발 중",
+      "desc": "구글 번역 앱, 실시간으로 대화 분석하여 번역하는 기능 개발 중&nbsp;&nbsp;보드나라",
+      "tags": [
+        "기능"
+      ],
+      "date": "2020.01.29",
+      "analysis": "기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9IdmFEbkpIUkE0TDhIS3Bld2JBNF96SkRPS2dvLWhtczR4bndQaWItVUk4bzNXcmN6VXNHMXdUWU1GaTFEbG81NzRvQS1BcXJZRW9iUHQyd2RON2IzdnV4dzFzdw?oc=5",
+      "ch": "Google News (보드나라)"
+    },
+    {
+      "appId": "samsung_pay",
+      "title": "삼성 갤럭시, 8배 빠른 NFC 탑재 전망... 2026년 표준 업그레이드",
+      "desc": "삼성 갤럭시, 8배 빠른 NFC 탑재 전망... 2026년 표준 업그레이드&nbsp;&nbsp;PRESS9",
+      "tags": [],
+      "date": "2026.02.06",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1NMF9pSjRNY2JtOGF2czhQclZLRk4wQVM1NG9NS0tuTTNFQ2Jzd2ZtdExvR3VyY0FLZ1RzdXpRU0xLY0RoR0U1ZjI4XzRfbU5fNTBQX1dHaGVHT0FQTlBKYV94YkVpZw?oc=5",
+      "ch": "Google News (PRESS9)"
+    },
+    {
+      "appId": "samsung_pay",
+      "title": "삼성페이, 삼성패스 통합해 사용자 편의성 대폭 강화",
+      "desc": "삼성페이, 삼성패스 통합해 사용자 편의성 대폭 강화&nbsp;&nbsp;samsung.com",
+      "tags": [],
+      "date": "2022.06.09",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQVUZjTjE5S09CODhBT29QbVE0TVJBRlFFMHROWWZIMm9QSkVVczNDN1h2SGRaSi05YzFvNHB3WHZkM0VJRTdwMDJqZmg2c3pIRmdyZDFHZU91UjI1US1KV1FsZDRQUktrY2xQQTZWVnVtaXc1NEN0YmFqMEZ3MkJWSnhPV2xha19Lc2U0QnZOaHZQWG8wSHRHMWRQSjlydktRbmZRcWE2dm1kaUVvX0NDWTZPMnA0V0ZlNUtLSzRQa0ZMcDQ1MkRXNVNIZmRrMTNSR1dWTVN4bWhENzdvbV9SWkJ5b2h1OUFGTXZpclNoUnpaVHlvYmxWMmdZYTlMX20tUGRRZUEtQjlQcGFwcl9sR2Q4ZWpzR2hqT3ZRVGR4cl9MaWtJbkg4LUJkTGw3Qmw3UHM2YUhHWWtxWjk2elBRdUlwSVREdw?oc=5",
+      "ch": "Google News (samsung.com)"
+    },
+    {
+      "appId": "samsung_pay",
+      "title": "삼성전자, ‘삼성페이→삼성월렛’ 확대 개편…‘모바일 신분증’ 지원",
+      "desc": "삼성전자, ‘삼성페이→삼성월렛’ 확대 개편…‘모바일 신분증’ 지원&nbsp;&nbsp;디일렉",
+      "tags": [
+        "개편"
+      ],
+      "date": "2024.03.20",
+      "analysis": "개편 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5rTW5Rbm9INXVqRm9aWGU3YUtncVpET1pjVEw5UGRTWG1SVFlIQUoxam0tdFg0LTRyNW1vWlZnOXlvV0tsSTVUZXotaFRTZ0ZmN0Q4b3BHdmVWWjc2T2tPOW5acVZQUQ?oc=5",
+      "ch": "Google News (디일렉)"
+    },
+    {
+      "appId": "samsung_pay",
+      "title": "\"애플페이 언제 쓸 수 있어요?\"…시행일 지나도 애플·현대카드 '묵묵부답'",
+      "desc": "\"애플페이 언제 쓸 수 있어요?\"…시행일 지나도 애플·현대카드 '묵묵부답'&nbsp;&nbsp;더팩트",
+      "tags": [],
+      "date": "2023.01.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OdFJGaWlZUjJ6MDZpNnJRaF8zZk82d1VjMGNlMkFDcGttWWpfUlRwc0RQVlAyWDVjbjVPY25ENlEzbks3N0VJYjdRU0VXSDhLTjVXc3dxUGxDUdIBVEFVX3lxTFBEcC1XUnZpUkJNZzFFVG5IbHlXVXhwdGNnNnkxUkVJdFRnVzNNRmxsbUFmOW5TQ0J0N2VhU1JpeVBpcjhuMFBNdllGb1ROdE1aSlFCXw?oc=5",
+      "ch": "Google News (더팩트)"
+    },
+    {
+      "appId": "samsung_pay",
+      "title": "통합되는 삼성페이·삼성패스, 쏠쏠한 기능 많네!",
+      "desc": "통합되는 삼성페이·삼성패스, 쏠쏠한 기능 많네!&nbsp;&nbsp;지티티코리아",
+      "tags": [
+        "기능"
+      ],
+      "date": "2022.06.09",
+      "analysis": "기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1TNzl6R1ZfREFTQzZodDBGV2R4dFZuVk9rSkJrWk9RSmF2bGthVUJSQ2lzX0ZDemdONFFZME9KZlNsQU9OUVhtdFg1QmZFMmdKck9Fa0NsOFdYempEZV9DQ1JkVU03THJV?oc=5",
+      "ch": "Google News (지티티코리아)"
+    },
+    {
+      "appId": "samsung_pay",
+      "title": "[비교해봤습니다] 애플페이 vs. 삼성페이",
+      "desc": "[비교해봤습니다] 애플페이 vs. 삼성페이&nbsp;&nbsp;동아사이언스",
+      "tags": [],
+      "date": "2015.11.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VOF9obERaMFBhYk12dzNyNFBQSzV1TDZxTjZ4Y0dmc29ISlVTSldKc0RQVUdHb2dmd0NNYTFBbGFyMTlUM1J4UkNTWEhPVTZyU2d5Rkx3MA?oc=5",
+      "ch": "Google News (동아사이언스)"
+    },
+    {
+      "appId": "coupang",
+      "title": "쿠팡, 정보유출 파고 넘었나…주간 이용자 수 2800만명대 '회복세'",
+      "desc": "쿠팡, 정보유출 파고 넘었나…주간 이용자 수 2800만명대 '회복세'&nbsp;&nbsp;네이트",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OM21rVm9KSE9GcXZzcWFyZG41aS1EVU1zRlNzNTJFaHVzbFROQVd1dFZvS0RocXBtWmZkM2d2bHVxbDAyUElzRDZ0WEMxSkRQUWlF?oc=5",
+      "ch": "Google News (네이트)"
+    },
+    {
+      "appId": "coupang",
+      "title": "전 국민 개인정보가 탈탈 털렸다? 😨 쿠팡 유출 사태 후폭풍과 대책 총정리.zip",
+      "desc": "전 국민 개인정보가 탈탈 털렸다? 😨 쿠팡 유출 사태 후폭풍과 대책 총정리.zip&nbsp;&nbsp;뉴닉",
+      "tags": [],
+      "date": "2025.12.01",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hRFd2YWZYcEpCTjZaSTc1eEtHZEhGajFHSXNFSl9uX0xQQTlENHJGSTdSNnFNZnpNMS1ITHdSYXoweTlCWUt4Q3lpaG1QTjFQaGdn?oc=5",
+      "ch": "Google News (뉴닉)"
+    },
+    {
+      "appId": "coupang",
+      "title": "쿠팡 등 개인정보 유출사고에 따른 피해 예방 안내",
+      "desc": "쿠팡 등 개인정보 유출사고에 따른 피해 예방 안내&nbsp;&nbsp;한국부동산뉴스",
+      "tags": [],
+      "date": "2025.12.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ySzdaRC00eHJpSnRBaURmQlFOcW5YdEo0RnNjcE01aUVHUGZzTGlpT0x3TUhxRHBieUQyTGx6VGZLeGlKcGtUNWV1WFRQTXVPeVFkSEpBWDgzcnhaQm5Vc0M3c1NoTWQxU2hZ?oc=5",
+      "ch": "Google News (한국부동산뉴스)"
+    },
+    {
+      "appId": "coupang",
+      "title": "사장님 배달비 걱정 뚝?…\"포장하면 더 싸요\" 배민 신기능 뜬다",
+      "desc": "사장님 배달비 걱정 뚝?…\"포장하면 더 싸요\" 배민 신기능 뜬다&nbsp;&nbsp;mt.co.kr",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2025.09.17",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5PQzZDcUhLTnZNcUE3NVN0Q1hSZ3VNYmxMdVBxV3VUN051U09GVTlUTTd4TV9qanBNX2tfTTlSVnN1LXhmejNRVm5vRUlzYVg5ZjF1b05uTUpFOTlnYnhjR0hPVDVoR00?oc=5",
+      "ch": "Google News (mt.co.kr)"
+    },
+    {
+      "appId": "coupang",
+      "title": "카카오톡 AI 신기능 도입, ‘안읽씹’ 대화 요약해주고 챗GPT도 바로 쓸 수 있다고? 💬",
+      "desc": "카카오톡 AI 신기능 도입, ‘안읽씹’ 대화 요약해주고 챗GPT도 바로 쓸 수 있다고? 💬&nbsp;&nbsp;뉴닉",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2025.10.24",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1SZHJ4U0xUSEZfVDZjbmY1Q21ZaGJ6dzR6Q0k5S0NVNlhSSjlPamQzbUladW52M0tiUnQwWXhGeGoxcXVOMlpsVUtzeGVDSllsaHc4?oc=5",
+      "ch": "Google News (뉴닉)"
+    },
+    {
+      "appId": "coupang",
+      "title": "쿠팡 로켓와우, 네이버 멤버십, 신세계 유니버스 클럽 혜택 비교 | KB의 생각",
+      "desc": "쿠팡 로켓와우, 네이버 멤버십, 신세계 유니버스 클럽 혜택 비교 | KB의 생각&nbsp;&nbsp;KB Think",
+      "tags": [],
+      "date": "2024.05.27",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ2ptTTJEbjg3Zm1tcUF5YXU5d1lueVJfbVRaNGNoTWtMM3ZCOE5CY1dvVURIQmtyeW5uQnEwbWZDei14TFVQUkxDeFpKXzRMZ3kyWmhXaWY4aUxHOVZRZGN3NGVaZ2Q4aS1WN1VzaVRhQy1XY0ZEdWIwYlBrbV9Hcg?oc=5",
+      "ch": "Google News (KB Think)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "일키 최강 블루 (파트너사 모집)",
+      "desc": "일키 최강 블루 (파트너사 모집)&nbsp;&nbsp;아이보스",
+      "tags": [],
+      "date": "2026.03.18",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBURk1ubUl2S1YtNERsZFM3Mlg3VXpBaUFuVzM5YnBUcWdVd3ZTSjhmQzdPVWhfdWdJU1ExU1E1NkhBa2hMRFFNU1Ewd1YxV1FQ?oc=5",
+      "ch": "Google News (아이보스)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "2025년, ‘확’ 바뀐 네이버 톺아보기",
+      "desc": "2025년, ‘확’ 바뀐 네이버 톺아보기&nbsp;&nbsp;브런치",
+      "tags": [],
+      "date": "2026.01.13",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBYcHFqbTczRktaZTRQRjdDdDlyZ245N0Q0RXR0RVdoU3FwZjJ2ZmV2MGxBckRiTHhndDhhbnIxc3ZsREo2U3JBY1ZR?oc=5",
+      "ch": "Google News (브런치)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "변화하는 네이버, 토스, 메타 한 번에 확인하기",
+      "desc": "변화하는 네이버, 토스, 메타 한 번에 확인하기&nbsp;&nbsp;오픈애즈",
+      "tags": [],
+      "date": "2025.07.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XM0EtYUN3VVgtSUVyd3N1MDJsOG80MnY4cW9KY3FrUDNSTl9jQUczVG9ELThUZnlaSnd3VkZCdURJdF9lQm5hM2YyNlduX2RJOEpBa3pmZU5Ramh2M2ktZlhSUi1VQTZz?oc=5",
+      "ch": "Google News (오픈애즈)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "\"리뷰 쓰면 명품 드려요\" 네이버 쇼핑 사칭 보이스피싱 주의",
+      "desc": "\"리뷰 쓰면 명품 드려요\" 네이버 쇼핑 사칭 보이스피싱 주의&nbsp;&nbsp;YTN",
+      "tags": [],
+      "date": "2025.11.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE55WXNucU54blloX1NqbFhiTmZjakRqX1liZkkxbUZmbFB0Z3JfSWpJc1FpY1dRTmhsVDNPQUxZcjJucnlNNVpWazZGNW9MdWgtTWViUEFnMl9FOVJoYkHSAYMBQVVfeXFMUFRhLVZiNW9oZm85RzFHTC1XODFsMm4yRDN1SGxybnZYNHdGdU9WMUEwa3hZdExPclMwWTJWb25BOHNIX3VERV8wb3llcXBBT05oNTJBZzA3aXBmeGFEUmp3VW5GZF84X3VCdUxIYVRjM2l1Q3NDejRXLUpQUG5LOHhkTlk?oc=5",
+      "ch": "Google News (YTN)"
+    },
+    {
+      "appId": "st11",
+      "title": "11번가, 체질개선 시동…12년 만에 '쇼킹딜 앱' 종료",
+      "desc": "11번가, 체질개선 시동…12년 만에 '쇼킹딜 앱' 종료&nbsp;&nbsp;전자신문",
+      "tags": [
+        "개선"
+      ],
+      "date": "2025.12.05",
+      "analysis": "개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1PS3hZRFFPeGtMeUNJS0ZEX1lWX1Y3Tko4RVlLZlJXRll0REhJSVRSSk5HNmxwSzB3MUVrd1ZYMG9Ib2NIcUYyOHRfWDVwUQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "st11",
+      "title": "[단독]中 징둥닷컴 메인에 '11번가' 간판 걸린다",
+      "desc": "[단독]中 징둥닷컴 메인에 '11번가' 간판 걸린다&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2026.02.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9WSlktZTZ2OVhFbWhLcUNtaUZjZTJoT0t5bFkySDY2TjZPbklsNzlRa2JFUlktWXVNenVnVmtpbHJxTUwxdW1mVW03OUE4QQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "st11",
+      "title": "인터파크, 앱 업데이트하면 해외직구 쇼핑 쉬워진다",
+      "desc": "인터파크, 앱 업데이트하면 해외직구 쇼핑 쉬워진다&nbsp;&nbsp;CNET Korea",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2024.06.07",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5QUS1MN2YxVUw2N200aXBvVWZwVmZXREhNZVUwelpORDlqRDVxck5PQVpMUmp4ZWJDWGlnbUtnVlZKV0xFdTF4MDk2bHpvUmpRLXl6ZlpLQQ?oc=5",
+      "ch": "Google News (CNET Korea)"
+    },
+    {
+      "appId": "st11",
+      "title": "궐련형 전자담배 신제품 경쟁...새로운 기능과 맛으로 소비자 유혹",
+      "desc": "궐련형 전자담배 신제품 경쟁...새로운 기능과 맛으로 소비자 유혹&nbsp;&nbsp;전자신문",
+      "tags": [
+        "기능"
+      ],
+      "date": "2024.06.30",
+      "analysis": "기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1xa1BCSTZWbC1oTkk3NFotWW9yY2NDR21qOVlkeHlQMnB5TW1QNEJiTHF4SFZtbk1LZ0hGS2lNem40WUIzTXdzalJPV0p0QQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "st11",
+      "title": "메이크샵, 온라인 쇼핑내역 통합관리 앱 ‘샵계부’ 리뉴얼",
+      "desc": "메이크샵, 온라인 쇼핑내역 통합관리 앱 ‘샵계부’ 리뉴얼&nbsp;&nbsp;edaily.co.kr",
+      "tags": [
+        "리뉴얼"
+      ],
+      "date": "2017.10.27",
+      "analysis": "리뉴얼 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPekVLYWZDa2pmV0tBQ3BuQWR2S2o2Q2ItdEVPcVJpYWdoYTRJemhGcjRLRlBOdXhMTmpFdkdVYzBGX2RPRWpiQUEtNE5qX0FrVE1VRVBMNm41NXQxcHI3VjZWNktvdnNnWV9wbjdqTkJGQmhnOWRZSUdTaGZNSVIwNw?oc=5",
+      "ch": "Google News (edaily.co.kr)"
+    },
+    {
+      "appId": "st11",
+      "title": "스마트기능 탑재한 ‘하이스마트 백’, 국내 첫 상륙",
+      "desc": "스마트기능 탑재한 ‘하이스마트 백’, 국내 첫 상륙&nbsp;&nbsp;경향신문",
+      "tags": [
+        "기능"
+      ],
+      "date": "2016.01.12",
+      "analysis": "기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zWnpFdUVrdlQ5NE9RSFU1QXpZMVZidTRNWnUxc1lCcmJmZFFkOUJvd3JrOUZGLWZ4RTM5VHdfQVhEQ2paZDJzVVhpek5RM2RWTTJQbVZkaWhiUdIBX0FVX3lxTE9WcDAydkNsWC1VbDJSazFvMnBGT1RubFlETjdxaWhrNjBDWTBmMVZ0Sm5rVUZKQ0FISUFzNksxSWlnM2RDTXdFV0JvTGZGNlhQc0JWRzY1RW1jTUV3UEJj?oc=5",
+      "ch": "Google News (경향신문)"
+    },
+    {
+      "appId": "st11",
+      "title": "11번가, '월간 십일절' 행사 기간 늘리고 혜택 강화한다",
+      "desc": "11번가, '월간 십일절' 행사 기간 늘리고 혜택 강화한다&nbsp;&nbsp;지디넷코리아",
+      "tags": [],
+      "date": "2026.02.27",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6TzVSMlV5Wl9iNldmM2M0VlhTUWg2WUEzYVpTS3k2TVg4ejlvOURPY1k0S2VONHctTFcxSGowOFotdjU1UzllOFdGVU91R1NsMTlROEZR?oc=5",
+      "ch": "Google News (지디넷코리아)"
+    },
+    {
+      "appId": "st11",
+      "title": "11번가, '월간 십일절' 기간 확대…\"3일부터 11일까지 진행\"",
+      "desc": "11번가, '월간 십일절' 기간 확대…\"3일부터 11일까지 진행\"&nbsp;&nbsp;디지털투데이",
+      "tags": [],
+      "date": "2026.02.27",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBcHc4anlHUzRxd1BSTWVSaUZ1RXBkUUMzdEN5S3VveUUxemFteEFQcDlSX0N5UTg0TmYwenBZeFdzSkJvOXpnSVdodlEzU1NvSWd5U0VWd0hBY1NPWVNPOG8xazh0SVgtWXVQeDJ3cVBUa0E?oc=5",
+      "ch": "Google News (디지털투데이)"
+    },
+    {
+      "appId": "gmarket",
+      "title": "[비즈톡톡] 실속 챙긴 G마켓의 명품 확장 전략 통할까 - 조선비즈",
+      "desc": "[비즈톡톡] 실속 챙긴 G마켓의 명품 확장 전략 통할까 - 조선비즈&nbsp;&nbsp;Chosunbiz",
+      "tags": [],
+      "date": "2026.02.27",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUE12OFMtZlJkeTJKaWpaek5yTmItRjVJUVBybWxKYlVReGRLUXBtOVFOeUc4QnZJWV80NE9UQURnZk1IMTNfMzdLQWVsMVdNV2pVa2dGQk9YTm1PM09OX0ZERkNJM3hESjd3ZGEtZmdxYWVPcE40dUpTTDNxZUJWVjh4emt0N090NzZMR1k3Q1lCenPSAacBQVVfeXFMUDhza2NFdDRuQUNWenJ3OTM0aWZBY2k4ZTZza3VrZDRZWWxIcy1SU2haQjVITjhoT0FFYmlReEFPYWZTbi1NZWNxLUVzanQ1YXlUaWd6eWR0OUhDc2U3cHFoTFJMaF90QkVnU0wzbklBSFgwY2xONXRvWUY4LWQtbURvQVF6bkFaNnhhWnJMeC0xc1JhX0xYZmtHNThBdUJ1S2V3aThkbnM?oc=5",
+      "ch": "Google News (Chosunbiz)"
+    },
+    {
+      "appId": "gmarket",
+      "title": "G마켓, 뷰티 카테고리 강화…큐레이션 서비스 오픈",
+      "desc": "G마켓, 뷰티 카테고리 강화…큐레이션 서비스 오픈&nbsp;&nbsp;매거진한경",
+      "tags": [],
+      "date": "2025.07.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9FYkVNRGJuNjZtakpIWXdHbW9yWVpFbDhBMWZEV2JKc2ZYcHJqT0NtcExxY1lFekhKUWRjZUFFZ1BIZm9EWng0eEZOdkFNclVva3BlekpVZmJGeG9lX3Zpa3k0WEZYTXQtYUNrOA?oc=5",
+      "ch": "Google News (매거진한경)"
+    },
+    {
+      "appId": "gmarket",
+      "title": "한국마이크로소프트, `페이블 2` 플래티넘 히트 타이틀 출시",
+      "desc": "한국마이크로소프트, `페이블 2` 플래티넘 히트 타이틀 출시&nbsp;&nbsp;게임메카",
+      "tags": [
+        "출시"
+      ],
+      "date": "2009.09.03",
+      "analysis": "출시 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB5OWZZdW1TTTh5T2IzSFJYZGRVNjZWSzBjYzdRUW5ZU05UaGdXc1RSazQ2bEMzY1VSTG1sWEtIdlY5S1cwM2JsakNVbjZ5T05pZ3Q4TUd3?oc=5",
+      "ch": "Google News (게임메카)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴 차별화 상품, 이마트몰로 '쓱'…'SSG Only'로 대개편",
+      "desc": "SSG닷컴 차별화 상품, 이마트몰로 '쓱'…'SSG Only'로 대개편&nbsp;&nbsp;전자신문",
+      "tags": [
+        "개편",
+        "상품"
+      ],
+      "date": "2025.11.26",
+      "analysis": "개편, 상품 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1zMnJSVUZyVXVreFJyUXpIa1JzcHlmRGMxZWJSSmRRNWxkZVdramVKQ19MLVNFSGRDN2NLcmMySjZ5d2s1WXprRjNOUEpKZw?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴, ‘쓱데이’ 온라인서 포문… ‘식품부터 명품까지 혜택 풍성’",
+      "desc": "SSG닷컴, ‘쓱데이’ 온라인서 포문… ‘식품부터 명품까지 혜택 풍성’&nbsp;&nbsp;신세계그룹 뉴스룸",
+      "tags": [],
+      "date": "2025.10.29",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONmpueGgwcjBycjZidFlRZlJSakQ0YlJxWS0ySDlXeHJkUFc2NHgxaFp6TDJBdElraW05di0tU3gwUUN3SGJydktod3pjSXp6ZFZzRnhHM3ZsWEVkUFJoNnROZHR1TEhkT1VNeTJacjc3TFQwd2RNRkRKMXIzMHlZcVFRRmVWaXM?oc=5",
+      "ch": "Google News (신세계그룹 뉴스룸)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴 “쓱7클럽 티빙형 회원은 WBC 8강 실시간 시청”",
+      "desc": "SSG닷컴 “쓱7클럽 티빙형 회원은 WBC 8강 실시간 시청”&nbsp;&nbsp;신세계그룹 뉴스룸",
+      "tags": [],
+      "date": "2026.03.16",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ETUdMX2IySnZIUFZFMTR1RG5zZ3ozZVlhQ2VfM1d6cVB5eERuQVNMLXNPR0RfXzRSRVYxSDAwckJFZDBGTmptU21RNlRZdURka3hrbFVzRnlHSkFFeTVXZHhHcmRQT1NMOVo2cm5TQWNqVVNndE1R?oc=5",
+      "ch": "Google News (신세계그룹 뉴스룸)"
+    },
+    {
+      "appId": "wemakeprice",
+      "title": "“위메프 파산, 광주 공공배달앱 ‘위메프오’ 영향 제한적”",
+      "desc": "“위메프 파산, 광주 공공배달앱 ‘위메프오’ 영향 제한적”&nbsp;&nbsp;전남일보",
+      "tags": [],
+      "date": "2025.11.11",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTE83ZEcwdV91UnZ3MjV6ZUtmTUlDR1JKTC04dHRnaHQxRXpCZVQydkhTMkJOWkhBcW5zTDNKSTN5T0YyLTJuQUgyTzNyREI4S09qTnRaNGFZT3p5ZFZVcDZ6VGkwR21uWWwtTVUxTGwzNA?oc=5",
+      "ch": "Google News (전남일보)"
+    },
+    {
+      "appId": "wemakeprice",
+      "title": "티몬 인수 100일 훌쩍 지나도 재오픈 '안갯속', 안준형 오아시스와 시너지 '언감생심'",
+      "desc": "티몬 인수 100일 훌쩍 지나도 재오픈 '안갯속', 안준형 오아시스와 시너지 '언감생심'&nbsp;&nbsp;비즈니스포스트",
+      "tags": [],
+      "date": "2025.10.13",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00cy1ReFBlTHJiY3pqTU02MzJYN0tSelFpMUJRZlloSEFqTlo3YmtlSGJDTjhZeFBERm9PV1BtdENwRVA2eFd4RVZWdFZLc2ZNSC1kMGNkNVhwVnJybl9CT0l5MmdHaWVoWTRSUDFXNEpnazQ?oc=5",
+      "ch": "Google News (비즈니스포스트)"
+    },
+    {
+      "appId": "wemakeprice",
+      "title": "이커머스 '위메프' 웹사이트 접속 장애…\"앱 업데이트 중 오류\"",
+      "desc": "이커머스 '위메프' 웹사이트 접속 장애…\"앱 업데이트 중 오류\"&nbsp;&nbsp;뉴시스",
+      "tags": [
+        "업데이트"
+      ],
+      "date": "2023.07.19",
+      "analysis": "업데이트 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Ia0FMRWpVUFFadXR1S0JZSTA3S0JROGhtVmpYYVJoMW5xWFNTc0V1RUk3TW9nazFmMTJ5a1FqeWowQjlzWWIySFZMYlp0NXk5cXdNalFsMEhtaFZkOXhiRNIBeEFVX3lxTE1FMVVwZHcxTGoydDRzSFlPWXlvOXBRM2x5VDhSdUNzUVJ3aTJHZ05CQVN0YTU1dUg3M2cwVGdTSXZzWDZwQzVGZjZsa2drb3U5bEVvZWFmZjU4LTh1Q2xBUGpvYlhmZ2p1aGRmSS0wVEg5dVpRTVBhTA?oc=5",
+      "ch": "Google News (뉴시스)"
+    },
+    {
+      "appId": "wemakeprice",
+      "title": "위메프 '개인정보 유출' 과징금 18억원 취소소송 승소",
+      "desc": "위메프 '개인정보 유출' 과징금 18억원 취소소송 승소&nbsp;&nbsp;연합뉴스",
+      "tags": [],
+      "date": "2023.10.12",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41dTQ3NW5UdzItZ2ZGUEdHOEk5ZmdaRFNLcV8yNGpVY0QwX0lQNEtlWVpnaXRva0VQZFgxQ2RwQlNGTzBPMEY5bFRQRUtsTkZHXzJCNk9COUE5em_SAWBBVV95cUxORVZPcnJCWkNKLTFoaGpNeWNVUG5VTW9NbU9RMUpiZFNMVE1weFo1bVFRbVQ0RVJtdkUxLVkxLUhacWk3S1lXWHp1VEwtSHQyTTlORGppUFhncTJVWHN1WmY?oc=5",
+      "ch": "Google News (연합뉴스)"
+    },
+    {
+      "appId": "musinsa",
+      "title": "카카오톡 '챗GPT', 올리브영·무신사 연동 예고…AI 에이전트 커머스 본격화",
+      "desc": "카카오톡 '챗GPT', 올리브영·무신사 연동 예고…AI 에이전트 커머스 본격화&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2026.01.27",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1aS010ZC0xSkpfR0o2YnNheTI0NWxJZ0Q3NnlXQ0djbmNUUU44aDAzYWk5OUt1RVlUdGcwS2h6aHBJMVpRZ2VJdEVBYkU4QQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "musinsa",
+      "title": "카톡에서 챗GPT로 송금하고 택시 호출…진화하는 '카카오 툴즈'",
+      "desc": "카톡에서 챗GPT로 송금하고 택시 호출…진화하는 '카카오 툴즈'&nbsp;&nbsp;v.daum.net",
+      "tags": [],
+      "date": "2026.02.02",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB6WUJCOVZ5dXJzTkEzVjRKaGtGczI5bG1YalNxSndYLWY2OGpMQS1fbndxRlhnLXNRdVhINlhpNTBqTTdRZlFfdzhhTQ?oc=5",
+      "ch": "Google News (v.daum.net)"
+    },
+    {
+      "appId": "musinsa",
+      "title": "카카오 초개인화 AI 도입… 올리브영 앱 MAU 1000만 돌파 [스타트업 뉴스]",
+      "desc": "카카오 초개인화 AI 도입… 올리브영 앱 MAU 1000만 돌파 [스타트업 뉴스]&nbsp;&nbsp;서울경제신문",
+      "tags": [],
+      "date": "2026.01.28",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QVUowLWk3R2pOd3dmaVFNbmNZcnhMa1A1WGc1Z2U0Y01WSklWaHo5M2dfSC1VWDVYMnFXVGF5TUwzV0hWYTliM0dzLVRseGlXc1HSAVNBVV95cUxOcGg1Z2lXNi16X3hTSWllYS1sT0I0RFZ6Q2gycVNSUmlzdVJBT3N0cnZHeGtsV29yMWRNTWRqYUxZZXFNbXhuSndxZDV1WTFhMndSUQ?oc=5",
+      "ch": "Google News (서울경제신문)"
+    },
+    {
+      "appId": "musinsa",
+      "title": "\"전 애인이 카톡 프사 보고 갔다\"…카톡 신기능 편법 공유 '논란'",
+      "desc": "\"전 애인이 카톡 프사 보고 갔다\"…카톡 신기능 편법 공유 '논란'&nbsp;&nbsp;뉴시안",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2023.02.14",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4xelZjSURFNmZWaFNYQ1B4cGFYRHR5VWRnRENxaHRXUWFuWndZMWVzN29leURBa2tmR2ZDbUI5MnNwUzZrUi1SdzI1Tng0STBiMUhzX0t1bXdvc0tCRDBlZ0ZqTjZCb2tGZVE?oc=5",
+      "ch": "Google News (뉴시안)"
+    },
+    {
+      "appId": "musinsa",
+      "title": "버티컬 커머스 앱 사용자 올리브영>무신사>다이소 순",
+      "desc": "버티컬 커머스 앱 사용자 올리브영>무신사>다이소 순&nbsp;&nbsp;주간신문씨엠엔",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA0Njl6YVFadVBmWnVVdDR5SDJoWTF1T0hJbnoxNU1ERHd1ZU9XdXdoSEZYN0Z0bXdkMkw0R1g2Vy1valYtRWEwd0VNS2VnVzVDX1RhcDJCc29DV1VNZzhlYm5GR2tEd3RoeDc4?oc=5",
+      "ch": "Google News (주간신문씨엠엔)"
+    },
+    {
+      "appId": "musinsa",
+      "title": "무신사, 푸마와 첫 컬래버레이션 ‘무신사 에디션’ 발매··· “레드벨벳 슬기 화보 전격 공개”",
+      "desc": "무신사, 푸마와 첫 컬래버레이션 ‘무신사 에디션’ 발매··· “레드벨벳 슬기 화보 전격 공개”&nbsp;&nbsp;무신사 뉴스룸",
+      "tags": [],
+      "date": "2026.03.03",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAzYnd3X1c1V0tWMXZYcTVkSmxUd1g4dHkwNjY5RzNoUzBHbmhBLXlCUnJUTWJGR2RMMjZER3F4YWo0YnNjOGlsMF96MkZ4SWFiN3hIenFxUGhndlZiRUd4STNabDlyZw?oc=5",
+      "ch": "Google News (무신사 뉴스룸)"
+    },
+    {
+      "appId": "cm29",
+      "title": "29CM, 내달 성수에 침구 팝업스토어 '29 눕 하우스' 오픈",
+      "desc": "29CM, 내달 성수에 침구 팝업스토어 '29 눕 하우스' 오픈&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2026.02.05",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAtNXNDQ3FCeEtEWGJQbFJ4aUpEMTNDcHV5NzcyZ2NJQ1dxWnFkUDR4Q1hqRGY4U1ZMRU9XUm5WVmM4RzNYUkhqamRVRk5PZw?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "cm29",
+      "title": "[O'story] 취향이 머무는 곳, 29CM의 이야기",
+      "desc": "[O'story] 취향이 머무는 곳, 29CM의 이야기&nbsp;&nbsp;오픈애즈",
+      "tags": [],
+      "date": "2025.12.18",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9pNjlrcGhDenFPVkVTcEp2ck4zd1RnTEltdmlodjZzQ1Etb2F6WHdNOGl6aXVNYzZNZFotOUQ0RWdFOXhEUzh6VThHRjdrNUNnLVZ2dnhaMVF1VlRSNXJKTHlNVnRIenMy?oc=5",
+      "ch": "Google News (오픈애즈)"
+    },
+    {
+      "appId": "cm29",
+      "title": "29CM, 연간 거래액 1조 달성... 작년보다 한 달 앞당겨",
+      "desc": "29CM, 연간 거래액 1조 달성... 작년보다 한 달 앞당겨&nbsp;&nbsp;조선일보",
+      "tags": [],
+      "date": "2025.11.04",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRTMta3VKWlRwaF9hYThyQy1WemhZZGRwc2VNdUhnSElOb3VaNWc1WDFlQUFiSXRpUUF2Z1hyTk9LYnUwUHhxdjVZTW9PZ2JZbUF4a1RpdW9TZENDc0JvcWgxc0dYTkkyYU4xcEFDRHBOc2RKXzhhbEUwZnhOTzVnbkpsZExKRTRHZWfSAZ4BQVVfeXFMTko5MUNxVmJnNk9vc1BJbXBBWlRnbm1rTG42aWhVWXZULVJtNVI1SWs3OWtiUU9MYkRJMEctSHlhWGJYRHMzNFBWWlhpd0tkVDFOZThfQ241eWhkbTFBZWpwM3VNVE02MzNBckFaMW5vQ2s5Z2Q3QURrVUJ1VUVYeG53YU5sVDhpRmdTTjhNTFhhSUJ4R0FrUzIyaEJSZHc?oc=5",
+      "ch": "Google News (조선일보)"
+    },
+    {
+      "appId": "kurly",
+      "title": "네이버플러스스토어, 사용자 수 19% '껑충'…컬리 연합 효과 '톡톡'",
+      "desc": "네이버플러스스토어, 사용자 수 19% '껑충'…컬리 연합 효과 '톡톡'&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2025.10.13",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lMWZiZ0VGd2I0NzduZEo1MXhYVjJKN0tGVG1xRzJYR19TeWM2ZU1IYlB6TlBLMjR5eXZvQXpSaHB4X293QUZubkNhX0FOdw?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "kurly",
+      "title": "“개인리뷰 덕에 잘 팔려요”…이커머스, 커뮤니티 관리에 올인하는 이유[유승호의 유노우]",
+      "desc": "“개인리뷰 덕에 잘 팔려요”…이커머스, 커뮤니티 관리에 올인하는 이유[유승호의 유노우]&nbsp;&nbsp;이투데이",
+      "tags": [],
+      "date": "2025.05.23",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1GTlQ4cm1DRWtiX1NVcUU5ekdyYzA2X2M2VjZTZ3dOMklvbkVzRndCU185WFYwWkVJbU1fZC14Wko0RmNqNk45SmFaelFSUWtSTmRQNQ?oc=5",
+      "ch": "Google News (이투데이)"
+    },
+    {
+      "appId": "kurly",
+      "title": "[르포]보랏빛 미식 축제…'컬리푸드페스타' 가보니",
+      "desc": "[르포]보랏빛 미식 축제…'컬리푸드페스타' 가보니&nbsp;&nbsp;전자신문",
+      "tags": [],
+      "date": "2025.12.18",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9yYk5hbkZXa2NlMWtCXzd0c21JV3R3SHZrUG9pbVFxbjF0bklqQ3h6dHlnekZkTjlUMEpTeC1JVmlCSEIxZ2xEVF8yUkRUQQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "단순하게 바뀐 오늘의집 리브랜딩",
+      "desc": "단순하게 바뀐 오늘의집 리브랜딩&nbsp;&nbsp;디자인 나침반",
+      "tags": [],
+      "date": "2025.10.14",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1iVU1XZ2k2U2g1RG9DcmVLN3J1Tlcwdm5UZG5yZXpGcVFIUUlsS3ViZ2FJcVJUZGJ3RUxkcHpEem55bllUTlpGRE1meGpTV0NJa29XRktpajdaVWZUQTMtdG1GRGctUVFRRkY1SlU1YktZdmxSaXdUSg?oc=5",
+      "ch": "Google News (디자인 나침반)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "오늘의집, “이미지 검색 기능 사용량 430% 증가”",
+      "desc": "오늘의집, “이미지 검색 기능 사용량 430% 증가”&nbsp;&nbsp;전자신문",
+      "tags": [
+        "기능"
+      ],
+      "date": "2026.02.11",
+      "analysis": "기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1wWXFvYVNfcVlmSVJidXhidENrblExYU9HdHJ2WlRVQmNwb0I3TmNhVlQzWUZ4S2puTGtqd3ZzNmFPUGVBRDlOWlhzNTJRUQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "[가봤어요] 앱 속 그 방, 북촌에 생겼다… 오늘의집 첫 쇼룸 ‘오프하우스’ - 조선비즈",
+      "desc": "[가봤어요] 앱 속 그 방, 북촌에 생겼다… 오늘의집 첫 쇼룸 ‘오프하우스’ - 조선비즈&nbsp;&nbsp;Chosunbiz",
+      "tags": [],
+      "date": "2025.07.16",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbkFCb2paQk42dWQ0U3Y0MEFrR2gyS1ZMSzVsSWxOenZtcXdjQ0pkNUgyT1R6aUlJU0lMcGlxZm9RT1k3REJLLXUzaEw2X092bDRIUnl2bW1yd29GNU9OOUdzbU5TMXp1TmFnZTU1ZWxFSzhORmFMZUFVLUY3dXJCMmcwa19leDZ4U1HSAZ4BQVVfeXFMTTRaY0hvNUF4akJFTElVdGhYUE15YWpyaVEzX2lLTTR0UGFwNjlQeEtiOVU1ZkZFbThpWE1QeXhhLXBsZU1TUm4zZmIteDZreGJnVGY5QnBpNTBIWXRXNG00c2ZjbzBjU1V2RzN4UVFMRV85elRQQ1VVVkpaSExMVXNtRElUNUZSaUo2a1h1SzhnUEVzUWNLamVIdTY1M3c?oc=5",
+      "ch": "Google News (Chosunbiz)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "챗GPT 신기능, 펄스(Pulse) 이건 꼭 짚고...",
+      "desc": "챗GPT 신기능, 펄스(Pulse) 이건 꼭 짚고...&nbsp;&nbsp;브런치",
+      "tags": [
+        "기능",
+        "신기능"
+      ],
+      "date": "2025.09.28",
+      "analysis": "기능, 신기능 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUUF9VTzlWMjN2N3A0b2dlTHh5UmFnZ2QyQzMzMlNJMm10RHRZSG13bGltNU9ZMVNQT1QwVktNOGhnNlMxd3NzMQ?oc=5",
+      "ch": "Google News (브런치)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "日 진출 2년…버킷플레이스, 인테리어 앱 '오하우스' 다운로드 50만 돌파",
+      "desc": "日 진출 2년…버킷플레이스, 인테리어 앱 '오하우스' 다운로드 50만 돌파&nbsp;&nbsp;더구루",
+      "tags": [],
+      "date": "2024.09.06",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1naVdIZUVfN3BKdFEwWnB1ZjczNXFsYUV0MXMtdHJ2MllLVUU2d0lZRjVldWJqUk9HSzZDSGQzSmxjd3FHY0VuM2VhYXliTFpkZERmM3JhOEdvTS0x?oc=5",
+      "ch": "Google News (더구루)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "인스타그램에서 왜 ‘오늘의집’만 잘나갈까?",
+      "desc": "인스타그램에서 왜 ‘오늘의집’만 잘나갈까?&nbsp;&nbsp;the-pr.co.kr",
+      "tags": [],
+      "date": "2021.12.14",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwdk5ZR3VXT3IzQVFtMEFtLXdwU2FEMVFnS0xqVTJwalhnOUVXOEFfb2REdzhsLXFIWVoxYzVBOFI0RG92ckdIWklXR1NIY2pKcEFWWHRMNkdWeVROTjhETUlnSkxHNkhnUlHSAW5BVV95cUxOWkJ0VUh2X0RuelJjY29TdDl6cXY3TzZMVE5EYkhGR1oweGJSeG1FUi16UEFIcHZQRU5JWFJiMjJmMmtmRFAyVzhRT1U4M0ZZbkVXN1UxQkc1c0RsMEp2XzMxMXNoOWNRcFF4YUwyZw?oc=5",
+      "ch": "Google News (the-pr.co.kr)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "부스터스, 오늘의집 북촌서 ‘브랜든’ 팝업 진행",
+      "desc": "부스터스, 오늘의집 북촌서 ‘브랜든’ 팝업 진행&nbsp;&nbsp;지디넷코리아",
+      "tags": [],
+      "date": "2026.03.13",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1kT3hoOENKb3JsVHNMdGFaSUZJNUV1N1BTOWEyblVUenhYMXZWTWJXVHhtbXdfZk9EQmZpckdJS21DaFdGN0gtR1BFWVBUQXczQ3Noa0tR?oc=5",
+      "ch": "Google News (지디넷코리아)"
+    },
     {
       "appId": "toss_bank",
       "title": "관련도순",
@@ -32,5 +1474,776 @@
       "ch": "네이버 뉴스"
     }
   ],
-  "marketing": []
+  "marketing": [
+    {
+      "appId": "toss_bank",
+      "title": "토스, 교촌치킨과 ‘페이스페이 쿠폰’ 이벤트 진행… “최대 허니콤보 당첨”",
+      "desc": "토스, 교촌치킨과 ‘페이스페이 쿠폰’ 이벤트 진행… “최대 허니콤보 당첨”&nbsp;&nbsp;토스",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "쿠폰",
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBxczV2dFhaZTBIN1ItUmtIODdTbHNYcWJQUVdYQ3pxOUtjVHlTa3E3ZVg0Vng5X0ZTQWg5UVRFOS1McXBKaExlZUxoam5udFk?oc=5",
+      "ch": "Google News (토스)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "카카오뱅크, 써브웨이 협업 이벤트⋯색깔 맞추면 포인트",
+      "desc": "카카오뱅크, 써브웨이 협업 이벤트⋯색깔 맞추면 포인트&nbsp;&nbsp;이투데이",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트",
+        "포인트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA5b3RPNndqSjZSTUNRcWRhQWFRN1RKTGo1WTF1cW9WRW1rWXdnUnJrUHpTZ2NEMGp1VzNvLXhuRDhxNnZHUFdjalp5b3lQT3NTb1JhaA?oc=5",
+      "ch": "Google News (이투데이)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "카카오뱅크, ‘돈 버는 재미’에서 서브웨이 포인트 선물 이벤트",
+      "desc": "카카오뱅크, ‘돈 버는 재미’에서 서브웨이 포인트 선물 이벤트&nbsp;&nbsp;스카이데일리",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트",
+        "포인트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBEcE9qTWs0Snd4QTRhZEJyT3BXNWJRREtud1l2dlc2dlUyc1AtdG81ME9BeDhObUhXWDVBMDFOak02ZGFEdS1oampKMk15QVh0TWliU0h4aU1Cdzhp?oc=5",
+      "ch": "Google News (스카이데일리)"
+    },
+    {
+      "appId": "kakao_bank",
+      "title": "카카오뱅크, '돈 버는 재미 with 써브웨이' 이벤트 운영",
+      "desc": "카카오뱅크, '돈 버는 재미 with 써브웨이' 이벤트 운영&nbsp;&nbsp;중앙이코노미뉴스",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wRHJ1V09Bamo4ZmpPNW9qWl9taWRPOGItdl9aNmJEWDdFRGg3NzQtOTROMHVZMVVTRzROUC1IdTZhM2gtV2ZsSngxaE1yUU5UTldodGVQTWU0MDl3ZEFYd0NLQmNxRXVZX3l5WXVxUVZQdw?oc=5",
+      "ch": "Google News (중앙이코노미뉴스)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "KB국민은행, ‘일임형ISA·연금저축’ 절세 이벤트 진행",
+      "desc": "KB국민은행, ‘일임형ISA·연금저축’ 절세 이벤트 진행&nbsp;&nbsp;이지경제",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13NXlhcUpGOWUwT1d2bUUzT09XSGd6SHdOTHpMQ2lua180RndWZ042R0p1ZlBuNmZ3ZHNLNk95RkJsZU10WGh3Z2h3WXd2UUJVYUNmak9OTDM4dzdKejRTSDRRWTJodTk5MjRhaURn?oc=5",
+      "ch": "Google News (이지경제)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "KB국민은행, 절세상품 이용 고객 대상 경품 이벤트 실시",
+      "desc": "KB국민은행, 절세상품 이용 고객 대상 경품 이벤트 실시&nbsp;&nbsp;중앙이코노미뉴스",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "상품",
+        "경품",
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE04RHVHOE5qNFlYQm9WeGphenNIVy1yNjB2TlI2SV9aaDFLckdRdFF4QUNVSkc4SXZUUkFIZmJ0YklSVC1LSEhVUjY2Y1FWR2V6Q1ZBdHFkXzBwMldsZmNOdVUwWkNwNXBHZzR2eXpaRHpZQQ?oc=5",
+      "ch": "Google News (중앙이코노미뉴스)"
+    },
+    {
+      "appId": "kb_bank",
+      "title": "[더밸류 브리핑] 오늘의 KB국민은행 소식…디지털화폐·포용금융·절세상품 이벤트",
+      "desc": "[더밸류 브리핑] 오늘의 KB국민은행 소식…디지털화폐·포용금융·절세상품 이벤트&nbsp;&nbsp;더밸류뉴스",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "상품",
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE92WjBZVnRpcXFXZlRfcDNKT2V0RGRFRkoxbGdSSDZobWFPNGFpd01HQnk4MjNXR2ZaMjNwTW1wOGx2SWFCdjFVRnF5WUpQY01SaHRGSA?oc=5",
+      "ch": "Google News (더밸류뉴스)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "[금융소식] 하나은행 신한은행 개인사업자 신용대출 갈아타기·기업은행 생산적금융 심사반·우리은행 달러 환전 우대금리 이벤트·농협은행 기안84 모델 발탁",
+      "desc": "[금융소식] 하나은행 신한은행 개인사업자 신용대출 갈아타기·기업은행 생산적금융 심사반·우리은행 달러 환전 우대금리 이벤트·농협은행 기안84 모델 발탁&nbsp;&nbsp;천지일보",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SVmNxUmxmZV9HT2lzX05xMnNINmJkOU9Tek1FVnNtSzV1cXF5dV9va2JYc1IwdEo3OTdBbHBMTU94ZWJjeHdEbm5EeVRhd2ItTW5wVWRGNjhGbXdyZ2RPUUlGM1hWc0VNbmc?oc=5",
+      "ch": "Google News (천지일보)"
+    },
+    {
+      "appId": "shinhan_bank",
+      "title": "신한은행, ‘SOL트래블 체크카드’ 300만장 돌파 이벤트",
+      "desc": "신한은행, ‘SOL트래블 체크카드’ 300만장 돌파 이벤트&nbsp;&nbsp;라이센스뉴스",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5JcVFSclN0TVhoYWtyc3V5cWRoMHhsc0wtR2VjeFJXVmg4UHZpWU83U1VabWhtRzdCbXZNeTQ1cm42ZDZXbEV1QkFkckFLNFZCYlVSc0JFZmgtQlpDc2ZDWlIyeUZabDFGODdR?oc=5",
+      "ch": "Google News (라이센스뉴스)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "하나은행, 모바일앱에 ‘가상자산 시세조회’ 서비스 도입…두나무와 전략적 제휴",
+      "desc": "하나은행, 모바일앱에 ‘가상자산 시세조회’ 서비스 도입…두나무와 전략적 제휴&nbsp;&nbsp;투데이e코노믹",
+      "type": "콜라보",
+      "tc": "collab",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "제휴"
+      ],
+      "analysis": "콜라보 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93QWtmNmtxVVlSdUtidlFwNVFpZGMtclhCVU5DWDc4eW9ud1o1aHFDbkZGVk8zU0xHT2hnVkFSaXBaU2M4dWxESWhvbjY0SE5NYkhOMDBmTWlpcG9nUUdvRkxuX1FtZmM?oc=5",
+      "ch": "Google News (투데이e코노믹)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "하나은행, 퇴직연금 우수사업자 3년 연속 수상 기념 이벤트",
+      "desc": "하나은행, 퇴직연금 우수사업자 3년 연속 수상 기념 이벤트&nbsp;&nbsp;BBS불교방송",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TQlA4WWd0Qnd5a3VjZl9MUlpHZXd2TE5VSnBRRUhWc2xhcHBCbTVPLU9vSEh3WUcwRzk0SjhLcGV2VVFaNjlnLWcwX3puSGlKVC05TjA2TE14bGUwSE5lY0hmb0VCMkhOU3lZ?oc=5",
+      "ch": "Google News (BBS불교방송)"
+    },
+    {
+      "appId": "hana_bank",
+      "title": "하나은행, 3년 연속 퇴직연금 우수사업자 선정…기념 이벤트 실시",
+      "desc": "하나은행, 3년 연속 퇴직연금 우수사업자 선정…기념 이벤트 실시&nbsp;&nbsp;디지털데일리",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11d0lzaVFUZmtEb3ZORmlDZ0Z5SlBQRWtKRDlJSXFBY1dadGw5bzJXT1pES2N3QWUzbFRDYXlyZk1GU2lDNTdESVN6cFJiaDlXd250Ml85aUFfS0lMZThmbGNyRmc?oc=5",
+      "ch": "Google News (디지털데일리)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "케이뱅크, 아낌e보금자리론 '100만원 이자 지원' 이벤트",
+      "desc": "케이뱅크, 아낌e보금자리론 '100만원 이자 지원' 이벤트&nbsp;&nbsp;뉴스1",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9oVnZxdi1jQ0RUTnFUWm5KZ2doU2JHRXFzSUpqSzFEaDdud0RCUmhNTk5panhRVVFEN29CZThwTlNDT1RJQXZqanVqVDh6SUtuakZ4NUhQdHZWS0pkV09ELVBn?oc=5",
+      "ch": "Google News (뉴스1)"
+    },
+    {
+      "appId": "k_bank",
+      "title": "케이뱅크, 아낌e보금자리론 이벤트…주담대 금리도 인하",
+      "desc": "케이뱅크, 아낌e보금자리론 이벤트…주담대 금리도 인하&nbsp;&nbsp;서울경제TV",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LWU5CVTRuUmstVjBVNzhYaFBtSExjSHY1a29XN1JBUXNaeDhZNmZzM0tPUmxsU3UyZFB1MmZMOVZBdTg5MlBybmd2TTFzWkxkQ1ZwMWtDU2xUSzJsRHhRaFZZMTc?oc=5",
+      "ch": "Google News (서울경제TV)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "카카오페이, 컴포즈커피와 3월 커피 할인 릴레이",
+      "desc": "카카오페이, 컴포즈커피와 3월 커피 할인 릴레이&nbsp;&nbsp;한국보험신문",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9IWHlnN2ZZRjdSaDM2VjZOVjJHS1NXWmZDVVNoaHFILUx4RXM0cmp5bTdWWnVvc1J3Unh5Y3ppU3JUMFJpbHhIeFRoZ25MeGtLT3d5YjVfdDlMd3RST1VRa204dHg3cl9UZEdHLWZGRdIBb0FVX3lxTE9IWHlnN2ZZRjdSaDM2VjZOVjJHS1NXWmZDVVNoaHFILUx4RXM0cmp5bTdWWnVvc1J3Unh5Y3ppU3JUMFJpbHhIeFRoZ25MeGtLT3d5YjVfdDlMd3RST1VRa204dHg3cl9UZEdHLWZGRQ?oc=5",
+      "ch": "Google News (한국보험신문)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "카카오페이, 컴포즈커피와 할인 이벤트 진행",
+      "desc": "카카오페이, 컴포즈커피와 할인 이벤트 진행&nbsp;&nbsp;비즈월드",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트",
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1DdlgzeDFQck5yaTlYTUFBZmhQSDk4cE9KaDd2S3JwRGFlZ3kyckFxYWlSdzR1ZEJRajhLbTJMWEVPeGpUZTduMkkxTk1CQzRDYnBUMzZvQzhtelFZUFMtckh5WndpTG1nckd3?oc=5",
+      "ch": "Google News (비즈월드)"
+    },
+    {
+      "appId": "kakao_pay",
+      "title": "카카오페이, 컴포즈커피와 '100원 커피' 이벤트",
+      "desc": "카카오페이, 컴포즈커피와 '100원 커피' 이벤트&nbsp;&nbsp;뉴데일리 경제",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwNnVOWEJqOVpiQ1NaamtrYmQyU1hfQTdQRHZFOUNfbzhzMjhCVjYyM1VOS1JTT3JmOUpvWUk1Tk9MeWN6RUY0SWdjbC1lcHZVRHNMbmx2VlUxYTJBektuOG9EM0hxMmQ4c01KS1pvNGdDYTY2cmRNd3hKMA?oc=5",
+      "ch": "Google News (뉴데일리 경제)"
+    },
+    {
+      "appId": "naver_pay",
+      "title": "네이버페이, 결제 오류 보상 공지…\"평균 결제 수수료 3배 지급\"",
+      "desc": "네이버페이, 결제 오류 보상 공지…\"평균 결제 수수료 3배 지급\"&nbsp;&nbsp;연합뉴스",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "보상"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zRHdteldRYWpIcEUwcFZLYmNaUHNhUXc4akl4Y0hBR0lNZjZ1ZzJVdU9aRFdRNklNeXREM1E0WlE0V2NKWEJ6dXpVWEZxd2FheE1iU1N3WFk2OFXSAWBBVV95cUxPc01raGg4cWh3QTBUWW1HdVNuajdZUVhWNjlqdGFKTXU5U2NBSjc1ekhLZENfVUJUb1VodGdQVnBrUXQyTlU1eW1DR1VRWXFTQ0pzTUUtbFBvbEJ0anZPMUo?oc=5",
+      "ch": "Google News (연합뉴스)"
+    },
+    {
+      "appId": "naver_pay",
+      "title": "네이버페이, 결제 오류 보상안 공지… “평균 결제 수수료 3배 지급” - 조선비즈",
+      "desc": "네이버페이, 결제 오류 보상안 공지… “평균 결제 수수료 3배 지급” - 조선비즈&nbsp;&nbsp;Chosunbiz",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "보상"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORHh0THJ1Z2tHYnRKbDRCU3NWc2lPS3hJM3lvMkVJQnlscVk2WUNndGF0Z3JmWklZWC15akJjdWZMYklkeTVRRUE1LXY1ZjNzV3BVRHJHR3V4YVpQUTdVaUFIOGVaaktFMHlObjZhMXlDRm9vWFVXeHN0d2VGUnBjbNIBlAFBVV95cUxPVGNwSXJuWUo0d1F1dW9pTXNlUGJpRGppX3hodzByTlV0UlB0M05xVGxFendMTlZLZUFxaUFkSGRUbm1ZR2lIa1hicm16VXdXV2VycVhzeFRSZS1nUFZVTTR2WVFHSTQ0aHBQWUJUY2MzMC1kQ0Z0MlItbTYzQUZlTTlHaFFfaVNndGNMVzBSYUthME1N?oc=5",
+      "ch": "Google News (Chosunbiz)"
+    },
+    {
+      "appId": "naver_pay",
+      "title": "네이버페이, 결제오류 보상…\"동시간대 수수료 3배 지급\"",
+      "desc": "네이버페이, 결제오류 보상…\"동시간대 수수료 3배 지급\"&nbsp;&nbsp;뉴시스",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "보상"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HN0NFclprSUhYdTd2X19LMmZ2WE91Szc3dkVDUkFJeC1SWmRrVGNsZUdnaVFGUHFldlBiOHlmaE1XMlFMbXRDRG1iMG0xem9sZTJfRk5vOHlvQjFldkxlcdIBeEFVX3lxTE1xX29zaVhabkUtMklCOFg4bUNPcEJ5SEhjX3NTSnlKZWYzeDAxUEQ4TGpoOUdIOG5MZmc5dDVxczdfS0w2LVF1LUp5SjZydEJwWGc1S2sxMk5pc0V6ZDVWX0tITTBlMlV1aWVDWkZQS3NhampSSEp6SQ?oc=5",
+      "ch": "Google News (뉴시스)"
+    },
+    {
+      "appId": "naver_pay",
+      "title": "다이소, 우리카드·네이버페이와 봄맞이 이벤트",
+      "desc": "다이소, 우리카드·네이버페이와 봄맞이 이벤트&nbsp;&nbsp;스트레이트뉴스",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBOWDkxOG5lNFZrWFNHYmhOMkh4cW5NdjZhclNwVFMtd2dRcGNETHh3c1VXeW02RW92SFRVLTZQVlRaeG1Dci1IVmNhQm9MS204U3huZjZobXJjOE9PN2dBWUxFUUR0a1FiMlkwRHJ2RFJWbmgwNnk40gF3QVVfeXFMUE5YOTE4bmU0VmtYU0diaE4ySHhxbk12NmFyU3BUUy13Z1FwY0RMeHdzVVd5bTZFb3ZIVFUtNlBWVFp4bUNyLUhWY2FCb0xLbThTeG5mNmhtcmM4T083Z0FZTEVRRHRrUWIyWTBEcnZEUlZuaDA2eTg?oc=5",
+      "ch": "Google News (스트레이트뉴스)"
+    },
+    {
+      "appId": "naver_pay",
+      "title": "아성다이소, 우리카드·네이버페이와 '2026년 봄맞이 이벤트' 진행",
+      "desc": "아성다이소, 우리카드·네이버페이와 '2026년 봄맞이 이벤트' 진행&nbsp;&nbsp;뉴스포스트",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE92RjZCRWNHdTJqRk83eTRPcDVQWVM2elBWcWh3RWVSdVQ5a3pPNkp5V3g0RmJ0YW0tVjhTZWVveHVJRmhfaEw5OXNSOGtfcklPd0pWLUJRLTg3NDhFVFpQLUd4elFDQ050d3c?oc=5",
+      "ch": "Google News (뉴스포스트)"
+    },
+    {
+      "appId": "naver_pay",
+      "title": "다이소, 우리카드·네이버페이 결제 시 혜택 이벤트",
+      "desc": "다이소, 우리카드·네이버페이 결제 시 혜택 이벤트&nbsp;&nbsp;헤럴드경제",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBROXdjUFlEQW42QU1BX18tTkVkLW9qdXhlSkJOWExVeU15UTFJbkN0YUJKVm9RYjNUd19lX2dZY1dZQW4wZUhwQjQ0MjltRlQwYmtPRExB?oc=5",
+      "ch": "Google News (헤럴드경제)"
+    },
+    {
+      "appId": "payco",
+      "title": "NHN페이코, 할인율 직접 높이는 신규 기능 '강화 쿠폰' 출시",
+      "desc": "NHN페이코, 할인율 직접 높이는 신규 기능 '강화 쿠폰' 출시&nbsp;&nbsp;포인트데일리",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "기능",
+        "출시",
+        "쿠폰"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE43LWRUaTRmbkJkbXNYRVhFTEJrZk9xejZUaHAtakNOazFiQXBFYW1LQUVUVl9IcWUxd2hPX1ZWeWwxMlh2ZmlQa3dQZ0Y5WHB4NlBUNEZIb1FaTVBDNWdLX09GY1RZcHotblhWZk9JeE_SAXRBVV95cUxPeks3cVJjTFNnRFEwdkdkN1N6T0xadUo3Uk14Vk8xaHVocHMwNUdmUmRqdm1ROU1pdGJVNmVxN1FPNXBPTjJWeWFkc0pnbFFwRWx3Um56Rkw2MjZfS0ZjOTZXSmI3cTI2N2FpQVR5b1RwdXlkTQ?oc=5",
+      "ch": "Google News (포인트데일리)"
+    },
+    {
+      "appId": "coupang",
+      "title": "책임자 없는 `맹탕` 청문회…로저스 쿠팡 대표 \"보상안 검토 중\" (종합)",
+      "desc": "책임자 없는 `맹탕` 청문회…로저스 쿠팡 대표 \"보상안 검토 중\" (종합)&nbsp;&nbsp;디지털데일리",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "보상"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5NS3ZPTXcyQzBIanpEYVpvanR1TTZIbzVtYzV5bldMaVhOS0pQaFBjbEhWU0IySVNvRVhFRnB4N21ENU5nME1MZkNEOWZqMENWb1ZNcWhqZmlwbk9qeXJXN2s1QnA?oc=5",
+      "ch": "Google News (디지털데일리)"
+    },
+    {
+      "appId": "coupang",
+      "title": "쿠팡 와우카드, 발급 200만장 돌파…최대 20만원 혜택 특별 이벤트 진행",
+      "desc": "쿠팡 와우카드, 발급 200만장 돌파…최대 20만원 혜택 특별 이벤트 진행&nbsp;&nbsp;더페어",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Xc1Y4SVdYTXNMMVptYkF0NlBZUzdnNW1wWFhRVWp3aUhPcUlJZTk1SlRqRWJ3NkliTFlSNVRlUWhTX1BHQklQdTdaTEdoR3VHZE9HNFBiY0V0eHdOT2k1OGtOVFgxZ1NMOG9KUU1sQ2zSAXRBVV95cUxOYWpJTVdUbjhpcWxKZkF2bWg5dlNXcFBuTUZ1elQxNWU5SUlUSlhoY0hqVXVZMmdCMGtTNk4wRnhHazl1aFhveWd6cjhuanYzbmlhNmN2NWNpdUo0RFFjVTlUcVdmRW9NR0VNQkt0c2x6dEg2Qw?oc=5",
+      "ch": "Google News (더페어)"
+    },
+    {
+      "appId": "coupang",
+      "title": "쿠팡, 로켓와우클럽 위한 추석 이벤트 진행...'최대 쿠팡캐시 1000만원 지급'",
+      "desc": "쿠팡, 로켓와우클럽 위한 추석 이벤트 진행...'최대 쿠팡캐시 1000만원 지급'&nbsp;&nbsp;녹색경제신문",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1NMVpPSU1ieGFoUDU5S1V5UDlGUFRvbjBfOUFJUThWbWk0VWlYZXpmQXpCOUY3ZGFsSm96aDZ2SklLRUk0NWdER0RfdFh1UlhXSGpocHRmbEg2dXlwUGVvMXlSQmU3d29z?oc=5",
+      "ch": "Google News (녹색경제신문)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "N쇼핑 리워드 개발사에서 최저가 안내드립니다.(무료 테스트 가능)",
+      "desc": "N쇼핑 리워드 개발사에서 최저가 안내드립니다.(무료 테스트 가능)&nbsp;&nbsp;아이보스",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "리워드"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9TTUh3UDREUkJjQnYzakoxV2M1OEJfRTN6akxVNUp1SWp2Snd4aFZ1N0psaFRoMl9ldkdTTU0xUHd5RERhNU0wUEVaRDQzWk9h?oc=5",
+      "ch": "Google News (아이보스)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "카페24, '유튜브 쇼핑' 솔루션 고도화…판매자 접근성 강화",
+      "desc": "카페24, '유튜브 쇼핑' 솔루션 고도화…판매자 접근성 강화&nbsp;&nbsp;전자신문",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "판매"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xRnFyWkdrR3lOY1g4VWtkSk1hbllYay1kM1dFSlBMX1ZTS3VRdndfZHNtb3JVdE5QSGFneWRHV0ttWVUwZE01Nk05ZE9DYldWMC05RXdqek4?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "[테크스냅] 네이버, 쇼핑 이벤트 '넾다세일' 판매액 1조원 돌파",
+      "desc": "[테크스냅] 네이버, 쇼핑 이벤트 '넾다세일' 판매액 1조원 돌파&nbsp;&nbsp;연합뉴스",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "판매",
+        "세일",
+        "이벤트"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0ybmJ4eE5WNXJPdGJtUDlsZ1ZXTVZQRFZjX0NVbUp4OXUxWnM2dTY0d0xmYnpGQkFIWDdkd0Y0d3U1NTViY2FJV0VHd1BoTnBuTnRMOUdoOVh6WTTSAWBBVV95cUxOSHp2SHVwRThQbm9vOW5tekNyN1FtLXdncDJ6RXBzWHViTExENnNNZHBaa3NhRkV0d2t3RWwzbmxXelR3S2ZYZ1RUdmNoWUlxem1LeUQ3RHpRSmJKTVlFazQ?oc=5",
+      "ch": "Google News (연합뉴스)"
+    },
+    {
+      "appId": "naver_shop",
+      "title": "2025 마무리, 2026 시작은 어디서?...네이버·카카오, 연말 맞이 이벤트 '풍성'",
+      "desc": "2025 마무리, 2026 시작은 어디서?...네이버·카카오, 연말 맞이 이벤트 '풍성'&nbsp;&nbsp;테크M",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1CSTBoeERQM1ZqZGdQZkd0bFRYWk1yMXM3dHg4Zm5GOTVDRml1MzNRQjI0RzViclFFcVVLdXJkckJCTHlKSGdiNlhOalRMaEF4dWV2QXBBb2x2REdIS0wzRGVmNEtUd9IBakFVX3lxTFB0TmdBMWVnWlY2b3FZTW13bXd5WWxWN1BEbXhXNGpIZlgtSE5YZlVZTlNqYk5reGN0WHQtRWpkSlo0SWtHUnA5a0xkSjhXZGtzeEtCclBERjU4a05WVnNBVlhlX0Ztb0lVdFE?oc=5",
+      "ch": "Google News (테크M)"
+    },
+    {
+      "appId": "st11",
+      "title": "\"패션∙뷰티∙리빙 상품 할인\"…11번가, '3월 찐템페스타' 진행",
+      "desc": "\"패션∙뷰티∙리빙 상품 할인\"…11번가, '3월 찐템페스타' 진행&nbsp;&nbsp;청년일보",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "상품",
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50M2wzaEgtWTdMdTMzaG9aakRkbDZHaXhZRzlZdzYxNEQxdjV2cVNtdGdKM1hLS29NT1lNTUh0ZWVVWWQ0bHRwSGJxYlQwWTF5Y21aVmRzdkp2SWQ3dWJ6SDhtMGtCWVU?oc=5",
+      "ch": "Google News (청년일보)"
+    },
+    {
+      "appId": "gmarket",
+      "title": "G마켓서 모바일 상품권 도용 결제 정황…“신고 후 2차피해 선제 조치”",
+      "desc": "G마켓서 모바일 상품권 도용 결제 정황…“신고 후 2차피해 선제 조치”&nbsp;&nbsp;전자신문",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "상품"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1TSVFLc1FNUnl5MmNHekRXTVZ4c1Znb0hLR1hFNlgtdXVRdmhJLXdtUFBuYXlxM3dpcjY2WTBUNXFOOVhBZjFZT3ZzLUt1QQ?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴, '쓱7클럽' 신규 회원 77% 할인 행사",
+      "desc": "SSG닷컴, '쓱7클럽' 신규 회원 77% 할인 행사&nbsp;&nbsp;전자신문",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5IMXlkWDJKZm5LNE5jTHpYa3J4d1FSMXNGVW1EVW9rVXNXbDY2SVJWbElacmpmLVUyNkNlR05zeDN1My1wQkNrVkt4UHFxdw?oc=5",
+      "ch": "Google News (전자신문)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴 “상품·가격·배송 경쟁력 강화“... ‘온라인 이마트’ 정체성 내세운다",
+      "desc": "SSG닷컴 “상품·가격·배송 경쟁력 강화“... ‘온라인 이마트’ 정체성 내세운다&nbsp;&nbsp;조선일보",
+      "type": "마케팅",
+      "tc": "marketing",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "상품"
+      ],
+      "analysis": "마케팅 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSFhMczVZNy1GTzVFZWs4T0JSdjQzdXJpY3NRMEpPeVJrdXh5TjNGTGtHVTg4Q0p6eXdVNTRBMFpIQlpSRHhlbWp4OTZUS293S0cxTkgyTmxtRm1HYzd5aXdyU0xVdDcwODF1R28xanNjSkVEWkUtQkZOR3c4SzRBR3JjVWtyRVNZeFHSAZ4BQVVfeXFMTlRReXAxSUcwa2JjNlFHVE9xakhOa2tDaW1sU2MwR21fWmZhX3BBOVFCNWU1SFhMU1IyRElEbFNfQkNLeWlsdkR6R3puUUtUSVphTlU2VWpvdlZCeERtNF9mWS1zVWFRVjRCNWxnYlNaWjk4RmNGem5uMmpla0ZYSFJMdmE1elZQOTB6T3h4RFRBYjNFNG94TktORmhMX1E?oc=5",
+      "ch": "Google News (조선일보)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴, '쓱데이' 할인…신세계사이먼도 쇼핑축제",
+      "desc": "SSG닷컴, '쓱데이' 할인…신세계사이먼도 쇼핑축제&nbsp;&nbsp;연합뉴스",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YWHhaUFVLOE15WmxpNTJfQ1VaQk9VQnhGQjdBVktoS3FGMnE1LURwTkxpdW1CRk04cmotZXNzb1lXVTBoRTJQMTdmQWpYb0wwT1J5MnhRc1diNEHSAWBBVV95cUxNWURHT1h4LXdPa202VGw1MTc3VVZaY20zVFhuVWx4Q1RJTTZKSEFpNjdma0RDWXB6aXMteFNtS3NEbWRQYjk0RG1qeGFmTXVoVUtGWWZkWGdnelZ6dGp3WkU?oc=5",
+      "ch": "Google News (연합뉴스)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴, '쓱데이' 온라인서 포문⋯\"연중 최대 릴레이 할인\"",
+      "desc": "SSG닷컴, '쓱데이' 온라인서 포문⋯\"연중 최대 릴레이 할인\"&nbsp;&nbsp;v.daum.net",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Nb3hBXzdFTVV0a1JhOFc4Mk9PbnBGSUR5cWZqQnNQbUhNdktIQWZwNWwzTnM2OUxRdVd1Qm5mR2d4aktJcldKelNsVWoyTEk?oc=5",
+      "ch": "Google News (v.daum.net)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴, ‘쓱 장보기 페스타’ 개최…식료품 등 할인에 룰렛 이벤트까지",
+      "desc": "SSG닷컴, ‘쓱 장보기 페스타’ 개최…식료품 등 할인에 룰렛 이벤트까지&nbsp;&nbsp;더퍼블릭",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트",
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tTEtoTDM4WEt5ZEN6OERyNUxEVDBYT0c4RTRKQ1c1amVseGVhbEd2eVNtMkI3enY4RlFNQmdGank2UFhUQlBxY2pZQ2tseEdsTTBfMjExNFdMb2FDSzViQ3hqcV9WN1VyUzBWR1I5TdIBb0FVX3lxTE0tTEtoTDM4WEt5ZEN6OERyNUxEVDBYT0c4RTRKQ1c1amVseGVhbEd2eVNtMkI3enY4RlFNQmdGank2UFhUQlBxY2pZQ2tseEdsTTBfMjExNFdMb2FDSzViQ3hqcV9WN1VyUzBWR1I5TQ?oc=5",
+      "ch": "Google News (더퍼블릭)"
+    },
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴 '바로퀵', 전국 60곳 확대…'무료 배송 이벤트 진행'",
+      "desc": "SSG닷컴 '바로퀵', 전국 60곳 확대…'무료 배송 이벤트 진행'&nbsp;&nbsp;물류신문",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzMlVHTmIxLUo4VVVlUEMwMExRbS10d00tRVA1TzJiY0dWZ1BkanRzT0J2Sm45YU1ieFVLQWJJMG5lQ0h6aU1QSFVBcWZGMnMwMWkwVGhDNkZybjMzZmR4dkRuNjVtMFFjU1dV?oc=5",
+      "ch": "Google News (물류신문)"
+    },
+    {
+      "appId": "wemakeprice",
+      "title": "[이벤트] 위메프 '위메프데이'",
+      "desc": "[이벤트] 위메프 '위메프데이'&nbsp;&nbsp;서울파이낸스",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1NFgzdERYc04yaUdiZHN3T0pDWGxKeFc0SmtMeWtrV1ZvZDVEVlZXYmNja0JDNmpSXzJlajZEWTVzcl84RzdPTlJSN0NFZFptQkQtd1Vpc1ByZFVzRDZIY0FIdUhwYVV4dVE?oc=5",
+      "ch": "Google News (서울파이낸스)"
+    },
+    {
+      "appId": "wemakeprice",
+      "title": "40% 할인쿠폰 잡아라…위메프 '66특가로 입어봐' 주요상품과 유의사항 떴다(종합)",
+      "desc": "40% 할인쿠폰 잡아라…위메프 '66특가로 입어봐' 주요상품과 유의사항 떴다(종합)&nbsp;&nbsp;서울경제신문",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "특가",
+        "상품",
+        "쿠폰"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBXZjIwd3kzMlA5ME1fUXczaHdUYmxsbzF2NGEyWmpYR2sxeTNXQ2ptY0pBR2lRaEcybUZsSDRadXJoNklISWVJb1lUdUZqUGc?oc=5",
+      "ch": "Google News (서울경제신문)"
+    },
+    {
+      "appId": "musinsa",
+      "title": "러브이즈트루, 최예나 콜라보 상품 무신사 단독으로 선보여",
+      "desc": "러브이즈트루, 최예나 콜라보 상품 무신사 단독으로 선보여&nbsp;&nbsp;이넷뉴스",
+      "type": "콜라보",
+      "tc": "collab",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "콜라보",
+        "상품"
+      ],
+      "analysis": "콜라보 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82ZWhJZkE4OGw3R0txREFfREwwaDFzQjBQVl9rckJqZ3Bna2tqNzl6ODlUV0x3V05PMmMyZ0laLUozZENXal9zR1RBMGxNWHBvdE5lbC0wS194Y1FEVk9aQ2h4YmlNMnRTMGRYMng3MUfSAXBBVV95cUxPNmVoSWZBODhsN0dLcURBX0RMMGgxc0IwUFZfa3JCamdwZ2trajc5ejg5VFdMd1dOTzJjMmdJWi1KM2RDV2pfc0dUQTBsTVhwb3ROZWwtMEtfeGNRRFZPWkNoeGJpTTJ0UzBkWDJ4NzFH?oc=5",
+      "ch": "Google News (이넷뉴스)"
+    },
+    {
+      "appId": "cm29",
+      "title": "29CM, 봄 시즌 '이구패션위크' 선발매 기획전 실시... \"취향 저격 브랜드 신상, 먼저 만난다\"",
+      "desc": "29CM, 봄 시즌 '이구패션위크' 선발매 기획전 실시... \"취향 저격 브랜드 신상, 먼저 만난다\"&nbsp;&nbsp;무신사 뉴스룸",
+      "type": "캠페인",
+      "tc": "campaign",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "기획전"
+      ],
+      "analysis": "캠페인 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94c3ZfVjZRNUZkTnNLYmFJcGdmdjNycFp1OXZWNDBOT2c0d1hIbEhsUkZKS2Z4dlFCZElpUnAxcENuWm1lYlNtTW1UMjlYRkZGUUdlN1hNQUJtR1ZycjV4Z2V5V29OVXpW?oc=5",
+      "ch": "Google News (무신사 뉴스룸)"
+    },
+    {
+      "appId": "cm29",
+      "title": "29CM, '이구패션위크' 선발매 기획전 열어",
+      "desc": "29CM, '이구패션위크' 선발매 기획전 열어&nbsp;&nbsp;지디넷코리아",
+      "type": "캠페인",
+      "tc": "campaign",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "기획전"
+      ],
+      "analysis": "캠페인 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1GdHE2N1RIcTFBVG5BSVhPMGVmeHljZkk4U2lsZkxWQzdhM0JkakU4OVpZY3RHU1BRZTdLcjJRcEMtakJxcXhfRF82eGdQUTVYamJjRVRn?oc=5",
+      "ch": "Google News (지디넷코리아)"
+    },
+    {
+      "appId": "cm29",
+      "title": "29cm, 봄맞이 홈 인테리어 기획전",
+      "desc": "29cm, 봄맞이 홈 인테리어 기획전&nbsp;&nbsp;한국경제",
+      "type": "캠페인",
+      "tc": "campaign",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "기획전"
+      ],
+      "analysis": "캠페인 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rR21zMmpuc0VaUFVmVWZGSmtLTXNydVNjWlVrOFZhMzZHd0VrNjhmcENxUUk4M2EtSmk1R2NxR1AzUFd5RVZjeFNLalNENXNKWFdJLXVlYVVLUdIBVEFVX3lxTE4zelp1Rmt1RTRrZEMwNC1aQTZqYnhsb1h4eXBBZEZaMzVtOUdvMlVyaGctSHh5VldrT1dGSmU0WGx5Qkg2RzlrbmtwWEo5LTNDWnItSg?oc=5",
+      "ch": "Google News (한국경제)"
+    },
+    {
+      "appId": "kurly",
+      "title": "컬리, ‘3월 원더컬리 기획전’ 진행",
+      "desc": "컬리, ‘3월 원더컬리 기획전’ 진행&nbsp;&nbsp;중소기업신문",
+      "type": "캠페인",
+      "tc": "campaign",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "기획전"
+      ],
+      "analysis": "캠페인 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qRkV4Zy0xbWJVaEw5WEEtbGhFMUJPVmdreUp6V1FUOW5YZm1vbDZGQy1iWmVHd3VsV25BSU9aTlY4al9vdzhTMzkzMW5sMFBJNF9LVTkxbG1NOEIwcVhNNEYtRERaMHdFODNrdG9n?oc=5",
+      "ch": "Google News (중소기업신문)"
+    },
+    {
+      "appId": "kurly",
+      "title": "마켓컬리, ‘설 얼리버드 선물세트’ 기획전 진행",
+      "desc": "마켓컬리, ‘설 얼리버드 선물세트’ 기획전 진행&nbsp;&nbsp;ceodaily.co.kr",
+      "type": "캠페인",
+      "tc": "campaign",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "기획전"
+      ],
+      "analysis": "캠페인 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qQU9peWR1V0Q2VWFlWHpmY1VCdzNYMEZmZEZPUk1sTjVERDd6SlV2cHAyQnY4ZU1rQk12RXpLMk5DTlVNNnZieWFsaWd2bjlLU0MyNG1TYkNSQ29sdGlhQk94UEFnblVleWlIS9IBcEFVX3lxTE9kQ3VrSE9iRkZLWHdaRHBWWVRiWHhXMFVPc05FTHdzS2o4dWE5Y0xiWXN1V3pGemhDZE9kNGxvWjF0eE9vOFczaTVFaXBDM1dLenRlT1ViLXViMDFrTGk4U2RhdElfYnIyQmhkTmF4NGM?oc=5",
+      "ch": "Google News (ceodaily.co.kr)"
+    },
+    {
+      "appId": "kurly",
+      "title": "컬리, '원더컬리' 기획전···봄 제철 상품 최대 88% 할인",
+      "desc": "컬리, '원더컬리' 기획전···봄 제철 상품 최대 88% 할인&nbsp;&nbsp;서울파이낸스",
+      "type": "프로모션",
+      "tc": "promo",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "기획전",
+        "상품",
+        "할인"
+      ],
+      "analysis": "프로모션 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14cjN1ZTg2cHJvM1Uweks3NEV3VXZ0T1hiU0tLeVp1T09ydlFYbzQ2OHpfaW5oUE0zaVpVSzUwZ3ZjZ1JhMXlfMzJ4UF81dUxJbzFLdk9XQUk5VXBCS3VRS1l0bkNmaThPYXc?oc=5",
+      "ch": "Google News (서울파이낸스)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "“이제는 라이프 이벤트 통합 솔루션”오늘의집, 리브랜딩 캠페인 전개",
+      "desc": "“이제는 라이프 이벤트 통합 솔루션”오늘의집, 리브랜딩 캠페인 전개&nbsp;&nbsp;매일경제",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "캠페인",
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE53cXJES21UZ1dBek91R3MzbHBFVVkyYVFnWUYwTVpqd19tS201aWtfUExvSEQ2SXo2clVnb2FPcVR6WHF4Q0Y4Q3M1U0Z5aXJPVG5BRw?oc=5",
+      "ch": "Google News (매일경제)"
+    },
+    {
+      "appId": "ohouse",
+      "title": "‘라이프 이벤트 통합 솔루션’ 꿈꾸는 오늘의집, 리브랜딩 캠페인 시작",
+      "desc": "‘라이프 이벤트 통합 솔루션’ 꿈꾸는 오늘의집, 리브랜딩 캠페인 시작&nbsp;&nbsp;바이라인네트워크",
+      "type": "이벤트",
+      "tc": "event",
+      "status": "live",
+      "period": "",
+      "tags": [
+        "캠페인",
+        "이벤트"
+      ],
+      "analysis": "이벤트 진행 중",
+      "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KWDk5bU5lTVlaZnpKbHU4UjFFTEpiXzJxc2syMkpNUTUwXzBqUUU0XzViMjQ2Qy1NWUljdnFYSXFDMU81N1dIT05mTDZwdE9BY0RyWW52akFvdw?oc=5",
+      "ch": "Google News (바이라인네트워크)"
+    }
+  ]
 }
