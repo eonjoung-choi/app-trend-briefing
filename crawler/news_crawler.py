@@ -176,3 +176,6 @@ def crawl(apps: dict, data_policy: dict) -> list:
         print()
 
     return all_results
+
+# Alias for backward compatibility with run.py
+crawl_news = crawl
