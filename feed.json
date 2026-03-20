@@ -1,5 +1,36 @@
 {
-  "lastUpdated": "2026-03-19T23:35:25.464849",
-  "features": [],
+  "lastUpdated": "2026-03-20T04:49:25.209042",
+  "features": [
+    {
+      "appId": "toss_bank",
+      "title": "관련도순",
+      "desc": "",
+      "tags": [],
+      "date": "2026.03.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "#",
+      "ch": "네이버 뉴스"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "전체",
+      "desc": "",
+      "tags": [],
+      "date": "2026.03.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "javascript:;",
+      "ch": "네이버 뉴스"
+    },
+    {
+      "appId": "toss_bank",
+      "title": "옵션 초기화",
+      "desc": "서비스 영역과 언론사의 선택 옵션이 유지됩니다.",
+      "tags": [],
+      "date": "2026.03.20",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "?mynews=0&nso_open=1&office_category=0&office_type=0&query=%ED%86%A0%EC%8A%A4+%EC%95%B1+%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&service_area=0&sm=tab_opt&ssc=tab.news.all",
+      "ch": "네이버 뉴스"
+    }
+  ],
   "marketing": []
 }
