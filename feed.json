@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20T08:24:41.360805",
+  "lastUpdated": "2026-03-20T08:42:16.198740",
   "features": [
     {
       "appId": "toss_bank",
@@ -77,6 +77,16 @@
     },
     {
       "appId": "toss_fin",
+      "title": "토스페이먼츠, 항공예약발권시스템 간편결제 도입",
+      "desc": "토스페이먼츠, 항공예약발권시스템 간편결제 도입 MSN",
+      "tags": [],
+      "date": "2026.03.19",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMi9ANBVV95cUxQQUV6MDJyQnFRc2pRb0dhc0Nod0czLURjUzF2NlNqc2NOeXV3ZDFfMEhUejNLV25laDdEZjJmdEZpVmtzVHhCbV8xcTA5RDdSRHBlSWZPMHlEcEFJUUFJRXdsMXR6MXBmYXBYX19VVUVPLUgyX2JPVi1TS2hBYkU0bEM3NVdPV3V4aW9oWm1Da2VCUUppUU84OFJfQjRPclIwZjFSbDBFZEdQNG95UWwyUm4wWGVaT2hQNzNiNnhmeDZIeWxVRXpSdDdfMlVqcHpFMWhmeVRHOEtTc2lRcDJrSjI5N25jYk9OWE5PVDAtamkySHdueFp1a0ZXekE3dGkyd2xXNGpCSmNDOXkxSHM0TTljTFVQeEo4QWdmS0tTUlZaeGVSX1MwdUlHR1RlZDBxZ05ETGlQaXd6SUhZMlY5MV9uUG5HMVZadndMY2hDQmxLOTdTb2FWZXRhMWQ1MHlLVWJKcGE1VEpZX05SLUgwQjVoTUJYVktFLUwxcEdESWwtT2RwSlF4U25ZOFdDNHlFcHFKU2pzUUtZS1ZxMGx0QWZ3TTIzaEN3aXV6RVNoQVhjSktSdmRzX1IzTTRQTkNJTi1oOE4tRk5qcjNPSGZ5VlJNZm8wbmVJbnVwQ2FDQkpNNGNER0RISzctbG1UVzhLRUM2Mw?oc=5",
+      "ch": "Google News (MSN)"
+    },
+    {
+      "appId": "toss_fin",
       "title": "토스 앱에 ‘한강 수온’ 서비스…“투자 실패 희화화” 비판에 노출 중단",
       "desc": "토스 앱에 ‘한강 수온’ 서비스…“투자 실패 희화화” 비판에 노출 중단 v.daum.net“오늘 한강물 온도는?”…토스, ‘투자 실패’ 은어 사용한 서비스 논란 매일경제 마켓“투자 실패하면 한강 가란 소리냐”…토스 ‘한강물 온도’ 기능에 공분 매거진한경“주식 투자 망하면 한강 가라는 건가?”…‘한강...",
       "tags": [
@@ -118,16 +128,6 @@
       "ch": "Google News (네이트)"
     },
     {
-      "appId": "toss_fin",
-      "title": "토스페이먼츠, 항공예약발권시스템 간편결제 도입",
-      "desc": "토스페이먼츠, 항공예약발권시스템 간편결제 도입&nbsp;&nbsp;MSN",
-      "tags": [],
-      "date": "2026.03.19",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMi9ANBVV95cUxQQUV6MDJyQnFRc2pRb0dhc0Nod0czLURjUzF2NlNqc2NOeXV3ZDFfMEhUejNLV25laDdEZjJmdEZpVmtzVHhCbV8xcTA5RDdSRHBlSWZPMHlEcEFJUUFJRXdsMXR6MXBmYXBYX19VVUVPLUgyX2JPVi1TS2hBYkU0bEM3NVdPV3V4aW9oWm1Da2VCUUppUU84OFJfQjRPclIwZjFSbDBFZEdQNG95UWwyUm4wWGVaT2hQNzNiNnhmeDZIeWxVRXpSdDdfMlVqcHpFMWhmeVRHOEtTc2lRcDJrSjI5N25jYk9OWE5PVDAtamkySHdueFp1a0ZXekE3dGkyd2xXNGpCSmNDOXkxSHM0TTljTFVQeEo4QWdmS0tTUlZaeGVSX1MwdUlHR1RlZDBxZ05ETGlQaXd6SUhZMlY5MV9uUG5HMVZadndMY2hDQmxLOTdTb2FWZXRhMWQ1MHlLVWJKcGE1VEpZX05SLUgwQjVoTUJYVktFLUwxcEdESWwtT2RwSlF4U25ZOFdDNHlFcHFKU2pzUUtZS1ZxMGx0QWZ3TTIzaEN3aXV6RVNoQVhjSktSdmRzX1IzTTRQTkNJTi1oOE4tRk5qcjNPSGZ5VlJNZm8wbmVJbnVwQ2FDQkpNNGNER0RISzctbG1UVzhLRUM2Mw?oc=5",
-      "ch": "Google News (MSN)"
-    },
-    {
       "appId": "toss_bank",
       "title": "3월 3주 앱인토스 업데이트 | 통합 미니앱 홈이 출시됐어요",
       "desc": "3월 3주 앱인토스 업데이트 | 통합 미니앱 홈이 출시됐어요 토스",
@@ -165,12 +165,12 @@
       "title": "SK인텔릭스, 웰니스 로봇 ‘나무엑스’ OTA 업데이트…‘팔로우 미’ 등 신기능 추가",
       "desc": "SK인텔릭스, 웰니스 로봇 ‘나무엑스’ OTA 업데이트…‘팔로우 미’ 등 신기능 추가 리버티코리아포스트",
       "tags": [
-        "추가",
+        "업데이트",
         "기능",
         "신기능"
       ],
       "date": "2026.03.17",
-      "analysis": "추가, 기능, 신기능 관련 업데이트",
+      "analysis": "업데이트, 기능, 신기능 관련 업데이트",
       "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5xaGNCeUp6dDV5WW1wSTRhU3FKbnYxNFZlSDA4Tjcya2gtVHp6em85X2xvQUlRV2ZiZFpkODNTbGpqV2txTV9naGFyNjhCT1Z3eklOMFp2OHJmSEstblJlRlNiONIBZ0FVX3lxTFBfSjNGLW5HYV9UVDdwMDBvdTJVa3p0YXNyanVqOVBpMlZBZ2dBZ2tBdDBjZy1BTUxSblozVHJvbmJZY01lQXRLZ1hSanpJOHZtWE5CTXJHel8xQ1Z4eTJSNWVxYll3akU?oc=5",
       "ch": "Google News (리버티코리아포스트)"
     },
@@ -217,12 +217,12 @@
     {
       "appId": "toss_fin",
       "title": "“과도한 데이터 이용료, 마이데이터 산업화 발목”",
-      "desc": "“과도한 데이터 이용료, 마이데이터 산업화 발목” 마켓인",
+      "desc": "“과도한 데이터 이용료, 마이데이터 산업화 발목” edaily.co.kr",
       "tags": [],
       "date": "2026.03.15",
       "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ibHJwVlJEazMyQkR2TG9MY3BfMHNPLTFtQ0hVekdGS1U0VHdkSnFlVmdQNk1vTE9qc3YzWXNacUl5UVpMT0tpOFB2cGR4OHZuQ0M1R25tb3RXSFFraWM5Qml5RWVkWVhNVlhMT0F6cmQ4X1k?oc=5",
-      "ch": "Google News (마켓인)"
+      "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQem52MWl6bllsX3FvTEhLcEdEb0hRN2N5V3ZVTGR4alhuTUxwTHk1bGxnejBOejlLMDE0WkptLUNsWjgzdjNKVERCNWlITUtaWTlwcGZEdGtJalNQaEVVNC04cEI5MmRXYnNVYWVJTkZxbHBTUmVUdV9xR3ZKSHBvWA?oc=5",
+      "ch": "Google News (edaily.co.kr)"
     },
     {
       "appId": "ohouse",
@@ -264,7 +264,7 @@
       ],
       "date": "2026.03.08",
       "analysis": "기능, 신기능 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5RUGFSUlRta1RLdlhOenNFRVFKU09tMDJwakc1clRjSEdHOTcyLXI0MUh5VnpRRTZWUWprUmdQRkxKdGpFNTVwZ09pRUlib2M?oc=5",
+      "src": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51dnhSakhpREhGem1rZjQyQ3E1emI3ZDVLQlhGam5IdTdNbWpVSDB4emNRMmhhV0FKM2h6ZDJlMFVsbGEtTlNhdm1UVlJtWjNCWDRPb3ZFa1U0OHZM?oc=5",
       "ch": "Google News (서울경제신문)"
     },
     {
@@ -272,12 +272,12 @@
       "title": "\"이제 부장님 소식 안 볼 수 있네\"...카카오톡 신기능 업데이트 [1일IT템]",
       "desc": "\"이제 부장님 소식 안 볼 수 있네\"...카카오톡 신기능 업데이트 [1일IT템] v.daum.net",
       "tags": [
+        "업데이트",
         "기능",
-        "신기능",
-        "업데이트"
+        "신기능"
       ],
       "date": "2026.03.07",
-      "analysis": "기능, 신기능, 업데이트 관련 업데이트",
+      "analysis": "업데이트, 기능, 신기능 관련 업데이트",
       "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04cjk1R0Q1ckJGRk5Ub2haVnl1WU9CaGFyeUZ4TzZzWkFuOGptX1UtVUlDLXhpMFdvMkt5bFE4OFFQV3pFcDVReUVCSzd2VU0?oc=5",
       "ch": "Google News (v.daum.net)"
     },
