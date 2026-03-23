@@ -66,7 +66,10 @@ body {
 will-change: max-height, padding, opacity; transform: translateZ(0);
   opacity: 1;
 }
-/* tab-nav always visible */
+/* 이 블록 전체를 삭제하세요 */
+.tab-nav.hidden {
+  max-height: 0; padding: 0; overflow: hidden;
+}
 .tab-link {
   font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.45);
   background: rgba(255,255,255,0.1); border: none; cursor: pointer;
@@ -91,7 +94,10 @@ will-change: max-height, padding, opacity; transform: translateZ(0);
 will-change: max-height, padding, opacity; transform: translateZ(0);
   opacity: 1;
 }
-/* filter-nav always visible */
+/* 이 블록 전체를 삭제하세요 */
+.filter-nav.hidden {
+  max-height: 0; padding: 0; overflow: hidden;
+}
 .filter-nav::-webkit-scrollbar { display: none; }
 .filter-link {
   flex-shrink: 0; padding: 6px 10px;
@@ -715,7 +721,9 @@ const y=window.scrollY;
 const tabNav=document.querySelector('#page-main .tab-nav');
 const filterNav=document.getElementById('domainFilter');
 if(!tabNav||!filterNav){ticking=false;return;}
-/* scroll collapse disabled */
+// 이 두 줄을 삭제하세요:
+if(y>80){tabNav.classList.add('hidden');filterNav.classList.add('hidden');}
+else{tabNav.classList.remove('hidden');filterNav.classList.remove('hidden');}
 ticking=false;});ticking=true;}
 },{passive:true});
 
