@@ -1,6 +1,369 @@
 """
 App Trends Tracker - 크롤링 파이프라인 오케스트레이터
 - Play Store, App Store, 뉴스 크롤링
+- 항목 분류, 중복 제거, 병합
+- feed.json 생성 (최신순 정렬, 현재 월 필터링)
+- 노이즈 필터링 (퀴즈, 주가, 채용 등 무관 콘텐츠 제거)
+- 동일 토픽 중복 제거 (같은 회사의 같은 사건 뉴스는 대표 1건만 유지)
+- desc 출처명 정리
+
+GitHub Actions 및 로컬 실행 모두 호환
+"""
+
+import sys
+import os
+import json
+import re
+from datetime import datetime, timedelta
+from pathlib import Path
+
+CRAWLER_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(CRAWLER_DIR))
+
+from config import APPS, DATA_POLICY
+from play_store import crawl_play_store
+from app_store import crawl_app_store
+from news_crawler import crawl_news
+from classifier import classify, deduplicate_items, generate_analysis
+
+# ── 노이즈 필터 ──
+NOISE_KEYWORDS = [
+    "퀴즈 정답", "행운퀴즈", "이벤트 정답", "오늘의 퀴즈",
+    "파트너사 모집", "채용", "인턴", "공채", "합격",
+    "주가", "시세", "주식 전망", "투자 의견", "목표가",
+    "실적 발표", "영업이익", "순이익", "매출액",
+    "대출 금리", "예금 금리", "적금 금리",
+    "로봇", "웰니스", "AI 서밋", "AI 전략 공개",
+    "ESG", "탄소", "사회공헌", "봉사",
+    "일키", "최강 블루", "게임", "e스포츠",
+    "갤럭시", "아이폰", "영상갤",
+]
+
+# ── 같은 회사를 가리키는 appId 그룹 (동일 토픽 크로스 중복 제거용) ──
+APP_NAME_MAP = {}
+for _aid, _cfg in APPS.items():
+    _name = _cfg.get("name", _aid)
+    APP_NAME_MAP[_aid] = _name
+
+
+def _get_company_name(app_id: str) -> str:
+    """appId에서 실제 회사/서비스명 반환 (toss_bank, toss_fin 모두 '토스')"""
+    return APP_NAME_MAP.get(app_id, app_id)
+
+
+def is_noise_title(title: str) -> bool:
+    title_lower = title.lower()
+    for noise in NOISE_KEYWORDS:
+        if noise.lower() in title_lower:
+            return True
+    return False
+
+
+def clean_desc_source(desc: str) -> str:
+    if not desc:
+        return ""
+    desc = re.sub(r'\s+[a-zA-Z0-9.-]+\.(co\.kr|com|net|kr|org)(\s|$)', ' ', desc)
+    desc = re.sub(r'\s+[가-힣]{2,6}$', '', desc.strip())
+    return desc.strip()
+
+
+# ── 동일 토픽 중복 제거 (회사명 기준, 크로스-appId) ──
+
+def _extract_topic_words(title: str) -> set:
+    clean = re.sub(r"['\"\u2018\u2019\u201c\u201d\u2026\u00b7\-\?!,\.\(\)\[\]…·]", " ", title)
+    words = set()
+    for w in clean.split():
+        w = w.strip()
+        if len(w) >= 2:
+            words.add(w)
+    return words
+
+
+def _extract_entities(title: str) -> set:
+    """제목에서 핵심 고유명사/엔티티 추출 (3글자 이상 한글 단어)"""
+    clean = re.sub(r"['\"\u2018\u2019\u201c\u201d\u2026\u00b7\-\?!,\.\(\)\[\]…·]", " ", title)
+    entities = set()
+    for w in clean.split():
+        w = w.strip()
+        if len(w) >= 3:
+            entities.add(w)
+    return entities
+
+
+def _is_same_topic(title_a: str, title_b: str) -> bool:
+    """두 제목이 동일 토픽인지 판정 (두 가지 기준 OR)"""
+    words_a = _extract_topic_words(title_a)
+    words_b = _extract_topic_words(title_b)
+    if not words_a or not words_b:
+        return False
+
+    # 기준 1: 전체 단어 35% 이상 겹침
+    overlap = len(words_a & words_b)
+    shorter = min(len(words_a), len(words_b))
+    if shorter > 0 and overlap / shorter >= 0.35:
+        return True
+
+    # 기준 2: 핵심 엔티티(3글자 이상) 2개 이상 공유
+    ent_a = _extract_entities(title_a)
+    ent_b = _extract_entities(title_b)
+    ent_overlap = len(ent_a & ent_b)
+    if ent_overlap >= 2:
+        return True
+
+    return False
+
+
+def dedup_by_topic(items: list) -> list:
+    """회사명 기준으로 동일 토픽 뉴스를 그룹핑, 대표 1건만 남김.
+    toss_bank/toss_fin 같이 appId가 달라도 같은 회사면 함께 중복 제거."""
+    # 회사명별로 그룹핑
+    company_groups = {}
+    for item in items:
+        company = _get_company_name(item.get("appId", ""))
+        if company not in company_groups:
+            company_groups[company] = []
+        company_groups[company].append(item)
+
+    result = []
+    total_removed = 0
+    for company, group in company_groups.items():
+        topic_clusters = []
+        for item in group:
+            title = item.get("title", "")
+            placed = False
+            for cluster in topic_clusters:
+                if _is_same_topic(title, cluster[0].get("title", "")):
+                    cluster.append(item)
+                    placed = True
+                    break
+            if not placed:
+                topic_clusters.append([item])
+
+        for cluster in topic_clusters:
+            # 대표 1건: desc 있는 것 우선, 최신 우선
+            best = cluster[0]
+            for item in cluster[1:]:
+                if item.get("desc", "") and not best.get("desc", ""):
+                    best = item
+                elif item.get("date", "") > best.get("date", ""):
+                    best = item
+            result.append(best)
+            if len(cluster) > 1:
+                total_removed += len(cluster) - 1
+
+    if total_removed > 0:
+        print(f"  [TopicDedup] 회사별 토픽 중복 {total_removed}건 제거")
+    return result
+
+
+def format_date(date_str: str) -> str:
+    today = datetime.now()
+    if not date_str:
+        return today.strftime("%Y.%m.%d")
+    if date_str == "오늘":
+        return today.strftime("%Y.%m.%d")
+    if date_str == "어제":
+        return (today - timedelta(days=1)).strftime("%Y.%m.%d")
+    if len(date_str) == 10 and date_str[4] == '.' and date_str[7] == '.':
+        return date_str
+    for fmt in ["%Y-%m-%dT%H:%M:%S", "%Y-%m-%d", "%b %d, %Y", "%d %b %Y"]:
+        try:
+            dt = datetime.strptime(date_str[:len(fmt.replace('%', 'X').replace('X', 'XX'))], fmt)
+            return dt.strftime("%Y.%m.%d")
+        except (ValueError, TypeError):
+            continue
+    return date_str if date_str else today.strftime("%Y.%m.%d")
+
+
+def to_feature_item(item: dict) -> dict:
+    desc = item.get("description", item.get("release_notes", ""))
+    desc = desc.replace("&nbsp;", " ").replace("\u00a0", " ").strip()
+    desc = " ".join(desc.split())
+    return {
+        "appId": item.get("app_id", ""),
+        "title": item.get("title", ""),
+        "desc": desc,
+        "tags": item.get("tags", []),
+        "date": format_date(item.get("date", item.get("last_updated", ""))),
+        "analysis": item.get("analysis", ""),
+        "src": item.get("link", item.get("url", "")),
+        "ch": item.get("channel", ""),
+    }
+
+
+def to_marketing_item(item: dict) -> dict:
+    desc = item.get("description", item.get("release_notes", ""))
+    desc = desc.replace("&nbsp;", " ").replace("\u00a0", " ").strip()
+    desc = " ".join(desc.split())
+    return {
+        "appId": item.get("app_id", ""),
+        "title": item.get("title", ""),
+        "desc": desc,
+        "type": item.get("type", "마케팅"),
+        "tc": item.get("target_customer", "전체"),
+        "status": item.get("status", "진행중"),
+        "period": item.get("period", ""),
+        "tags": item.get("tags", []),
+        "analysis": item.get("analysis", ""),
+        "src": item.get("link", item.get("url", "")),
+        "ch": item.get("channel", ""),
+    }
+
+
+def is_valid_item(item: dict) -> bool:
+    title = item.get("title", "").strip()
+    src = item.get("src", "").strip()
+    if not title:
+        return False
+    if title in ["관련도순", "전체", "옵션 초기화", "최신순", "정확도순"]:
+        return False
+    if src in ["#", "javascript:;", "javascript:void(0)", ""]:
+        return False
+    return True
+
+
+def is_current_month(item: dict) -> bool:
+    date_str = item.get("date", "")
+    if not date_str:
+        return False
+    return date_str.startswith(datetime.now().strftime("%Y.%m"))
+
+
+def sort_by_date_desc(items: list) -> list:
+    return sorted(items, key=lambda x: x.get("date", "0000.00.00"), reverse=True)
+
+
+def run_crawler_pipeline():
+    print("=" * 60)
+    print("App Trends Tracker - 크롤링 시작")
+    print(f"시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 60)
+
+    start_time = datetime.now()
+    features = []
+    marketing = []
+
+    total_apps = len(APPS)
+    for idx, (app_key, app_config) in enumerate(APPS.items(), 1):
+        print(f"\n[{idx}/{total_apps}] {app_config['name']} ({app_key})")
+        print("-" * 50)
+        app_id = app_key
+
+        play_result = crawl_play_store(app_id, app_config.get('play_id'))
+        if play_result and play_result.get('release_notes'):
+            classified = classify(play_result)
+            classified['analysis'] = generate_analysis(classified)
+            (features if classified['category'] == 'feature' else marketing).append(classified)
+
+        if app_config.get('itunes_id'):
+            app_result = crawl_app_store(app_id, app_config.get('itunes_id'))
+            if app_result and app_result.get('release_notes'):
+                classified = classify(app_result)
+                classified['analysis'] = generate_analysis(classified)
+                (features if classified['category'] == 'feature' else marketing).append(classified)
+
+        news_results = crawl_news(app_id, app_config.get('news_keywords', []))
+        for news_item in news_results:
+            classified = classify(news_item)
+            classified['analysis'] = generate_analysis(classified)
+            (features if classified['category'] == 'feature' else marketing).append(classified)
+
+    print("\n" + "=" * 60)
+    print("후처리 중...")
+    features = deduplicate_items(features)
+    marketing = deduplicate_items(marketing)
+    print(f"제목 중복 제거 후 - Features: {len(features)}, Marketing: {len(marketing)}")
+
+    formatted_features = [to_feature_item(f) for f in features]
+    formatted_marketing = [to_marketing_item(m) for m in marketing]
+
+    repo_root = CRAWLER_DIR.parent
+    feed_path = repo_root / "feed.json"
+
+    if not formatted_features and not formatted_marketing:
+        print("\n⚠ 크롤링 결과가 없습니다. 기존 feed.json 유지.")
+        return
+
+    existing_features = []
+    existing_marketing = []
+    if feed_path.exists():
+        try:
+            with open(feed_path, 'r', encoding='utf-8') as f:
+                existing = json.load(f)
+            existing_features = existing.get("features", [])
+            existing_marketing = existing.get("marketing", [])
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    def merge_items(new_items, existing_items):
+        seen = set()
+        merged = []
+        for item in new_items + existing_items:
+            key = item.get("title", "").strip().lower()
+            if key and key not in seen:
+                seen.add(key)
+                merged.append(item)
+        return merged
+
+    all_features = merge_items(formatted_features, existing_features)
+    all_marketing = merge_items(formatted_marketing, existing_marketing)
+
+    # 1. 쓰레기 필터
+    all_features = [i for i in all_features if is_valid_item(i)]
+    all_marketing = [i for i in all_marketing if is_valid_item(i)]
+
+    # 2. 노이즈 필터
+    bf, bm = len(all_features), len(all_marketing)
+    all_features = [i for i in all_features if not is_noise_title(i.get("title", ""))]
+    all_marketing = [i for i in all_marketing if not is_noise_title(i.get("title", ""))]
+    noise_removed = (bf - len(all_features)) + (bm - len(all_marketing))
+    print(f"노이즈 필터: {noise_removed}건 제거")
+
+    # 3. desc 출처명 정리
+    for i in all_features + all_marketing:
+        i["desc"] = clean_desc_source(i.get("desc", ""))
+
+    # 4. 현재 월 필터
+    all_features = [i for i in all_features if is_current_month(i)]
+    all_marketing = [i for i in all_marketing if is_current_month(i)]
+
+    # 5. ★ 동일 토픽 중복 제거 (회사명 기준, 크로스 appId)
+    bf2, bm2 = len(all_features), len(all_marketing)
+    all_features = dedup_by_topic(all_features)
+    all_marketing = dedup_by_topic(all_marketing)
+    topic_removed = (bf2 - len(all_features)) + (bm2 - len(all_marketing))
+    print(f"토픽 중복 제거: {topic_removed}건 제거")
+
+    # 6. 최신순 정렬
+    all_features = sort_by_date_desc(all_features)
+    all_marketing = sort_by_date_desc(all_marketing)
+
+    max_items = DATA_POLICY.get("max_items", 2000)
+    all_features = all_features[:max_items]
+    all_marketing = all_marketing[:max_items]
+
+    feed = {
+        "lastUpdated": datetime.now().isoformat(),
+        "features": all_features,
+        "marketing": all_marketing
+    }
+
+    with open(feed_path, 'w', encoding='utf-8') as f:
+        json.dump(feed, f, ensure_ascii=False, indent=2)
+
+    elapsed = (datetime.now() - start_time).total_seconds()
+    print(f"\n✓ 저장됨: {feed_path}")
+    print(f"\n최종: Features {len(all_features)}, Marketing {len(all_marketing)}, 총 {len(all_features)+len(all_marketing)}")
+    print(f"노이즈 제거 {noise_removed}건, 토픽 중복 제거 {topic_removed}건")
+    print(f"소요 시간: {elapsed:.1f}초")
+    print("\n파이프라인 완료!")
+
+
+if __name__ == "__main__":
+    run_crawler_pipeline()
+"""
+App Trends Tracker - 크롤링 파이프라인 오케스트레이터
+- Play Store, App Store, 뉴스 크롤링
 - 항목 분류
 - 중복 제거 및 병합
 - feed.json 생성 (최신순 정렬, 현재 월 필터링)
