@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T00:00:43.042372",
+  "lastUpdated": "2026-03-23T00:31:15.266529",
   "features": [
     {
       "appId": "toss_fin",
@@ -32,18 +32,6 @@
       "analysis": "기능 관련 업데이트",
       "src": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB6OGRpOWZYYnVNZXVobVNhTWxJXzk4RGJHMmE4YVBKdVFFNThKeXdmYVVhZ2pNTmJFRVByd1VIb2NHUVo3aGY0anp0ejVPeUk?oc=5",
       "ch": "Google News (v.daum.net)"
-    },
-    {
-      "appId": "toss_bank",
-      "title": "토스 앱에 '한강물 온도' 새 기능...죽음 희화화 논란 일자 \"중단\"",
-      "desc": "토스 앱에 '한강물 온도' 새 기능...죽음 희화화 논란 일자 \"중단\" YTN",
-      "tags": [
-        "기능"
-      ],
-      "date": "2026.03.19",
-      "analysis": "기능 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9meVdpcER0UHlQd0xqamVwZGJ0X2R1YTdpUUFJZkh6V3AyOVFPQXVoTGkweHk0cmllVE1pN015MGVXRGFWWk4yVTgtYmtudjZqdzhmazlPSVp3R0Mxbmc?oc=5",
-      "ch": "Google News (YTN)"
     },
     {
       "appId": "toss_bank",
@@ -117,16 +105,6 @@
       "analysis": "기능 개선 관련 업데이트",
       "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9mYVFmM3IxSUFyZUJYT25jR0tlQzUtZ2t5TnVzeDhiczVnbUJDeWxSYWFDTG5HeENBUVZrZV9laE5yN1d5bU5hd20tZFdXUQ?oc=5",
       "ch": "Google News (전자신문)"
-    },
-    {
-      "appId": "toss_fin",
-      "title": "토스인슈어런스, KB손해보험과 소비자보호 협력 강화",
-      "desc": "토스인슈어런스, KB손해보험과",
-      "tags": [],
-      "date": "2026.03.17",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5MY3lXR05KQnprNzF5cTZ2Tl9QZ3RlbGVRM2hISjBlbDYwWGppMWxRS2lXcVpVejZLRXdmRU5mSWh2U3BTOEhvTzBISVdqLW5HX3VReWRDemR2QWsxNElVWW5sOVpLck5HanFF0gFvQVVfeXFMTkFTT2JpbWFPSHUxY2ZkSV9wa3RWUm1Yd3oyaEU2dDh4TGxJV3lYS3dsRE9DSkxiSi1vUEVUR2tYTENrX1J2am1EQUJGOXlEVzNEdmdqWFc4UVk2ZjRtOF9oSnQzZDlIOFVweWdJM0FN?oc=5",
-      "ch": "Google News (한국보험신문)"
     },
     {
       "appId": "ssg",
