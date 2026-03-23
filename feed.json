@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T01:01:04.336797",
+  "lastUpdated": "2026-03-23T01:37:22.693954",
   "features": [
     {
       "appId": "toss_fin",
@@ -149,26 +149,6 @@
       "analysis": "기능 개선 관련 업데이트",
       "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BS3RJcDlGV0FRbWV4UjRHR0tOcXBJUi1XcmdnS1lOaUx6WllKWXRDNzNDaGFvMzB3bkplTGwtd0FCYVhMLTA5VmNJbHowWFdMaS04?oc=5",
       "ch": "Google News (브런치)"
-    },
-    {
-      "appId": "nh_bank",
-      "title": "NH농협은행, 'NH올원뱅크' 모바일 신분증 전 기종 확대…금융권 최초",
-      "desc": "NH농협은행, 'NH올원뱅크' 모바일 신분증 전 기종 확대…금융권",
-      "tags": [],
-      "date": "2026.03.04",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5OWmVwbTdsRUhadzRBY2dPbnZvYzZOQnZMeExkbm9ySk5taXdZMDJxOEdVVGdzUW42cWNHLU84WWtuNnJxUXNTNkRHX1lFUQ?oc=5",
-      "ch": "Google News (전자신문)"
-    },
-    {
-      "appId": "musinsa",
-      "title": "무신사, 푸마와 첫 컬래버레이션 ‘무신사 에디션’ 발매··· “레드벨벳 슬기 화보 전격 공개”",
-      "desc": "무신사, 푸마와 첫 컬래버레이션 ‘무신사 에디션’ 발매··· “레드벨벳 슬기 화보 전격 공개”",
-      "tags": [],
-      "date": "2026.03.03",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAzYnd3X1c1V0tWMXZYcTVkSmxUd1g4dHkwNjY5RzNoUzBHbmhBLXlCUnJUTWJGR2RMMjZER3F4YWo0YnNjOGlsMF96MkZ4SWFiN3hIenFxUGhndlZiRUd4STNabDlyZw?oc=5",
-      "ch": "Google News (무신사 뉴스룸)"
     },
     {
       "appId": "payco",
