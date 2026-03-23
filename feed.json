@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T00:31:15.266529",
+  "lastUpdated": "2026-03-23T01:01:04.336797",
   "features": [
     {
       "appId": "toss_fin",
@@ -34,16 +34,6 @@
       "ch": "Google News (v.daum.net)"
     },
     {
-      "appId": "toss_bank",
-      "title": "[자막뉴스] 증시 널뛰는데 증권 앱에 '한강물'?…\"왜 뛰어들라고?\" \"눈을 의심했다\"",
-      "desc": "[자막뉴스] 증시 널뛰는데 증권 앱에 '한강물'?…\"왜 뛰어들라고?\" \"눈을 의심했다\"&nbsp;&nbsp;네이트",
-      "tags": [],
-      "date": "2026.03.19",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5VdlF2MU42dFlIRHphWW9QRm9EaGoxTldDREJJMnhkS2lORnExRmxiR1p2eUIySXlhQjgwMXBpRkdYRjk2MG1YY3pmaENaLWRPU0pr?oc=5",
-      "ch": "Google News (네이트)"
-    },
-    {
       "appId": "kakao_bank",
       "title": "카카오뱅크, 17일 접속 장애 원인 2시간 만에 뒤늦게 파악…복구 중 또 ′먹통′",
       "desc": "카카오뱅크, 17일 접속 장애 원인 2시간 만에 뒤늦게 파악…복구 중 또 ′먹통′",
@@ -72,16 +62,6 @@
       "analysis": "기능 개선 관련 업데이트",
       "src": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA0Njl6YVFadVBmWnVVdDR5SDJoWTF1T0hJbnoxNU1ERHd1ZU9XdXdoSEZYN0Z0bXdkMkw0R1g2Vy1valYtRWEwd0VNS2VnVzVDX1RhcDJCc29DV1VNZzhlYm5GR2tEd3RoeDc4?oc=5",
       "ch": "Google News (주간신문씨엠엔)"
-    },
-    {
-      "appId": "toss_fin",
-      "title": "미국 현지에서 찾은 투자 힌트: 토스증권의 탐방 리포트 출간",
-      "desc": "미국 현지에서 찾은 투자 힌트:",
-      "tags": [],
-      "date": "2026.03.18",
-      "analysis": "기능 개선 관련 업데이트",
-      "src": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53aW1YYjd1ei1RTVQ2bWpIbGtLakFDWWF2NldCbW82VllPWTlHNC1CZzJlVDBVR1BwbHB2WFJCU3FkYWU0bmc0YUxCUU5DeW5MbUNuRVl6aG4tUHl2VHVacFNvRV9sRE0ycFE?oc=5",
-      "ch": "Google News (토스)"
     },
     {
       "appId": "toss_bank",
