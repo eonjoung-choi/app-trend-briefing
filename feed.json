@@ -1,5 +1,16 @@
 {
-  "lastUpdated": "2026-10-28T02:32:06.170474",
-  "features": [],
+  "lastUpdated": "2026-10-29T02:39:48.741066",
+  "features": [
+    {
+      "appId": "ssg",
+      "title": "SSG닷컴, ‘쓱데이’ 단독 100여종...반값 과일박스부터 명품 화장품",
+      "desc": "",
+      "tags": [],
+      "date": "2026.10.28",
+      "analysis": "기능 개선 관련 업데이트",
+      "src": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KVU4xNGJBeU1rWlFTSVllcFQtRmZLOGJvNVdfcnBLMUdZUmFkMmpnb0JGaUt5Y2hIRzk2dm8zSmdQSzFnY3Bjak1KdG1xRVE3cHlOT2g5UkRZOC1JRGJvdnBMd2hOZw?oc=5",
+      "ch": "Google News (싱글리스트)"
+    }
+  ],
   "marketing": []
 }
